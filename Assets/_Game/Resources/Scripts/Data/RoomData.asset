@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eee67c77fb49c14aab87cfa8de3ebac, type: 3}
+  m_Name: RoomData
+  m_EditorClassIdentifier: 
+  doorTypes:
+  - {fileID: 190348, guid: 093b8646eae6e634788b989c705975bf, type: 2}
+  - {fileID: 190348, guid: 093b8646eae6e634788b989c705975bf, type: 2}
+  - {fileID: 130172, guid: 382c2c6bf01594f0cbd899fc5b31b7e6, type: 2}
+  - {fileID: 168198, guid: a64ec1d2c34df47e991e139935cee37f, type: 2}
+  torchTypes:
+  - {fileID: 169272, guid: 3f3b6424d379c4b999712ff674c81ecd, type: 2}
+  trapTypes:
+  - {fileID: 133742, guid: 96fdc949f8bdf4f77ab31f7480978d5f, type: 2}
+  data:
+  - list:
+    - name: Alpha Level 0
+      gameObject: {fileID: 181506, guid: 1f1609b198ec1d649a4cea784a202d9a, type: 2}
+      floorSize: {x: 36.5597839, y: 9.15310669, z: 32.2157516}
+  - list:
+    - name: Alpha Level 1
+      gameObject: {fileID: 148356, guid: 916fc75d6c1a1074bad307266ba3a51f, type: 2}
+      floorSize: {x: 36.5597839, y: 9.15310669, z: 32.2157516}
+    - name: Alpha Level 2
+      gameObject: {fileID: 161900, guid: 6c589bfbe370ed44c9e7a3446bfcafcc, type: 2}
+      floorSize: {x: 36.5597839, y: 9.15310669, z: 32.2157516}
+    - name: Alpha Level 3
+      gameObject: {fileID: 194154, guid: 20103b328a319844983b942e8dbda539, type: 2}
+      floorSize: {x: 36.5597839, y: 9.15310669, z: 32.2157516}
+    - name: Alpha Level 4
+      gameObject: {fileID: 172140, guid: a5a08d5d24af2ca458fc0d7b20e6cfc4, type: 2}
+      floorSize: {x: 36.5597839, y: 9.15310669, z: 32.2157516}
+  - list:
+    - name: Item Level Layout
+      gameObject: {fileID: 160536, guid: 866ad1f069d65a843a6820c3791621bf, type: 2}
+      floorSize: {x: 36.5597839, y: 9.15310669, z: 32.2157516}
+  - list:
+    - name: Level Layout Lilith
+      gameObject: {fileID: 103536, guid: f32e22878271a8c40affb6b7869cad3e, type: 2}
+      floorSize: {x: 36.5597839, y: 9.15310669, z: 32.2157516}
+    - name: Level Layout Pillar
+      gameObject: {fileID: 127642, guid: f22921a645d0b4876adf7a92dfe5698f, type: 2}
+      floorSize: {x: 36.5597839, y: 9.15310669, z: 32.2157516}
+    - name: Level Layout Sid
+      gameObject: {fileID: 171048, guid: 91bc442851b0ee4488203b88a743532d, type: 2}
+      floorSize: {x: 36.5597839, y: 9.15310669, z: 32.2157516}

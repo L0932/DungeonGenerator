@@ -1,0 +1,555 @@
+fileFormatVersion: 2
+guid: 0b1d09c18c606be4bbae02afd5ab20cf
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Back_ArmJoint
+    100002: Back_ArmJoint_Tip
+    100004: Body
+    100006: Chest_Joint
+    100008: CoG_Joint
+    100010: Eye
+    100012: Front_ArmJoint
+    100014: Front_ArmJoint_Tip
+    100016: Global
+    100018: Head_Joint
+    100020: Head_Joint_End
+    100022: Left_ArmJoint
+    100024: Left_ArmJoint_Tip
+    100026: Left_Leg01
+    100028: Left_Leg02
+    100030: nurbsCircle1
+    100032: nurbsCircle11
+    100034: nurbsCircle12
+    100036: nurbsCircle13
+    100038: nurbsCircle2
+    100040: nurbsCircle3
+    100042: nurbsCircle4
+    100044: nurbsCircle5
+    100046: nurbsCircle6
+    100048: Right_ArmJoint
+    100050: Right_ArmJoint_Tip
+    100052: Right_Leg01
+    100054: Right_Leg02
+    100056: //RootNode
+    400000: Back_ArmJoint
+    400002: Back_ArmJoint_Tip
+    400004: Body
+    400006: Chest_Joint
+    400008: CoG_Joint
+    400010: Eye
+    400012: Front_ArmJoint
+    400014: Front_ArmJoint_Tip
+    400016: Global
+    400018: Head_Joint
+    400020: Head_Joint_End
+    400022: Left_ArmJoint
+    400024: Left_ArmJoint_Tip
+    400026: Left_Leg01
+    400028: Left_Leg02
+    400030: nurbsCircle1
+    400032: nurbsCircle11
+    400034: nurbsCircle12
+    400036: nurbsCircle13
+    400038: nurbsCircle2
+    400040: nurbsCircle3
+    400042: nurbsCircle4
+    400044: nurbsCircle5
+    400046: nurbsCircle6
+    400048: Right_ArmJoint
+    400050: Right_ArmJoint_Tip
+    400052: Right_Leg01
+    400054: Right_Leg02
+    400056: //RootNode
+    4300000: Body
+    4300002: Eye
+    7400000: Snatch_Idle
+    7400002: Snatch_Walk
+    7400004: Snatch_Snatch
+    7400006: Snatch_Death
+    7400008: Snatch_Flinch
+    9500000: //RootNode
+    13700000: Body
+    13700002: Eye
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Snatch_Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eye
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/nurbsCircle2
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Back_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Back_ArmJoint/Back_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Front_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Front_ArmJoint/Front_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Head_Joint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Head_Joint/Head_Joint_End
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Left_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Left_ArmJoint/Left_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Right_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Right_ArmJoint/Right_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Left_Leg01
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Left_Leg01/Left_Leg02
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Right_Leg01
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Right_Leg01/Right_Leg02
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle5
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle6
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle11
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle12
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle13
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle3
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Snatch_Walk
+      takeName: Take 001
+      firstFrame: 95
+      lastFrame: 125
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eye
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/nurbsCircle2
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Back_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Back_ArmJoint/Back_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Front_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Front_ArmJoint/Front_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Head_Joint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Head_Joint/Head_Joint_End
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Left_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Left_ArmJoint/Left_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Right_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Right_ArmJoint/Right_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Left_Leg01
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Left_Leg01/Left_Leg02
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Right_Leg01
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Right_Leg01/Right_Leg02
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle5
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle6
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle11
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle12
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle13
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle3
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Snatch_Snatch
+      takeName: Take 001
+      firstFrame: 130
+      lastFrame: 146
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eye
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/nurbsCircle2
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Back_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Back_ArmJoint/Back_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Front_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Front_ArmJoint/Front_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Head_Joint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Head_Joint/Head_Joint_End
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Left_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Left_ArmJoint/Left_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Right_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Right_ArmJoint/Right_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Left_Leg01
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Left_Leg01/Left_Leg02
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Right_Leg01
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Right_Leg01/Right_Leg02
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle5
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle6
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle11
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle12
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle13
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle3
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Snatch_Death
+      takeName: Take 001
+      firstFrame: 160
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eye
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/nurbsCircle2
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Back_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Back_ArmJoint/Back_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Front_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Front_ArmJoint/Front_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Head_Joint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Head_Joint/Head_Joint_End
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Left_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Left_ArmJoint/Left_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Right_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Right_ArmJoint/Right_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Left_Leg01
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Left_Leg01/Left_Leg02
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Right_Leg01
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Right_Leg01/Right_Leg02
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle5
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle6
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle11
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle12
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle13
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle3
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Snatch_Flinch
+      takeName: Take 001
+      firstFrame: 195
+      lastFrame: 210
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Eye
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/nurbsCircle2
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Back_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Back_ArmJoint/Back_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Front_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Front_ArmJoint/Front_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Head_Joint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Head_Joint/Head_Joint_End
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Left_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Left_ArmJoint/Left_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Right_ArmJoint
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Chest_Joint/Right_ArmJoint/Right_ArmJoint_Tip
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Left_Leg01
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Left_Leg01/Left_Leg02
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Right_Leg01
+        weight: 1
+      - path: Global/nurbsCircle2/CoG_Joint/Right_Leg01/Right_Leg02
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle5
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle6
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle11
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle12
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle1/nurbsCircle13
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle3
+        weight: 1
+      - path: Global/nurbsCircle2/nurbsCircle4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Global
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

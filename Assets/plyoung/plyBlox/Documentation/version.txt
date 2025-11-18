@@ -1,0 +1,257 @@
+version: 1.3.6
+© Leslie Young
+http://plyoung.com/plyblox/
+
+===============================================================
+
+Verison 1.3.6
+
+- Added: Option to turn off auto saving and a button to that can be used to save
+
+Verison 1.3.5
+
+- Updated: Made Unity 5 compatible
+
+Version 1.3.4
+
+- Added: Rigidbody related Blocks
+- Updated: Changed error message to warning when Event is called that does not exist in the current State
+- Fixed: Delayed Events where still triggering, in wrong State, after the State has changed
+
+Version 1.3.3
+
+- Added: Component that can trigger a Blox Event with parameters. It is meant for use on uGUI Elements, like Buttons (Unity 4.6+ required). Thanks to RaiuLyn for this addition. http://forum.plyoung.com/users/raiulyn
+- Added: Various String manipulation Blocks (Common > String)
+- Fixed: Caching issue in Get/Set Property Blocks
+
+Version 1.3.2
+
+- Updated: You can now use a String Block for the Animation name field in Legacy Animation related Blocks
+- Fixed: Get/ Set Property Blocks where caching the first target
+
+Version 1.3.1
+
+- Added: Block to set Language when localization is used
+
+Version 1.3.0
+
+- Added: Support for Masks when System.Flags is used as attribute of enum
+- Fixed: The plyBlox.TriggerEvent function always returned error, even when the correct event name was specified
+
+Version 1.2.9
+
+- Added: Blocks related to Unity's new UI system
+- Fixed: Incorrect error message shown when event is triggered
+
+Version 1.2.8
+
+- Fixed: Field Blocks that where replaced by a paste would not unlink properly from the Event
+- Fixed: Some field blocks would not store their changes (caused by editor optimization of previous update)
+
+Version 1.2.7
+
+- Updated: Optimization of the Blox Editor to increase performance while a Block field is selected
+- Fixed: Bugs in Copy-Paste code
+
+Version 1.2.6
+
+- Added: Blocks to create and access Lists of values
+- Added: More GUI Related Blocks
+- Added: `TriggerEvent` and `SetState` public functions in plyBlox component. These can be used with Unity's new GUI Events to trigger events in a Blox on a target GameObject
+- Added: Non-container type comment block
+- Added: `Has Component` Block
+- Added: Audio `Play OneShot (auto)` to create an AudioSource, play sound, and then destroy AudioSource when done
+- Updated: Added Silent Fail option to `Get Component` Block
+- Updated: Added Ctr+LeftClick to simulate Right-Click, to Blox Editor
+- Fixed: Various fixes to prevent possible orphan Blocks and added code to detect existing orphan Blocks and remove them
+
+Version 1.2.5
+
+- Updated: Optimized the Event and Block rendering in Blox Editor
+- Updated: The Property Get/ Set Blocks now allows you to enter a path to the property manually
+- Fixed: Bug in OnGUi Window Block
+
+Version 1.2.4
+
+- Added: `GUIContent` Block under `GUI > OnGUI`
+- Updated: All OnGUI Blocks changed. They now have a field that accepts the new GUIContent Block as value
+- Updated: Improved drag-drop of objects/ components onto Block fields
+
+Version 1.2.3
+
+- Added: Input > Mouse X/Y Block
+- Added: "InlineValue" Data Provider that can provide Global and Local variable values
+- Updated: It is now possible to copy a whole Event (using copy while no block is selected) or Blocks with all those following it (from context menu)
+
+Version 1.2.2
+
+- Added: Blox Event Data Exporter
+- Added: Unity Input Acceleration related Blocks
+- Added: More Animation related Blocks
+
+Version 1.2.1
+
+- Added: `Variable Defined` Bock which can be used to check of Global, Local, Temp, and meta variable exist or not
+- Added: Encode/ Decode Global and Local variables for saving/ loading added to API
+- Added: Way to mark variables that can be persisted or not in variable editor/ inspector
+- Updated: Global & Local Variable "set" blocks can now set if variables partake in loading/ saving in properties
+- Updated: Added a confirmation when choosing to delete a State or Event
+- Updated: Made it easier to spot deactivated Events in the editor's list of events
+
+Version 1.2.0
+
+- Added: Variable Block that can return a plyBlox value
+- Added: New screen resolution related Blocks.
+- Added: Variation of `Object > Get Position` that can return only X, Y, or Z of position.
+
+Version 1.1.9
+
+- Added: Blocks related to quality settings (under Render group)
+- Added: Blocks and Events can now be disabled so that they exist but will not do anything at runtime
+- Fixed: Temporary variables could become invalid in active event when events are triggered in same blox object
+	Temporary Variables are now correctly associated per Event and not the plyBlox object as a whole
+- Updated: Temporary Variable Blocks do not take a plyBlox field any longer as they should not be able to access temp vars of other events
+
+Version 1.1.8
+
+- Updated: Events now accept custom parameters. The `Trigger Event` Block can now pass parameters
+- Added: Flow > Comparison > String IsEmpty Block
+
+Version 1.1.7
+
+- Updated: Moved 'Self GO/plyBlox' from Object to Common - Values category
+- Updated: link.xml file generator can now update file without removing existing entries
+- Added: Data Provider to plyBlox Global for plyBlox variables for systems that can interact with this
+- Added: metaData getter/ setter Blocks under Variables group
+
+Version 1.1.6
+
+- Added: 'Audio - Play One Shot' block
+- Fixed: 'Common - Set Property Value' block was not able to set value type object (boxed values)
+
+Version 1.1.5
+
+- Fixed bug in Vector3 SmoothDamp Block
+- Moved Screen and Cursor related Blocks to Render group (from Common)
+- Added the GetProperty and SetProperty Blocks (under Common). These allows you to get and set just about any value of GameObjects and their Components
+- Added more blocks to Common > Conversion
+- Deprecated Blocks
+	+ Math > 'as Vector2'. Please use Common > 'as Vector2'
+	+ Math > 'as Vector3'. Please use Common > 'as Vector3'
+	
+Version 1.1.4
+
+- Fixed bug in the stripping support (link.xml generator)
+- Fixed bug in the "Is Loading" Block
+- Added options to "Look At" Blocks to limit to horizontal or vertical rotation
+
+Version 1.1.3
+
+- Cleaned up editor skin
+- Added Blocks to get System.Object type values from plyBlox Variables
+- The Editor now resets the scroll position when switching between Events
+
+Version 1.1.2.beta
+
+- Improved editor for local and global variables
+- Added Input Blocks to read mouse, key and touch input
+- Added Screen related Blocks
+- Added Mouse Cursor related Blocks
+- Added Blocks related to Unity CharacterController
+- Updated the "with info" variants of Trigger and Collision Events. Please make sure to check what the temporary variables are called now if yo used these Events.
+
+
+Version 1.1.1.beta
+
+- IMPORTANT: If you are making Blocks make sure that they initialize plyBlox.blockIsValid and plyBlock.stopAllOnError as appropriate in the Block's Created() or Initialise(). Note that Initialise() will not be called if if blockIsValid = false. Your Blocks should use plyBlock.Log() to show error messages to the Unity console and not use Debug.Log
+- Made improvements to the error messages printed by Blocks so that it is easier to track down what is wrong
+- Added inspector property that can be set to indicate that the object should not be disabled
+- Updated GetComponent Block to specify which component in order to get when more than one of same on an object
+- Fixed bug in Comparison Blocks that where wrongly returning an Error Code
+
+Version 1.1.0.beta
+
+- Various visual improvements to blocks
+- Added Mecanim Blocks
+- Made GetComponent Block able to also look in child objects of target
+- Added a way to hide block fields and block properties depending on the status of another block.
+- See plyBlockFieldAttribute.ShowIfTargetFieldInvalid in API docs.
+- Added Blocks for generating random numbers and vectors
+- Changed the Set State Block to not fail and return an Error code if the block is already in the State.
+	It will print a warning so that you know Events like the State Enter will not trigger
+	
+Version 1.0.9.beta
+
+- Updated the description (help text) of the fields for many of the Blocks
+- Fixed problem that can occur when there are Blocks with the same name (even though in different groups)
+- Vector3 SmoothDamp block fixed to accept Variable for velocity field
+- Added Blend Block under Animation
+
+Version 1.0.8.beta
+
+- Added more Blocks under Math Vector2/3
+- Added more Transform and GameObject related Blocks under Object
+- Added Blocks that can execute Blocks timeout (under Flow)
+- Change Trigger Event Block to allow a delay before Event is triggered
+
+Version 1.0.7.beta
+
+- Fixed bugs in some existing blocks trying to access their owning blox too early after being created
+- Added blocks related to the Light component
+- Added blocks related to the AudioListener component
+- Added blocks related to the AudioSource component
+- Added blocks related to the Animation component
+- Added blocks to Vector3 and Vector2 (under math)
+
+Version 1.0.6 beta
+
+- Added PlayerPrefs Blocks
+- Added error catching to detect when Block field types where changed since it was last serialized
+
+Version 1.0.5 beta
+
+- Fixed bug with Copy/ Paste where reference with certain copied block fields where kept, rather than a a copy of the original
+- Fixed Object Create/Instantiate Block. It would not accept a prefab object as value
+- Fixed bug in "Get Temp Vector3" block not retrieving the correct value
+- Fixed bug where Blocks would loose the connection with their Events and link with the wrong Events. It cause various problems
+- Fixed bug where a scene object would revert to its prefab's plyBlox graph if it differ from it
+
+Version 1.0.4 beta
+
+- Cleaned up the description for many events and blocks
+- Added Trigger events that do not set info. Useful when you want better performance where the collider info is not needed
+- Changed On Collision and Trigger ('with info' variants) to set more temp variable types with relative data
+- Fixed bug that would prevent 3rd party custom block fields from deserialize properly
+- Updated editor to allow selecting which plyBlox to edit when there is more than one plyBlox component on a GameObject
+- Updated some of the blocks (like 'Trigger Event') to take into account that there might be more than one plyBlox on a GameObject
+
+Version 1.0.3 beta
+
+- Added drop-down as toolbar space might be too small when Block packages are installed
+- Added Unity Application class related blocks, like Load Level/Scene
+- The Variable blocks will now create the named variable if not present rather than throwing an error message about it not being present
+- Fixed crash when pasting twice after a copy
+
+
+Version 1.0.2 beta
+
+- Added ability to Cut, Copy and Paste blocks (see right-click context menu)
+- Added context menu (right-click menu) to blocks in graph with common options that can be performed on blocks
+- Added Backspace shortcut key to delete blocks in OSX
+- Added more math related blocks
+- Added more comparison blocks
+- Added more Vector2, Vector3, Rect and Color related blocks
+- Fixed bug with Color field throwing error when mouse down on it
+- Fixed bug with tooltips for OnGUI elements not showing at runtime
+
+Version 1.0.1 beta
+
+- Unity 4.3 compatibility fixes
+- Fixed error with default data paths
+- Fixed problem in Settings panel not moving files when choosing a new location for the data
+
+Version 1.0.0 (beta)
+
+- First beta release version
+
+-eof-

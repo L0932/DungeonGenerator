@@ -1,0 +1,79 @@
+version: 2.1.4
+© Leslie Young
+http://plyoung.com/diaq/
+
+===============================================================
+
+Version 2.1.4
+
+- Fixed: Problem with Reward Handler in DiaQ was fixed. See this post http://forum.plyoung.com/t/diaq-reward-is-not-rewarded/1541/5
+- Fixed: Data Provider's Set/ Get did not function correctly under certain conditions
+
+Version 2.1.3
+
+- Added: Quest Accepted, Completed and Rewarded callbacks in DiaQEngine
+- Added: Quest Accepted, Completed and Rewarded Events for plyGame/ plyBlox
+
+Version 2.1.2
+
+- Updated: Made Unity 5 compatible
+- Updated: Added option to suppress error message when condition key not found
+
+Version 2.1.1
+
+- Updated: Text wrapping for Dialogue Node field in inspector
+
+Version 2.1.0
+
+- Added: Blocks to work with list of Quests
+- Fixed: Error that could occur when duplicating a node
+
+Version 2.0.9
+
+- Fixed: Quest data was not being saved/ restored in plyGame
+
+Version 2.0.8
+
+- Added: Localization support
+- Added: Language strings Editor
+- Fixed: [plyGame/Blox] Items that has no Screen Name will show the prefab's name in quest rewards selection
+
+Version 2.0.7
+
+- Added: More plyBlox Blocks
+
+Version 2.0.6
+
+- Added: Way to reset a quest's status
+- Added: Blocks to give quest reward(s)
+- Fixed: plyGame Attribute rewards was setting value to, rather than changing it by, specified amount
+
+Version 2.0.5
+
+- Added: Support for inserting variable values into text like Dialogue node text, and other
+- Fixed: Some button icons in Graph and Quest editor would not always show up
+
+Version 2.0.4
+
+- Added: Graph Update Block for plyGame
+- Fixed: Giving a Quest's Rewards was not being recorded by the quest
+
+Version 2.0.3
+
+- Updated: Added a confirmation when choosing to delete a Graph or Quest
+- Updated: plyGame plugin to work with new Items System of plyGame RPG module
+
+Version 2.0.2
+
+- Fixed: Added missing `Update Quest Condition` Block (for plyGame/Blox)
+
+Version 2.0.1
+
+- Fixed: Bug in getting metaData interface of Nodes
+
+Version 2.0.0
+
+- Initial release of the version 2 series, a total remake of the DiaQ tool
+
+-eof-
+

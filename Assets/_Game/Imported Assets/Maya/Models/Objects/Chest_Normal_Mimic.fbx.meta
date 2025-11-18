@@ -1,0 +1,155 @@
+fileFormatVersion: 2
+guid: 428b9e598dc79c2498256b7323eebd8c
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: pasted__pasted__pasted__pCone1
+    100004: pasted__pasted__pasted__pCone2
+    100006: pasted__pasted__pasted__pCone3
+    100008: pasted__pasted__pasted__pCone4
+    100010: pasted__pasted__pasted__pCone5
+    100012: pasted__pasted__pasted__pCone6
+    100014: pasted__pCone1
+    100016: pasted__pCone2
+    100018: pasted__pCone3
+    100020: pasted__pCone4
+    100022: pasted__pCone5
+    100024: pasted__pCone6
+    100026: pasted__pCone7
+    100028: pasted__pCone8
+    100030: pCube18
+    100032: pCube19
+    100034: pCube20
+    400000: //RootNode
+    400002: pasted__pasted__pasted__pCone1
+    400004: pasted__pasted__pasted__pCone2
+    400006: pasted__pasted__pasted__pCone3
+    400008: pasted__pasted__pasted__pCone4
+    400010: pasted__pasted__pasted__pCone5
+    400012: pasted__pasted__pasted__pCone6
+    400014: pasted__pCone1
+    400016: pasted__pCone2
+    400018: pasted__pCone3
+    400020: pasted__pCone4
+    400022: pasted__pCone5
+    400024: pasted__pCone6
+    400026: pasted__pCone7
+    400028: pasted__pCone8
+    400030: pCube18
+    400032: pCube19
+    400034: pCube20
+    2300000: pasted__pasted__pasted__pCone1
+    2300002: pasted__pasted__pasted__pCone2
+    2300004: pasted__pasted__pasted__pCone3
+    2300006: pasted__pasted__pasted__pCone4
+    2300008: pasted__pasted__pasted__pCone5
+    2300010: pasted__pasted__pasted__pCone6
+    2300012: pasted__pCone1
+    2300014: pasted__pCone2
+    2300016: pasted__pCone3
+    2300018: pasted__pCone4
+    2300020: pasted__pCone5
+    2300022: pasted__pCone6
+    2300024: pasted__pCone7
+    2300026: pasted__pCone8
+    2300028: pCube18
+    2300030: pCube19
+    2300032: pCube20
+    3300000: pasted__pasted__pasted__pCone1
+    3300002: pasted__pasted__pasted__pCone2
+    3300004: pasted__pasted__pasted__pCone3
+    3300006: pasted__pasted__pasted__pCone4
+    3300008: pasted__pasted__pasted__pCone5
+    3300010: pasted__pasted__pasted__pCone6
+    3300012: pasted__pCone1
+    3300014: pasted__pCone2
+    3300016: pasted__pCone3
+    3300018: pasted__pCone4
+    3300020: pasted__pCone5
+    3300022: pasted__pCone6
+    3300024: pasted__pCone7
+    3300026: pasted__pCone8
+    3300028: pCube18
+    3300030: pCube19
+    3300032: pCube20
+    4300000: pCube18
+    4300002: pCube19
+    4300004: pCube20
+    4300006: pasted__pCone1
+    4300008: pasted__pasted__pasted__pCone1
+    4300010: pasted__pCone2
+    4300012: pasted__pasted__pasted__pCone2
+    4300014: pasted__pCone3
+    4300016: pasted__pasted__pasted__pCone3
+    4300018: pasted__pCone4
+    4300020: pasted__pCone5
+    4300022: pasted__pasted__pasted__pCone4
+    4300024: pasted__pCone6
+    4300026: pasted__pasted__pasted__pCone5
+    4300028: pasted__pCone7
+    4300030: pasted__pasted__pasted__pCone6
+    4300032: pasted__pCone8
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

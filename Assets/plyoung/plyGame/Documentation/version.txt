@@ -1,0 +1,10 @@
+version: 2.5.x
+© Leslie Young
+http://plyoung.com/plygame/
+
+Note: 	plyCommon, plyBlox, plyRPG, and DiaQ version notes
+		will be in their respective folders
+
+===============================================================
+
+For version notes, visit http://forum.plyoung.com/c/announce 

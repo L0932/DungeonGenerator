@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Game\Resources\Scripts\ProcGen\DGrid.cs">
+    <Files>
+      <File FileName="Assets\_Game\Resources\Scripts\ProcGen\DGenerator.cs" Line="252" Column="1" />
+      <File FileName="Assets\_Game\Resources\Scripts\ProcGen\DGrid.cs" Line="78" Column="3" />
+      <File FileName="Assets\_Game\Resources\Scripts\ProcGen\DRoom.cs" Line="162" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Catchpoint exceptionName="System.ArgumentOutOfRangeException" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/_Game/Scenes/RoomGen.unity
+  isLoaded: 1
+  isActive: 1

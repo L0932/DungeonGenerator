@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: 5ef28007ea87c6849895bae5b6663c7c
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Base_Joint
+    100002: Body
+    100004: curve1
+    100006: Global
+    100008: ikHandle1
+    100010: Left_Arm
+    100012: Left_Elbow_Control
+    100014: Left_NUB_Control
+    100016: Left_Nub_Control
+    100018: Left_Shoulder_Control
+    100020: Left_Stick01
+    100022: Left_Stick02
+    100024: Left_Stick03
+    100026: Left_Stick04
+    100028: Left_Stick05
+    100030: Right_Arm
+    100032: Right_Elbow_Control
+    100034: Right_NUB_Control
+    100036: Right_Nub_Control
+    100038: Right_Shoulder_Control
+    100040: Right_Stick01
+    100042: Right_Stick02
+    100044: Right_Stick03
+    100046: Right_Stick04
+    100048: Right_Stick05
+    100050: //RootNode
+    100052: Spine_01
+    100054: Spine_02
+    100056: Spine_03
+    100058: Spine_04
+    400000: Base_Joint
+    400002: Body
+    400004: curve1
+    400006: Global
+    400008: ikHandle1
+    400010: Left_Arm
+    400012: Left_Elbow_Control
+    400014: Left_NUB_Control
+    400016: Left_Nub_Control
+    400018: Left_Shoulder_Control
+    400020: Left_Stick01
+    400022: Left_Stick02
+    400024: Left_Stick03
+    400026: Left_Stick04
+    400028: Left_Stick05
+    400030: Right_Arm
+    400032: Right_Elbow_Control
+    400034: Right_NUB_Control
+    400036: Right_Nub_Control
+    400038: Right_Shoulder_Control
+    400040: Right_Stick01
+    400042: Right_Stick02
+    400044: Right_Stick03
+    400046: Right_Stick04
+    400048: Right_Stick05
+    400050: //RootNode
+    400052: Spine_01
+    400054: Spine_02
+    400056: Spine_03
+    400058: Spine_04
+    4300000: Body
+    4300002: Left_Arm
+    4300004: Right_Arm
+    7400000: ST_Idle
+    7400002: ST_Whack
+    9500000: //RootNode
+    13700000: Body
+    13700002: Left_Arm
+    13700004: Right_Arm
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: ST_Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 110
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Base_Joint
+        weight: 1
+      - path: Base_Joint/Spine_01
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Left_Stick01
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Left_Stick01/Left_Stick02
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Left_Stick01/Left_Stick02/Left_Stick03
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Left_Stick01/Left_Stick02/Left_Stick03/Left_Stick04
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Left_Stick01/Left_Stick02/Left_Stick03/Left_Stick04/Left_Stick05
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Right_Stick01
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Right_Stick01/Right_Stick02
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Right_Stick01/Right_Stick02/Right_Stick03
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Right_Stick01/Right_Stick02/Right_Stick03/Right_Stick04
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Right_Stick01/Right_Stick02/Right_Stick03/Right_Stick04/Right_Stick05
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Spine_04
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: curve1
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: ikHandle1
+        weight: 1
+      - path: Left_Arm
+        weight: 1
+      - path: Left_Shoulder_Control
+        weight: 1
+      - path: Left_Shoulder_Control/Left_Elbow_Control
+        weight: 1
+      - path: Left_Shoulder_Control/Left_Elbow_Control/Left_Nub_Control
+        weight: 1
+      - path: Left_Shoulder_Control/Left_Elbow_Control/Left_Nub_Control/Left_NUB_Control
+        weight: 1
+      - path: Right_Arm
+        weight: 1
+      - path: Right_Shoulder_Control
+        weight: 1
+      - path: Right_Shoulder_Control/Right_Elbow_Control
+        weight: 1
+      - path: Right_Shoulder_Control/Right_Elbow_Control/Right_Nub_Control
+        weight: 1
+      - path: Right_Shoulder_Control/Right_Elbow_Control/Right_Nub_Control/Right_NUB_Control
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ST_Whack
+      takeName: Take 001
+      firstFrame: 120
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Base_Joint
+        weight: 1
+      - path: Base_Joint/Spine_01
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Left_Stick01
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Left_Stick01/Left_Stick02
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Left_Stick01/Left_Stick02/Left_Stick03
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Left_Stick01/Left_Stick02/Left_Stick03/Left_Stick04
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Left_Stick01/Left_Stick02/Left_Stick03/Left_Stick04/Left_Stick05
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Right_Stick01
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Right_Stick01/Right_Stick02
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Right_Stick01/Right_Stick02/Right_Stick03
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Right_Stick01/Right_Stick02/Right_Stick03/Right_Stick04
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Right_Stick01/Right_Stick02/Right_Stick03/Right_Stick04/Right_Stick05
+        weight: 1
+      - path: Base_Joint/Spine_01/Spine_02/Spine_03/Spine_04
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: curve1
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: ikHandle1
+        weight: 1
+      - path: Left_Arm
+        weight: 1
+      - path: Left_Shoulder_Control
+        weight: 1
+      - path: Left_Shoulder_Control/Left_Elbow_Control
+        weight: 1
+      - path: Left_Shoulder_Control/Left_Elbow_Control/Left_Nub_Control
+        weight: 1
+      - path: Left_Shoulder_Control/Left_Elbow_Control/Left_Nub_Control/Left_NUB_Control
+        weight: 1
+      - path: Right_Arm
+        weight: 1
+      - path: Right_Shoulder_Control
+        weight: 1
+      - path: Right_Shoulder_Control/Right_Elbow_Control
+        weight: 1
+      - path: Right_Shoulder_Control/Right_Elbow_Control/Right_Nub_Control
+        weight: 1
+      - path: Right_Shoulder_Control/Right_Elbow_Control/Right_Nub_Control/Right_NUB_Control
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Global
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

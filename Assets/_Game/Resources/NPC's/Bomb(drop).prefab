@@ -1,0 +1,556 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &153998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 453998}
+  - 33: {fileID: 3353998}
+  - 23: {fileID: 2353998}
+  - 95: {fileID: 9553998}
+  - 114: {fileID: 11494078}
+  - 114: {fileID: 11494080}
+  - 114: {fileID: 11494076}
+  - 114: {fileID: 11400010}
+  - 114: {fileID: 11486346}
+  - 135: {fileID: 13539488}
+  m_Layer: 19
+  m_Name: Bomb(drop)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &453998
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153998}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.63000011, y: .526000023, z: -10.3100004}
+  m_LocalScale: {x: 8, y: 8, z: 8}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!23 &2353998
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153998}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: ad255cbeabe7a904bb9cd7c0f7eb0dde, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3353998
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153998}
+  m_Mesh: {fileID: 4300000, guid: c30693badfae7d24ea7bbc0332e224cf, type: 3}
+--- !u!95 &9553998
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153998}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: c30693badfae7d24ea7bbc0332e224cf, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 944975247, guid: 357936f588f68fb4e8f1d038fdfe02c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11486346
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 677389920, guid: ee437a4da0b2668478cfbed61746a8ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plyBloxGlobalPrefab: {fileID: 174866, guid: 2a01205c3fef6d542a5ed4f8089020f0, type: 2}
+  states:
+  - name: State 0
+    data:
+      eventTypes:
+      - plyGame.NPCAIThinkEvent
+      - plyGame.ActorMakesSelectionEvent
+      - plyGame.NPCDetectEvent
+      - plyBloxKit.CustomEvent
+      - plyBloxKit.CustomEvent
+      eventNames:
+      - On AI Think
+      - On Actor makes Selection
+      - On Detect Characters
+      - Boom
+      - Die
+      eventIdents:
+      - On AI Think
+      - On Actor makes Selection
+      - On Detect Characters
+      - Custom
+      - Custom
+      eventFirstBlock: 0100000005000000ffffffff0700000011000000
+      blockTypes:
+      - plyBloxKit.String_Value
+      - plyBloxKit.TriggerEvent_plyBlock
+      - plyBloxKit.Float_Value
+      - plyBloxKit.String_Value
+      - plyBloxKit.Float_Value
+      - plyBloxKit.TriggerEvent_plyBlock
+      - plyGame.Skill_plyBlock
+      - plyGame.Skill_Use_plyBlock
+      - plyBloxKit.String_Value
+      - plyBloxKit.Float_Value
+      - plyBloxKit.TriggerEvent_plyBlock
+      - plyBloxKit.GameObject_Value
+      - plyBloxKit.GetScale_plyBlock
+      - plyBloxKit.String_Value
+      - plyBloxKit.Float_Value
+      - plyBloxKit.InstantiateObject_plyBlock
+      - plyBloxKit.Float_Value
+      - plyGame.ActorAttribute_Set_plyBlock
+      blockLinks:
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 1
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 1
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 5
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 5
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 7
+        childIdx: -1
+        eventIdx: 3
+      - nextIdx: 15
+        prevIdx: -1
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 3
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 10
+        childIdx: -1
+        eventIdx: 3
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 10
+        childIdx: -1
+        eventIdx: 3
+      - nextIdx: -1
+        prevIdx: 15
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 3
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 15
+        childIdx: -1
+        eventIdx: 3
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 15
+        childIdx: -1
+        eventIdx: 3
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 10
+        childIdx: -1
+        eventIdx: 3
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 10
+        childIdx: -1
+        eventIdx: 3
+      - nextIdx: 10
+        prevIdx: 7
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 3
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 17
+        childIdx: -1
+        eventIdx: 4
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 4
+      blockDataIdx: 00000000010000000700000008000000090000000a000000100000001400000018000000190000001a00000020000000210000002400000025000000260000002a0000002b000000
+      blockDataCnt: 010000000600000001000000010000000100000006000000040000000400000001000000010000000600000001000000030000000100000001000000040000000100000007000000
+      blockData:
+      - type: 9
+        name: value
+        data: 426f6f6d
+      - type: 3
+        name: name
+        data: 00000000
+      - type: 3
+        name: target
+        data: ffffffff
+      - type: 3
+        name: timeout
+        data: 02000000
+      - type: 3
+        name: param1
+        data: ffffffff
+      - type: 3
+        name: param2
+        data: ffffffff
+      - type: 3
+        name: param3
+        data: ffffffff
+      - type: 8
+        name: value
+        data: 0000803f
+      - type: 9
+        name: value
+        data: 426f6f6d
+      - type: 8
+        name: value
+        data: 0000803f
+      - type: 3
+        name: name
+        data: 03000000
+      - type: 3
+        name: target
+        data: ffffffff
+      - type: 3
+        name: timeout
+        data: 04000000
+      - type: 3
+        name: param1
+        data: ffffffff
+      - type: 3
+        name: param2
+        data: ffffffff
+      - type: 3
+        name: param3
+        data: ffffffff
+      - type: 3
+        name: ident
+        data: ffffffff
+      - type: 1
+        name: skillNfo
+        data: 00000000
+      - type: 4
+        name: identType
+        data: 01000000
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 3
+        name: target
+        data: ffffffff
+      - type: 3
+        name: val
+        data: 06000000
+      - type: 5
+        name: learn
+        data: 01
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 9
+        name: value
+        data: 446965
+      - type: 8
+        name: value
+        data: 00000040
+      - type: 3
+        name: name
+        data: 08000000
+      - type: 3
+        name: target
+        data: ffffffff
+      - type: 3
+        name: timeout
+        data: 09000000
+      - type: 3
+        name: param1
+        data: ffffffff
+      - type: 3
+        name: param2
+        data: ffffffff
+      - type: 3
+        name: param3
+        data: ffffffff
+      - type: 10
+        name: value
+        data: 00000000
+      - type: 4
+        name: sp
+        data: 01000000
+      - type: 3
+        name: target
+        data: ffffffff
+      - type: 14
+        name: value
+        data: 000000000000000000000000
+      - type: 9
+        name: value
+        data: 446965
+      - type: 8
+        name: value
+        data: 9a99993e
+      - type: 3
+        name: prefab
+        data: 0b000000
+      - type: 3
+        name: pos
+        data: 0c000000
+      - type: 3
+        name: rot
+        data: ffffffff
+      - type: 3
+        name: saveIn
+        data: ffffffff
+      - type: 8
+        name: value
+        data: 00000000
+      - type: 4
+        name: valueType
+        data: 01000000
+      - type: 9
+        name: attribName
+        data: 4865616c7468
+      - type: 4
+        name: identType
+        data: 01000000
+      - type: 3
+        name: target
+        data: ffffffff
+      - type: 3
+        name: val
+        data: 10000000
+      - type: 3
+        name: influence
+        data: ffffffff
+      - type: 5
+        name: cacheTarget
+        data: 00
+      gameObjects:
+      - {fileID: 156758, guid: d8e3ca06e0d3a394e84573734f31afd8, type: 2}
+      unityObjects: []
+      arrayData: []
+      arrayDataNfo: []
+      customData:
+      - type: 9
+        name: id
+        data: 3237316261636462326562363435376361356465373864343539386664373334
+      - type: 9
+        name: cachedName
+        data: 467269656e646c79426f6d62
+      customDataNfo:
+      - typeName: plyGame.SkillFieldData, plyRPG, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        idx: 0
+        size: 2
+      eventActive: 0101010101
+      blockActive: 010101010100010101010101010101010101
+  vars: []
+  uniqueIdOnObject: 1
+  NeedObjectActive: 0
+--- !u!114 &11494076
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2043141640, guid: 357936f588f68fb4e8f1d038fdfe02c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistenceOn: 0
+  persistSpeed: 1
+  moveSpeed: 0
+  turnSpeed: 10
+  maxInteractDistance: 2
+  validInteractTarget: 11
+  runSpeed: 0
+  thinkInterval: 1
+  idleMode: 0
+  wanderArea: 0
+  wanderRadius: 10
+  wanderWH: {x: 1, y: 1}
+  wanderDelayMin: .5
+  wanderDelayMax: 2
+  path: {fileID: 0}
+  followObject: {fileID: 0}
+  minFollowDistance: 5
+  maxFollowDistance: 10
+  canDetectPlayer: 1
+  canDetectNPCs: 1
+  whenStatusTowardsPlayer: 0
+  whenStatusTowardNPC: 2
+  ignoreEssentialActor: 1
+  detectionTimeout: 1
+  skipIfEngaged: 1
+  autoEngageClosest: 1
+  detection360Distance: 100
+  detectionForwardDistance: 100
+  detectionForwardAngle: 300
+  detectionObstacleMask:
+    serializedVersion: 2
+    m_Bits: 256
+  detectionFwObstacleMask:
+    serializedVersion: 2
+    m_Bits: 768
+  obstacleCheckOffsetY: 1
+  engagedMinDistance: 0
+  engagedMaxDistance: 100
+  disengageDistanceHome: 100
+  disengageDistanceTarget: 100
+--- !u!114 &11494078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 161533427, guid: 357936f588f68fb4e8f1d038fdfe02c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistenceOn: 1
+  persistActorData: 1
+  persistClass: 0
+  persistKnowSkills: 0
+  persistFactions: 1
+  id:
+    savedIdent: 7e71a947cc6f4eeeabd4b457260f6776
+  def:
+    ident: 
+    screenName: 
+    shortName: 
+    meta: 
+    description: 
+    images:
+    - {fileID: 2800000, guid: 5127b0f010aedea45ba5427b5808f065, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  classId:
+    savedIdent: 00526f934e87430e99d10982b9faf5d3
+  startLevel: 1
+  overwriteStatus: 1
+  statusTowardsPlayer: 0
+  essential: 0
+  startFactions:
+  - savedIdent: 824cda590c0c4d3f8e10b9c839d578ad
+  startSkills:
+  - savedIdent: 98c6046fd859460db00dbcec7813c32c
+  autoDetectDeath: 1
+  objectDestroyer:
+    method: 0
+    opt_a: 1
+    opt_b: 1
+    opt_c: .100000001
+  disableOnDeath: []
+--- !u!114 &11494080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1690816720, guid: 6ddf2bb4864414d4d82bfa4d197efc5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id:
+    savedIdent: 97b68ad06ad84abcab8cd333107fb5c7
+  objectStartsActive: 1
+  persistBloxLocalVars: 1
+  persistPosition: 1
+  persistRotation: 0
+  persistScale: 0
+  persistActiveState: 0
+  persistDestroyedState: 0
+  useOffset: 0
+  positionOffset: {x: 0, y: .100000001, z: 0}
+--- !u!135 &13539488
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153998}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: .0500000007
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 153998}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

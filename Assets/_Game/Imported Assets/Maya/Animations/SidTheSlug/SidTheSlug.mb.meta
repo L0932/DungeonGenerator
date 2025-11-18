@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: 145539da61b4cbc47ba0105be288fb91
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: cluster1Handle
+    100002: cluster2Handle
+    100004: cluster3Handle
+    100006: cluster4Handle
+    100008: curve1
+    100010: group1
+    100012: group2
+    100014: group3
+    100016: group4
+    100018: Head_Control
+    100020: Left_AntenaBone
+    100022: Left_AntenaBone01
+    100024: LeftAntena_Control
+    100026: MiddleSpine_Control
+    100028: Neck_Control
+    100030: RearSpine_Control
+    100032: Right_AntenaBone
+    100034: Right_AntenaBone01
+    100036: RightAntena_Control
+    100038: //RootNode
+    100040: SidTheSlug
+    100042: SpineBone_01
+    100044: SpineBone_02
+    100046: SpineBone_03
+    100048: SpineBone_04
+    100050: SpineBone_Head
+    100052: SpineBone_HeadNull
+    100054: SpineBone_Neck
+    100056: SpineBone_Rear
+    100058: SpineIKHandle
+    100060: UpperSpine_Control
+    400000: cluster1Handle
+    400002: cluster2Handle
+    400004: cluster3Handle
+    400006: cluster4Handle
+    400008: curve1
+    400010: group1
+    400012: group2
+    400014: group3
+    400016: group4
+    400018: Head_Control
+    400020: Left_AntenaBone
+    400022: Left_AntenaBone01
+    400024: LeftAntena_Control
+    400026: MiddleSpine_Control
+    400028: Neck_Control
+    400030: RearSpine_Control
+    400032: Right_AntenaBone
+    400034: Right_AntenaBone01
+    400036: RightAntena_Control
+    400038: //RootNode
+    400040: SidTheSlug
+    400042: SpineBone_01
+    400044: SpineBone_02
+    400046: SpineBone_03
+    400048: SpineBone_04
+    400050: SpineBone_Head
+    400052: SpineBone_HeadNull
+    400054: SpineBone_Neck
+    400056: SpineBone_Rear
+    400058: SpineIKHandle
+    400060: UpperSpine_Control
+    4300000: SidTheSlug
+    7400000: Sid_Idle
+    7400002: SlugCrawl
+    7400004: SpitAttack01
+    7400006: SpitAttack02
+    9500000: //RootNode
+    13700000: SidTheSlug
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Sid_Idle
+      takeName: Take 001
+      firstFrame: 120
+      lastFrame: 164
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: curve1
+        weight: 1
+      - path: MiddleSpine_Control
+        weight: 1
+      - path: MiddleSpine_Control/group2
+        weight: 1
+      - path: MiddleSpine_Control/group2/cluster3Handle
+        weight: 1
+      - path: MiddleSpine_Control/group3
+        weight: 1
+      - path: MiddleSpine_Control/group3/cluster2Handle
+        weight: 1
+      - path: RearSpine_Control
+        weight: 1
+      - path: RearSpine_Control/group1
+        weight: 1
+      - path: RearSpine_Control/group1/cluster1Handle
+        weight: 1
+      - path: SidTheSlug
+        weight: 1
+      - path: SpineBone_Rear
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Left_AntenaBone
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Left_AntenaBone/Left_AntenaBone01
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Right_AntenaBone
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Right_AntenaBone/Right_AntenaBone01
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/SpineBone_HeadNull
+        weight: 1
+      - path: SpineIKHandle
+        weight: 1
+      - path: UpperSpine_Control
+        weight: 1
+      - path: UpperSpine_Control/group4
+        weight: 1
+      - path: UpperSpine_Control/group4/cluster4Handle
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control/Head_Control
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control/Head_Control/LeftAntena_Control
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control/Head_Control/RightAntena_Control
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: SlugCrawl
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: curve1
+        weight: 1
+      - path: MiddleSpine_Control
+        weight: 1
+      - path: MiddleSpine_Control/group2
+        weight: 1
+      - path: MiddleSpine_Control/group2/cluster3Handle
+        weight: 1
+      - path: MiddleSpine_Control/group3
+        weight: 1
+      - path: MiddleSpine_Control/group3/cluster2Handle
+        weight: 1
+      - path: RearSpine_Control
+        weight: 1
+      - path: RearSpine_Control/group1
+        weight: 1
+      - path: RearSpine_Control/group1/cluster1Handle
+        weight: 1
+      - path: SidTheSlug
+        weight: 1
+      - path: SpineBone_Rear
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Left_AntenaBone
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Left_AntenaBone/Left_AntenaBone01
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Right_AntenaBone
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Right_AntenaBone/Right_AntenaBone01
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/SpineBone_HeadNull
+        weight: 1
+      - path: SpineIKHandle
+        weight: 1
+      - path: UpperSpine_Control
+        weight: 1
+      - path: UpperSpine_Control/group4
+        weight: 1
+      - path: UpperSpine_Control/group4/cluster4Handle
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control/Head_Control
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control/Head_Control/LeftAntena_Control
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control/Head_Control/RightAntena_Control
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: SpitAttack01
+      takeName: Take 001
+      firstFrame: 50
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: curve1
+        weight: 1
+      - path: MiddleSpine_Control
+        weight: 1
+      - path: MiddleSpine_Control/group2
+        weight: 1
+      - path: MiddleSpine_Control/group2/cluster3Handle
+        weight: 1
+      - path: MiddleSpine_Control/group3
+        weight: 1
+      - path: MiddleSpine_Control/group3/cluster2Handle
+        weight: 1
+      - path: RearSpine_Control
+        weight: 1
+      - path: RearSpine_Control/group1
+        weight: 1
+      - path: RearSpine_Control/group1/cluster1Handle
+        weight: 1
+      - path: SidTheSlug
+        weight: 1
+      - path: SpineBone_Rear
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Left_AntenaBone
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Left_AntenaBone/Left_AntenaBone01
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Right_AntenaBone
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Right_AntenaBone/Right_AntenaBone01
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/SpineBone_HeadNull
+        weight: 1
+      - path: SpineIKHandle
+        weight: 1
+      - path: UpperSpine_Control
+        weight: 1
+      - path: UpperSpine_Control/group4
+        weight: 1
+      - path: UpperSpine_Control/group4/cluster4Handle
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control/Head_Control
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control/Head_Control/LeftAntena_Control
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control/Head_Control/RightAntena_Control
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: SpitAttack02
+      takeName: Take 001
+      firstFrame: 85
+      lastFrame: 115
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: curve1
+        weight: 1
+      - path: MiddleSpine_Control
+        weight: 1
+      - path: MiddleSpine_Control/group2
+        weight: 1
+      - path: MiddleSpine_Control/group2/cluster3Handle
+        weight: 1
+      - path: MiddleSpine_Control/group3
+        weight: 1
+      - path: MiddleSpine_Control/group3/cluster2Handle
+        weight: 1
+      - path: RearSpine_Control
+        weight: 1
+      - path: RearSpine_Control/group1
+        weight: 1
+      - path: RearSpine_Control/group1/cluster1Handle
+        weight: 1
+      - path: SidTheSlug
+        weight: 1
+      - path: SpineBone_Rear
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Left_AntenaBone
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Left_AntenaBone/Left_AntenaBone01
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Right_AntenaBone
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/Right_AntenaBone/Right_AntenaBone01
+        weight: 1
+      - path: SpineBone_Rear/SpineBone_01/SpineBone_02/SpineBone_03/SpineBone_04/SpineBone_Neck/SpineBone_Head/SpineBone_HeadNull
+        weight: 1
+      - path: SpineIKHandle
+        weight: 1
+      - path: UpperSpine_Control
+        weight: 1
+      - path: UpperSpine_Control/group4
+        weight: 1
+      - path: UpperSpine_Control/group4/cluster4Handle
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control/Head_Control
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control/Head_Control/LeftAntena_Control
+        weight: 1
+      - path: UpperSpine_Control/Neck_Control/Head_Control/RightAntena_Control
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .150000006
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: SpineBone_Rear
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

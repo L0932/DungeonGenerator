@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 1523d70757e74d940bbb00674c227d13
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Bag01_Control
+    100002: Bag_Control
+    100004: Body
+    100006: //RootNode
+    100008: Head
+    100010: Horn_Joint
+    100012: Horn_Joint01
+    100014: Horn_Joint02
+    100016: Horn_Joint_End
+    100018: HornControl
+    100020: LeftArm
+    100022: LeftLeg
+    100024: PeriRig:Chest_Control
+    100026: PeriRig:COG
+    100028: PeriRig:curve1
+    100030: PeriRig:Global
+    100032: PeriRig:group1
+    100034: PeriRig:group2
+    100036: PeriRig:group3
+    100038: PeriRig:group4
+    100040: PeriRig:Head_Bone_01
+    100042: PeriRig:Head_Bone_02
+    100044: PeriRig:Head_Bone_03
+    100046: PeriRig:Head_Bone_04
+    100048: PeriRig:Head_Control
+    100050: PeriRig:Hip_Control
+    100052: PeriRig:Left_Ankle_Bone
+    100054: PeriRig:Left_Ball_Bone
+    100056: PeriRig:Left_Clavicle_Control
+    100058: PeriRig:Left_Collar_Bone
+    100060: PeriRig:Left_Elbow_Bone
+    100062: PeriRig:Left_Elbow_Control
+    100064: PeriRig:Left_FK_Elbow_Control
+    100066: PeriRig:Left_FK_Shoulder_Control
+    100068: PeriRig:Left_FK_Wrist_Control
+    100070: PeriRig:Left_Foot_Control
+    100072: PeriRig:Left_Hand_Bone
+    100074: PeriRig:Left_IK_Ankle
+    100076: PeriRig:Left_IK_Arm
+    100078: PeriRig:Left_IK_ARM_Control
+    100080: PeriRig:Left_IK_Ball
+    100082: PeriRig:Left_IK_Toe
+    100084: PeriRig:Left_Knee_Bone
+    100086: PeriRig:Left_knee_Control
+    100088: PeriRig:Left_RF_Ankle_Bone
+    100090: PeriRig:Left_RF_Ball_Bone
+    100092: PeriRig:Left_RF_Heel_Bone
+    100094: PeriRig:Left_RF_Toe_Bone
+    100096: PeriRig:Left_Shoulder_Bone
+    100098: PeriRig:Left_Thigh_Bone
+    100100: PeriRig:Left_Toe_Bone
+    100102: PeriRig:Left_Wrist_Bone
+    100104: PeriRig:LeftBank_LBone
+    100106: PeriRig:LeftBank_RBone
+    100108: PeriRig:Neck_Control
+    100110: PeriRig:Right_Ankle_Bone
+    100112: PeriRig:Right_Ball_Bone
+    100114: PeriRig:Right_Clavicle_Control
+    100116: PeriRig:Right_Collar_Bone
+    100118: PeriRig:Right_Elbow_Bone
+    100120: PeriRig:Right_Elbow_Control
+    100122: PeriRig:Right_FK_Elbow_Control
+    100124: PeriRig:Right_FK_Shoulder_Control
+    100126: PeriRig:Right_FK_Wrist_Control
+    100128: PeriRig:Right_Foot_Control
+    100130: PeriRig:Right_Hand_Bone
+    100132: PeriRig:Right_IK_Ankle
+    100134: PeriRig:Right_IK_Arm
+    100136: PeriRig:Right_IK_Arm_Control
+    100138: PeriRig:Right_IK_Ball
+    100140: PeriRig:Right_IK_Toe
+    100142: PeriRig:Right_Knee_Bone
+    100144: PeriRig:Right_Knee_Control
+    100146: PeriRig:Right_RF_Ankle_Bone
+    100148: PeriRig:Right_RF_Ball_Bone
+    100150: PeriRig:Right_RF_Heel_Bone
+    100152: PeriRig:Right_RF_Toe_Bone
+    100154: PeriRig:Right_Shoulder_Bone
+    100156: PeriRig:Right_Thigh_Bone
+    100158: PeriRig:Right_Toe_Bone
+    100160: PeriRig:Right_Wrist_Bone
+    100162: PeriRig:RightBank_LBone
+    100164: PeriRig:RightBank_RBone
+    100166: PeriRig:Root
+    100168: PeriRig:Spine02_FK_Control
+    100170: PeriRig:Spine03_FK_Control
+    100172: PeriRig:Spine_Bone_01
+    100174: PeriRig:Spine_Bone_02
+    100176: PeriRig:Spine_Bone_03
+    100178: PeriRig:Spine_Bone_04
+    100180: PeriRig:Spine_Bone_05
+    100182: PeriRig:Spine_Cluster01
+    100184: PeriRig:Spine_Cluster02
+    100186: PeriRig:Spine_Cluster03
+    100188: PeriRig:Spine_Cluster04
+    100190: PeriRig:Spine_FK_Control
+    100192: PeriRig:Spine_IK
+    100194: RightArm
+    100196: RightLeg
+    100198: Skirt
+    400000: Bag01_Control
+    400002: Bag_Control
+    400004: Body
+    400006: //RootNode
+    400008: Head
+    400010: Horn_Joint
+    400012: Horn_Joint01
+    400014: Horn_Joint02
+    400016: Horn_Joint_End
+    400018: HornControl
+    400020: LeftArm
+    400022: LeftLeg
+    400024: PeriRig:Chest_Control
+    400026: PeriRig:COG
+    400028: PeriRig:curve1
+    400030: PeriRig:Global
+    400032: PeriRig:group1
+    400034: PeriRig:group2
+    400036: PeriRig:group3
+    400038: PeriRig:group4
+    400040: PeriRig:Head_Bone_01
+    400042: PeriRig:Head_Bone_02
+    400044: PeriRig:Head_Bone_03
+    400046: PeriRig:Head_Bone_04
+    400048: PeriRig:Head_Control
+    400050: PeriRig:Hip_Control
+    400052: PeriRig:Left_Ankle_Bone
+    400054: PeriRig:Left_Ball_Bone
+    400056: PeriRig:Left_Clavicle_Control
+    400058: PeriRig:Left_Collar_Bone
+    400060: PeriRig:Left_Elbow_Bone
+    400062: PeriRig:Left_Elbow_Control
+    400064: PeriRig:Left_FK_Elbow_Control
+    400066: PeriRig:Left_FK_Shoulder_Control
+    400068: PeriRig:Left_FK_Wrist_Control
+    400070: PeriRig:Left_Foot_Control
+    400072: PeriRig:Left_Hand_Bone
+    400074: PeriRig:Left_IK_Ankle
+    400076: PeriRig:Left_IK_Arm
+    400078: PeriRig:Left_IK_ARM_Control
+    400080: PeriRig:Left_IK_Ball
+    400082: PeriRig:Left_IK_Toe
+    400084: PeriRig:Left_Knee_Bone
+    400086: PeriRig:Left_knee_Control
+    400088: PeriRig:Left_RF_Ankle_Bone
+    400090: PeriRig:Left_RF_Ball_Bone
+    400092: PeriRig:Left_RF_Heel_Bone
+    400094: PeriRig:Left_RF_Toe_Bone
+    400096: PeriRig:Left_Shoulder_Bone
+    400098: PeriRig:Left_Thigh_Bone
+    400100: PeriRig:Left_Toe_Bone
+    400102: PeriRig:Left_Wrist_Bone
+    400104: PeriRig:LeftBank_LBone
+    400106: PeriRig:LeftBank_RBone
+    400108: PeriRig:Neck_Control
+    400110: PeriRig:Right_Ankle_Bone
+    400112: PeriRig:Right_Ball_Bone
+    400114: PeriRig:Right_Clavicle_Control
+    400116: PeriRig:Right_Collar_Bone
+    400118: PeriRig:Right_Elbow_Bone
+    400120: PeriRig:Right_Elbow_Control
+    400122: PeriRig:Right_FK_Elbow_Control
+    400124: PeriRig:Right_FK_Shoulder_Control
+    400126: PeriRig:Right_FK_Wrist_Control
+    400128: PeriRig:Right_Foot_Control
+    400130: PeriRig:Right_Hand_Bone
+    400132: PeriRig:Right_IK_Ankle
+    400134: PeriRig:Right_IK_Arm
+    400136: PeriRig:Right_IK_Arm_Control
+    400138: PeriRig:Right_IK_Ball
+    400140: PeriRig:Right_IK_Toe
+    400142: PeriRig:Right_Knee_Bone
+    400144: PeriRig:Right_Knee_Control
+    400146: PeriRig:Right_RF_Ankle_Bone
+    400148: PeriRig:Right_RF_Ball_Bone
+    400150: PeriRig:Right_RF_Heel_Bone
+    400152: PeriRig:Right_RF_Toe_Bone
+    400154: PeriRig:Right_Shoulder_Bone
+    400156: PeriRig:Right_Thigh_Bone
+    400158: PeriRig:Right_Toe_Bone
+    400160: PeriRig:Right_Wrist_Bone
+    400162: PeriRig:RightBank_LBone
+    400164: PeriRig:RightBank_RBone
+    400166: PeriRig:Root
+    400168: PeriRig:Spine02_FK_Control
+    400170: PeriRig:Spine03_FK_Control
+    400172: PeriRig:Spine_Bone_01
+    400174: PeriRig:Spine_Bone_02
+    400176: PeriRig:Spine_Bone_03
+    400178: PeriRig:Spine_Bone_04
+    400180: PeriRig:Spine_Bone_05
+    400182: PeriRig:Spine_Cluster01
+    400184: PeriRig:Spine_Cluster02
+    400186: PeriRig:Spine_Cluster03
+    400188: PeriRig:Spine_Cluster04
+    400190: PeriRig:Spine_FK_Control
+    400192: PeriRig:Spine_IK
+    400194: RightArm
+    400196: RightLeg
+    400198: Skirt
+    4300000: RightArm
+    4300002: RightLeg
+    4300004: Head
+    4300006: LeftArm
+    4300008: LeftLeg
+    4300010: Skirt
+    4300012: Body
+    7400000: Bard_Idle
+    7400002: Bard_Cast
+    7400004: Bard_Flinch
+    7400006: Bard_Walk
+    7400008: Bard_Death
+    9500000: //RootNode
+    13700000: Body
+    13700002: Head
+    13700004: LeftArm
+    13700006: LeftLeg
+    13700008: RightArm
+    13700010: RightLeg
+    13700012: Skirt
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Bard_Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: LeftArm
+        weight: 1
+      - path: LeftLeg
+        weight: 1
+      - path: PeriRig:curve1
+        weight: 1
+      - path: PeriRig:Global
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group1
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group1/PeriRig:Spine_Cluster01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group2
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group2/PeriRig:Spine_Cluster02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone/PeriRig:Left_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone/PeriRig:Left_Ball_Bone/PeriRig:Left_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone/PeriRig:Right_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone/PeriRig:Right_Ball_Bone/PeriRig:Right_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint/Horn_Joint01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint/Horn_Joint01/Horn_Joint02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint/Horn_Joint01/Horn_Joint02/Horn_Joint_End
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/PeriRig:Spine_Bone_05
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/Bag_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/Bag_Control/Bag01_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/Bag_Control/Bag01_Control/HornControl
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group3
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group3/PeriRig:Spine_Cluster03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group4
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group4/PeriRig:Spine_Cluster04
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02/PeriRig:Head_Bone_03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02/PeriRig:Head_Bone_03/PeriRig:Head_Bone_04
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone/PeriRig:Left_Hand_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone/PeriRig:Right_Wrist_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone/PeriRig:Right_Wrist_Bone/PeriRig:Right_Hand_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control/PeriRig:Left_FK_Wrist_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_IK_ARM_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_IK_ARM_Control/PeriRig:Left_IK_Arm
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Neck_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Neck_Control/PeriRig:Head_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control/PeriRig:Right_FK_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control/PeriRig:Right_FK_Elbow_Control/PeriRig:Right_FK_Wrist_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_IK_Arm_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_IK_Arm_Control/PeriRig:Right_IK_Arm
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:Left_knee_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_IK_Toe
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_IK_Ball
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_RF_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_RF_Ankle_Bone/PeriRig:Left_IK_Ankle
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:Right_Knee_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_IK_Toe
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_IK_Ball
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_RF_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_RF_Ankle_Bone/PeriRig:Right_IK_Ankle
+        weight: 1
+      - path: PeriRig:Spine_IK
+        weight: 1
+      - path: RightArm
+        weight: 1
+      - path: RightLeg
+        weight: 1
+      - path: Skirt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Bard_Cast
+      takeName: Take 001
+      firstFrame: 95
+      lastFrame: 125
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: LeftArm
+        weight: 1
+      - path: LeftLeg
+        weight: 1
+      - path: PeriRig:curve1
+        weight: 1
+      - path: PeriRig:Global
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group1
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group1/PeriRig:Spine_Cluster01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group2
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group2/PeriRig:Spine_Cluster02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone/PeriRig:Left_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone/PeriRig:Left_Ball_Bone/PeriRig:Left_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone/PeriRig:Right_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone/PeriRig:Right_Ball_Bone/PeriRig:Right_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint/Horn_Joint01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint/Horn_Joint01/Horn_Joint02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint/Horn_Joint01/Horn_Joint02/Horn_Joint_End
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/PeriRig:Spine_Bone_05
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/Bag_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/Bag_Control/Bag01_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/Bag_Control/Bag01_Control/HornControl
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group3
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group3/PeriRig:Spine_Cluster03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group4
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group4/PeriRig:Spine_Cluster04
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02/PeriRig:Head_Bone_03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02/PeriRig:Head_Bone_03/PeriRig:Head_Bone_04
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone/PeriRig:Left_Hand_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone/PeriRig:Right_Wrist_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone/PeriRig:Right_Wrist_Bone/PeriRig:Right_Hand_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control/PeriRig:Left_FK_Wrist_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_IK_ARM_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_IK_ARM_Control/PeriRig:Left_IK_Arm
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Neck_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Neck_Control/PeriRig:Head_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control/PeriRig:Right_FK_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control/PeriRig:Right_FK_Elbow_Control/PeriRig:Right_FK_Wrist_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_IK_Arm_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_IK_Arm_Control/PeriRig:Right_IK_Arm
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:Left_knee_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_IK_Toe
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_IK_Ball
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_RF_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_RF_Ankle_Bone/PeriRig:Left_IK_Ankle
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:Right_Knee_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_IK_Toe
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_IK_Ball
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_RF_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_RF_Ankle_Bone/PeriRig:Right_IK_Ankle
+        weight: 1
+      - path: PeriRig:Spine_IK
+        weight: 1
+      - path: RightArm
+        weight: 1
+      - path: RightLeg
+        weight: 1
+      - path: Skirt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Bard_Flinch
+      takeName: Take 001
+      firstFrame: 130
+      lastFrame: 141
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: LeftArm
+        weight: 1
+      - path: LeftLeg
+        weight: 1
+      - path: PeriRig:curve1
+        weight: 1
+      - path: PeriRig:Global
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group1
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group1/PeriRig:Spine_Cluster01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group2
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group2/PeriRig:Spine_Cluster02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone/PeriRig:Left_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone/PeriRig:Left_Ball_Bone/PeriRig:Left_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone/PeriRig:Right_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone/PeriRig:Right_Ball_Bone/PeriRig:Right_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint/Horn_Joint01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint/Horn_Joint01/Horn_Joint02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint/Horn_Joint01/Horn_Joint02/Horn_Joint_End
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/PeriRig:Spine_Bone_05
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/Bag_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/Bag_Control/Bag01_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/Bag_Control/Bag01_Control/HornControl
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group3
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group3/PeriRig:Spine_Cluster03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group4
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group4/PeriRig:Spine_Cluster04
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02/PeriRig:Head_Bone_03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02/PeriRig:Head_Bone_03/PeriRig:Head_Bone_04
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone/PeriRig:Left_Hand_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone/PeriRig:Right_Wrist_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone/PeriRig:Right_Wrist_Bone/PeriRig:Right_Hand_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control/PeriRig:Left_FK_Wrist_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_IK_ARM_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_IK_ARM_Control/PeriRig:Left_IK_Arm
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Neck_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Neck_Control/PeriRig:Head_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control/PeriRig:Right_FK_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control/PeriRig:Right_FK_Elbow_Control/PeriRig:Right_FK_Wrist_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_IK_Arm_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_IK_Arm_Control/PeriRig:Right_IK_Arm
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:Left_knee_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_IK_Toe
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_IK_Ball
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_RF_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_RF_Ankle_Bone/PeriRig:Left_IK_Ankle
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:Right_Knee_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_IK_Toe
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_IK_Ball
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_RF_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_RF_Ankle_Bone/PeriRig:Right_IK_Ankle
+        weight: 1
+      - path: PeriRig:Spine_IK
+        weight: 1
+      - path: RightArm
+        weight: 1
+      - path: RightLeg
+        weight: 1
+      - path: Skirt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Bard_Walk
+      takeName: Take 001
+      firstFrame: 145
+      lastFrame: 165
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: LeftArm
+        weight: 1
+      - path: LeftLeg
+        weight: 1
+      - path: PeriRig:curve1
+        weight: 1
+      - path: PeriRig:Global
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group1
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group1/PeriRig:Spine_Cluster01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group2
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group2/PeriRig:Spine_Cluster02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone/PeriRig:Left_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone/PeriRig:Left_Ball_Bone/PeriRig:Left_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone/PeriRig:Right_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone/PeriRig:Right_Ball_Bone/PeriRig:Right_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint/Horn_Joint01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint/Horn_Joint01/Horn_Joint02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint/Horn_Joint01/Horn_Joint02/Horn_Joint_End
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/PeriRig:Spine_Bone_05
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/Bag_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/Bag_Control/Bag01_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/Bag_Control/Bag01_Control/HornControl
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group3
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group3/PeriRig:Spine_Cluster03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group4
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group4/PeriRig:Spine_Cluster04
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02/PeriRig:Head_Bone_03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02/PeriRig:Head_Bone_03/PeriRig:Head_Bone_04
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone/PeriRig:Left_Hand_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone/PeriRig:Right_Wrist_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone/PeriRig:Right_Wrist_Bone/PeriRig:Right_Hand_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control/PeriRig:Left_FK_Wrist_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_IK_ARM_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_IK_ARM_Control/PeriRig:Left_IK_Arm
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Neck_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Neck_Control/PeriRig:Head_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control/PeriRig:Right_FK_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control/PeriRig:Right_FK_Elbow_Control/PeriRig:Right_FK_Wrist_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_IK_Arm_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_IK_Arm_Control/PeriRig:Right_IK_Arm
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:Left_knee_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_IK_Toe
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_IK_Ball
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_RF_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_RF_Ankle_Bone/PeriRig:Left_IK_Ankle
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:Right_Knee_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_IK_Toe
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_IK_Ball
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_RF_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_RF_Ankle_Bone/PeriRig:Right_IK_Ankle
+        weight: 1
+      - path: PeriRig:Spine_IK
+        weight: 1
+      - path: RightArm
+        weight: 1
+      - path: RightLeg
+        weight: 1
+      - path: Skirt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Bard_Death
+      takeName: Take 001
+      firstFrame: 170
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: LeftArm
+        weight: 1
+      - path: LeftLeg
+        weight: 1
+      - path: PeriRig:curve1
+        weight: 1
+      - path: PeriRig:Global
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group1
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group1/PeriRig:Spine_Cluster01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group2
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group2/PeriRig:Spine_Cluster02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone/PeriRig:Left_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone/PeriRig:Left_Ball_Bone/PeriRig:Left_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone/PeriRig:Right_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone/PeriRig:Right_Ball_Bone/PeriRig:Right_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint/Horn_Joint01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint/Horn_Joint01/Horn_Joint02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/Horn_Joint/Horn_Joint01/Horn_Joint02/Horn_Joint_End
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/PeriRig:Spine_Bone_05
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/Bag_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/Bag_Control/Bag01_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/Bag_Control/Bag01_Control/HornControl
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group3
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group3/PeriRig:Spine_Cluster03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group4
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group4/PeriRig:Spine_Cluster04
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02/PeriRig:Head_Bone_03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02/PeriRig:Head_Bone_03/PeriRig:Head_Bone_04
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone/PeriRig:Left_Hand_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone/PeriRig:Right_Wrist_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone/PeriRig:Right_Wrist_Bone/PeriRig:Right_Hand_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control/PeriRig:Left_FK_Wrist_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_IK_ARM_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_IK_ARM_Control/PeriRig:Left_IK_Arm
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Neck_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Neck_Control/PeriRig:Head_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control/PeriRig:Right_FK_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control/PeriRig:Right_FK_Elbow_Control/PeriRig:Right_FK_Wrist_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_IK_Arm_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_IK_Arm_Control/PeriRig:Right_IK_Arm
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:Left_knee_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_IK_Toe
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_IK_Ball
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_RF_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_RF_Ankle_Bone/PeriRig:Left_IK_Ankle
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Elbow_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:Right_Knee_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_IK_Toe
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_IK_Ball
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_RF_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_RF_Ankle_Bone/PeriRig:Right_IK_Ankle
+        weight: 1
+      - path: PeriRig:Spine_IK
+        weight: 1
+      - path: RightArm
+        weight: 1
+      - path: RightLeg
+        weight: 1
+      - path: Skirt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: PeriRig:Global
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

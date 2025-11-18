@@ -1,0 +1,1140 @@
+fileFormatVersion: 2
+guid: 5fc4e6905e9a08640bf21b4126c3d915
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Back_Thigh_Control
+    100002: Body
+    100004: Body_Control
+    100006: Collar
+    100008: Front_Thigh_Control
+    100010: Global
+    100012: Head
+    100014: //RootNode
+    100016: Jaw
+    100018: Jaw01
+    100020: Jaw_Control
+    100022: left1
+    100024: Left_BackFoot_Control
+    100026: Left_BackIK_Ankle
+    100028: Left_BackIK_Ball
+    100030: Left_BackIK_Toe
+    100032: Left_BackKnee_Control
+    100034: Left_BackLeg_Ankle
+    100036: Left_BackLeg_Ball
+    100038: Left_BackLeg_Knee
+    100040: Left_BackLeg_Thigh
+    100042: Left_BackLeg_Toe
+    100044: Left_BackRF_Ankle
+    100046: Left_BackRF_Ball
+    100048: Left_BackRF_Heel
+    100050: Left_BackRF_Toe
+    100052: Left_Ear01
+    100054: Left_Ear02
+    100056: Left_Ear03
+    100058: Left_Ear_Base
+    100060: Left_Ear_Tip
+    100062: Left_FrontFoot_Control
+    100064: Left_FrontIK_Ankle
+    100066: Left_FrontIK_Ball
+    100068: Left_FrontIK_Toe
+    100070: Left_FrontKnee_Control
+    100072: Left_FrontLeg_Ankle
+    100074: Left_FrontLeg_Ball
+    100076: Left_FrontLeg_Knee
+    100078: Left_FrontLeg_Thigh
+    100080: Left_FrontLeg_Toe
+    100082: Left_FrontRF_Ankle
+    100084: Left_FrontRF_Ball
+    100086: Left_FrontRF_Heel
+    100088: Left_FrontRF_Toe
+    100090: Mid_Spine
+    100092: Neck
+    100094: Neck_Control
+    100096: nurbsCircle2
+    100098: right1
+    100100: Right_BackFoot_Control
+    100102: Right_BackIK_Ankle
+    100104: Right_BackIK_Ball
+    100106: Right_BackIK_Toe
+    100108: Right_BackKnee_Control
+    100110: Right_BackLeg_Ankle
+    100112: Right_BackLeg_Ball
+    100114: Right_BackLeg_Knee
+    100116: Right_BackLeg_Thigh
+    100118: Right_BackLeg_Toe
+    100120: Right_BackRF_Ankle
+    100122: Right_BackRF_Ball
+    100124: Right_BackRF_Heel
+    100126: Right_BackRF_Toe
+    100128: Right_Ear01
+    100130: Right_Ear02
+    100132: Right_Ear03
+    100134: Right_Ear_Base
+    100136: Right_FrontFoot_Control
+    100138: Right_FrontIK_Ankle
+    100140: Right_FrontIK_Ball
+    100142: Right_FrontIK_Toe
+    100144: Right_FrontKnee_Control
+    100146: Right_FrontLeg_Ankle
+    100148: Right_FrontLeg_Ball
+    100150: Right_FrontLeg_Knee
+    100152: Right_FrontLeg_Thigh
+    100154: Right_FrontLeg_Toe
+    100156: Right_FrontRF_Ankle
+    100158: Right_FrontRF_Ball
+    100160: Right_FrontRF_Heel
+    100162: Right_FrontRF_Toe
+    100164: Snout
+    100166: Spine_01
+    100168: Spine_02
+    100170: Spine_03
+    100172: Spine_04
+    100174: Spine_05
+    100176: Spine_06
+    100178: Spine_07
+    100180: Spine_08
+    100182: Spine_09
+    100184: Tail_01_Control
+    100186: Tail_02_Control
+    100188: Tail_03_Control
+    100190: Tail_Base_Control
+    400000: Back_Thigh_Control
+    400002: Body
+    400004: Body_Control
+    400006: Collar
+    400008: Front_Thigh_Control
+    400010: Global
+    400012: Head
+    400014: //RootNode
+    400016: Jaw
+    400018: Jaw01
+    400020: Jaw_Control
+    400022: left1
+    400024: Left_BackFoot_Control
+    400026: Left_BackIK_Ankle
+    400028: Left_BackIK_Ball
+    400030: Left_BackIK_Toe
+    400032: Left_BackKnee_Control
+    400034: Left_BackLeg_Ankle
+    400036: Left_BackLeg_Ball
+    400038: Left_BackLeg_Knee
+    400040: Left_BackLeg_Thigh
+    400042: Left_BackLeg_Toe
+    400044: Left_BackRF_Ankle
+    400046: Left_BackRF_Ball
+    400048: Left_BackRF_Heel
+    400050: Left_BackRF_Toe
+    400052: Left_Ear01
+    400054: Left_Ear02
+    400056: Left_Ear03
+    400058: Left_Ear_Base
+    400060: Left_Ear_Tip
+    400062: Left_FrontFoot_Control
+    400064: Left_FrontIK_Ankle
+    400066: Left_FrontIK_Ball
+    400068: Left_FrontIK_Toe
+    400070: Left_FrontKnee_Control
+    400072: Left_FrontLeg_Ankle
+    400074: Left_FrontLeg_Ball
+    400076: Left_FrontLeg_Knee
+    400078: Left_FrontLeg_Thigh
+    400080: Left_FrontLeg_Toe
+    400082: Left_FrontRF_Ankle
+    400084: Left_FrontRF_Ball
+    400086: Left_FrontRF_Heel
+    400088: Left_FrontRF_Toe
+    400090: Mid_Spine
+    400092: Neck
+    400094: Neck_Control
+    400096: nurbsCircle2
+    400098: right1
+    400100: Right_BackFoot_Control
+    400102: Right_BackIK_Ankle
+    400104: Right_BackIK_Ball
+    400106: Right_BackIK_Toe
+    400108: Right_BackKnee_Control
+    400110: Right_BackLeg_Ankle
+    400112: Right_BackLeg_Ball
+    400114: Right_BackLeg_Knee
+    400116: Right_BackLeg_Thigh
+    400118: Right_BackLeg_Toe
+    400120: Right_BackRF_Ankle
+    400122: Right_BackRF_Ball
+    400124: Right_BackRF_Heel
+    400126: Right_BackRF_Toe
+    400128: Right_Ear01
+    400130: Right_Ear02
+    400132: Right_Ear03
+    400134: Right_Ear_Base
+    400136: Right_FrontFoot_Control
+    400138: Right_FrontIK_Ankle
+    400140: Right_FrontIK_Ball
+    400142: Right_FrontIK_Toe
+    400144: Right_FrontKnee_Control
+    400146: Right_FrontLeg_Ankle
+    400148: Right_FrontLeg_Ball
+    400150: Right_FrontLeg_Knee
+    400152: Right_FrontLeg_Thigh
+    400154: Right_FrontLeg_Toe
+    400156: Right_FrontRF_Ankle
+    400158: Right_FrontRF_Ball
+    400160: Right_FrontRF_Heel
+    400162: Right_FrontRF_Toe
+    400164: Snout
+    400166: Spine_01
+    400168: Spine_02
+    400170: Spine_03
+    400172: Spine_04
+    400174: Spine_05
+    400176: Spine_06
+    400178: Spine_07
+    400180: Spine_08
+    400182: Spine_09
+    400184: Tail_01_Control
+    400186: Tail_02_Control
+    400188: Tail_03_Control
+    400190: Tail_Base_Control
+    4300000: Collar
+    4300002: Body
+    7400000: HH_Idle
+    7400002: HH_Run
+    7400004: HH_Bite
+    7400006: HH_LundgeBite
+    9500000: //RootNode
+    13700000: Body
+    13700002: Collar
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: HH_Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Collar
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/Body_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control/Tail_01_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control/Tail_01_Control/Tail_02_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control/Tail_01_Control/Tail_02_Control/Tail_03_Control
+        weight: 1
+      - path: Global/Body_Control/Front_Thigh_Control
+        weight: 1
+      - path: Global/Body_Control/Mid_Spine
+        weight: 1
+      - path: Global/Body_Control/Neck_Control
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Jaw_Control
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Left_Ear_Base
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Left_Ear_Base/Left_Ear_Tip
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Right_Ear_Base
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Right_Ear_Base/nurbsCircle2
+        weight: 1
+      - path: Global/Body_Control/Spine_01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Jaw
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Jaw/Jaw01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Left_Ear01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Left_Ear01/Left_Ear02
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Left_Ear01/Left_Ear02/Left_Ear03
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Right_Ear01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Right_Ear01/Right_Ear02
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Right_Ear01/Right_Ear02/Right_Ear03
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Snout
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee/Left_FrontLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee/Left_FrontLeg_Ankle/Left_FrontLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee/Left_FrontLeg_Ankle/Left_FrontLeg_Ball/Left_FrontLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee/Right_FrontLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee/Right_FrontLeg_Ankle/Right_FrontLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee/Right_FrontLeg_Ankle/Right_FrontLeg_Ball/Right_FrontLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee/Left_BackLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee/Left_BackLeg_Ankle/Left_BackLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee/Left_BackLeg_Ankle/Left_BackLeg_Ball/Left_BackLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee/Right_BackLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee/Right_BackLeg_Ankle/Right_BackLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee/Right_BackLeg_Ankle/Right_BackLeg_Ball/Right_BackLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06/Spine_07
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06/Spine_07/Spine_08
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06/Spine_07/Spine_08/Spine_09
+        weight: 1
+      - path: Global/Left_BackFoot_Control
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackKnee_Control
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackIK_Toe
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball/Left_BackIK_Ball
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball/Left_BackRF_Ankle
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball/Left_BackRF_Ankle/Left_BackIK_Ankle
+        weight: 1
+      - path: Global/Left_FrontFoot_Control
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontKnee_Control
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontIK_Toe
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball/Left_FrontIK_Ball
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball/Left_FrontRF_Ankle
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball/Left_FrontRF_Ankle/Left_FrontIK_Ankle
+        weight: 1
+      - path: Global/Right_BackFoot_Control
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackKnee_Control
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackIK_Toe
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball/Right_BackIK_Ball
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball/Right_BackRF_Ankle
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball/Right_BackRF_Ankle/Right_BackIK_Ankle
+        weight: 1
+      - path: Global/Right_FrontFoot_Control
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontKnee_Control
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontIK_Toe
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball/Right_FrontIK_Ball
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball/Right_FrontRF_Ankle
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball/Right_FrontRF_Ankle/Right_FrontIK_Ankle
+        weight: 1
+      - path: left1
+        weight: 1
+      - path: right1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: HH_Run
+      takeName: Take 001
+      firstFrame: 95
+      lastFrame: 122
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Collar
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/Body_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control/Tail_01_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control/Tail_01_Control/Tail_02_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control/Tail_01_Control/Tail_02_Control/Tail_03_Control
+        weight: 1
+      - path: Global/Body_Control/Front_Thigh_Control
+        weight: 1
+      - path: Global/Body_Control/Mid_Spine
+        weight: 1
+      - path: Global/Body_Control/Neck_Control
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Jaw_Control
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Left_Ear_Base
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Left_Ear_Base/Left_Ear_Tip
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Right_Ear_Base
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Right_Ear_Base/nurbsCircle2
+        weight: 1
+      - path: Global/Body_Control/Spine_01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Jaw
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Jaw/Jaw01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Left_Ear01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Left_Ear01/Left_Ear02
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Left_Ear01/Left_Ear02/Left_Ear03
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Right_Ear01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Right_Ear01/Right_Ear02
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Right_Ear01/Right_Ear02/Right_Ear03
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Snout
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee/Left_FrontLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee/Left_FrontLeg_Ankle/Left_FrontLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee/Left_FrontLeg_Ankle/Left_FrontLeg_Ball/Left_FrontLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee/Right_FrontLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee/Right_FrontLeg_Ankle/Right_FrontLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee/Right_FrontLeg_Ankle/Right_FrontLeg_Ball/Right_FrontLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee/Left_BackLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee/Left_BackLeg_Ankle/Left_BackLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee/Left_BackLeg_Ankle/Left_BackLeg_Ball/Left_BackLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee/Right_BackLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee/Right_BackLeg_Ankle/Right_BackLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee/Right_BackLeg_Ankle/Right_BackLeg_Ball/Right_BackLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06/Spine_07
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06/Spine_07/Spine_08
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06/Spine_07/Spine_08/Spine_09
+        weight: 1
+      - path: Global/Left_BackFoot_Control
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackKnee_Control
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackIK_Toe
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball/Left_BackIK_Ball
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball/Left_BackRF_Ankle
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball/Left_BackRF_Ankle/Left_BackIK_Ankle
+        weight: 1
+      - path: Global/Left_FrontFoot_Control
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontKnee_Control
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontIK_Toe
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball/Left_FrontIK_Ball
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball/Left_FrontRF_Ankle
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball/Left_FrontRF_Ankle/Left_FrontIK_Ankle
+        weight: 1
+      - path: Global/Right_BackFoot_Control
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackKnee_Control
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackIK_Toe
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball/Right_BackIK_Ball
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball/Right_BackRF_Ankle
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball/Right_BackRF_Ankle/Right_BackIK_Ankle
+        weight: 1
+      - path: Global/Right_FrontFoot_Control
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontKnee_Control
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontIK_Toe
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball/Right_FrontIK_Ball
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball/Right_FrontRF_Ankle
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball/Right_FrontRF_Ankle/Right_FrontIK_Ankle
+        weight: 1
+      - path: left1
+        weight: 1
+      - path: right1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: HH_Bite
+      takeName: Take 001
+      firstFrame: 130
+      lastFrame: 160
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Collar
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/Body_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control/Tail_01_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control/Tail_01_Control/Tail_02_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control/Tail_01_Control/Tail_02_Control/Tail_03_Control
+        weight: 1
+      - path: Global/Body_Control/Front_Thigh_Control
+        weight: 1
+      - path: Global/Body_Control/Mid_Spine
+        weight: 1
+      - path: Global/Body_Control/Neck_Control
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Jaw_Control
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Left_Ear_Base
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Left_Ear_Base/Left_Ear_Tip
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Right_Ear_Base
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Right_Ear_Base/nurbsCircle2
+        weight: 1
+      - path: Global/Body_Control/Spine_01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Jaw
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Jaw/Jaw01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Left_Ear01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Left_Ear01/Left_Ear02
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Left_Ear01/Left_Ear02/Left_Ear03
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Right_Ear01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Right_Ear01/Right_Ear02
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Right_Ear01/Right_Ear02/Right_Ear03
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Snout
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee/Left_FrontLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee/Left_FrontLeg_Ankle/Left_FrontLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee/Left_FrontLeg_Ankle/Left_FrontLeg_Ball/Left_FrontLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee/Right_FrontLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee/Right_FrontLeg_Ankle/Right_FrontLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee/Right_FrontLeg_Ankle/Right_FrontLeg_Ball/Right_FrontLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee/Left_BackLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee/Left_BackLeg_Ankle/Left_BackLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee/Left_BackLeg_Ankle/Left_BackLeg_Ball/Left_BackLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee/Right_BackLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee/Right_BackLeg_Ankle/Right_BackLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee/Right_BackLeg_Ankle/Right_BackLeg_Ball/Right_BackLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06/Spine_07
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06/Spine_07/Spine_08
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06/Spine_07/Spine_08/Spine_09
+        weight: 1
+      - path: Global/Left_BackFoot_Control
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackKnee_Control
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackIK_Toe
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball/Left_BackIK_Ball
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball/Left_BackRF_Ankle
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball/Left_BackRF_Ankle/Left_BackIK_Ankle
+        weight: 1
+      - path: Global/Left_FrontFoot_Control
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontKnee_Control
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontIK_Toe
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball/Left_FrontIK_Ball
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball/Left_FrontRF_Ankle
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball/Left_FrontRF_Ankle/Left_FrontIK_Ankle
+        weight: 1
+      - path: Global/Right_BackFoot_Control
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackKnee_Control
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackIK_Toe
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball/Right_BackIK_Ball
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball/Right_BackRF_Ankle
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball/Right_BackRF_Ankle/Right_BackIK_Ankle
+        weight: 1
+      - path: Global/Right_FrontFoot_Control
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontKnee_Control
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontIK_Toe
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball/Right_FrontIK_Ball
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball/Right_FrontRF_Ankle
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball/Right_FrontRF_Ankle/Right_FrontIK_Ankle
+        weight: 1
+      - path: left1
+        weight: 1
+      - path: right1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: HH_LundgeBite
+      takeName: Take 001
+      firstFrame: 165
+      lastFrame: 205
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Collar
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/Body_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control/Tail_01_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control/Tail_01_Control/Tail_02_Control
+        weight: 1
+      - path: Global/Body_Control/Back_Thigh_Control/Tail_Base_Control/Tail_01_Control/Tail_02_Control/Tail_03_Control
+        weight: 1
+      - path: Global/Body_Control/Front_Thigh_Control
+        weight: 1
+      - path: Global/Body_Control/Mid_Spine
+        weight: 1
+      - path: Global/Body_Control/Neck_Control
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Jaw_Control
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Left_Ear_Base
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Left_Ear_Base/Left_Ear_Tip
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Right_Ear_Base
+        weight: 1
+      - path: Global/Body_Control/Neck_Control/Right_Ear_Base/nurbsCircle2
+        weight: 1
+      - path: Global/Body_Control/Spine_01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Jaw
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Jaw/Jaw01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Left_Ear01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Left_Ear01/Left_Ear02
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Left_Ear01/Left_Ear02/Left_Ear03
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Right_Ear01
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Right_Ear01/Right_Ear02
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Right_Ear01/Right_Ear02/Right_Ear03
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Neck/Head/Snout
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee/Left_FrontLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee/Left_FrontLeg_Ankle/Left_FrontLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Left_FrontLeg_Thigh/Left_FrontLeg_Knee/Left_FrontLeg_Ankle/Left_FrontLeg_Ball/Left_FrontLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee/Right_FrontLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee/Right_FrontLeg_Ankle/Right_FrontLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Right_FrontLeg_Thigh/Right_FrontLeg_Knee/Right_FrontLeg_Ankle/Right_FrontLeg_Ball/Right_FrontLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee/Left_BackLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee/Left_BackLeg_Ankle/Left_BackLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Left_BackLeg_Thigh/Left_BackLeg_Knee/Left_BackLeg_Ankle/Left_BackLeg_Ball/Left_BackLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee/Right_BackLeg_Ankle
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee/Right_BackLeg_Ankle/Right_BackLeg_Ball
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Right_BackLeg_Thigh/Right_BackLeg_Knee/Right_BackLeg_Ankle/Right_BackLeg_Ball/Right_BackLeg_Toe
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06/Spine_07
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06/Spine_07/Spine_08
+        weight: 1
+      - path: Global/Body_Control/Spine_01/Spine_02/Spine_03/Spine_04/Spine_05/Spine_06/Spine_07/Spine_08/Spine_09
+        weight: 1
+      - path: Global/Left_BackFoot_Control
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackKnee_Control
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackIK_Toe
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball/Left_BackIK_Ball
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball/Left_BackRF_Ankle
+        weight: 1
+      - path: Global/Left_BackFoot_Control/Left_BackRF_Heel/Left_BackRF_Toe/Left_BackRF_Ball/Left_BackRF_Ankle/Left_BackIK_Ankle
+        weight: 1
+      - path: Global/Left_FrontFoot_Control
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontKnee_Control
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontIK_Toe
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball/Left_FrontIK_Ball
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball/Left_FrontRF_Ankle
+        weight: 1
+      - path: Global/Left_FrontFoot_Control/Left_FrontRF_Heel/Left_FrontRF_Toe/Left_FrontRF_Ball/Left_FrontRF_Ankle/Left_FrontIK_Ankle
+        weight: 1
+      - path: Global/Right_BackFoot_Control
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackKnee_Control
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackIK_Toe
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball/Right_BackIK_Ball
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball/Right_BackRF_Ankle
+        weight: 1
+      - path: Global/Right_BackFoot_Control/Right_BackRF_Heel/Right_BackRF_Toe/Right_BackRF_Ball/Right_BackRF_Ankle/Right_BackIK_Ankle
+        weight: 1
+      - path: Global/Right_FrontFoot_Control
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontKnee_Control
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontIK_Toe
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball/Right_FrontIK_Ball
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball/Right_FrontRF_Ankle
+        weight: 1
+      - path: Global/Right_FrontFoot_Control/Right_FrontRF_Heel/Right_FrontRF_Toe/Right_FrontRF_Ball/Right_FrontRF_Ankle/Right_FrontIK_Ankle
+        weight: 1
+      - path: left1
+        weight: 1
+      - path: right1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Global
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

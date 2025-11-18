@@ -1,0 +1,797 @@
+fileFormatVersion: 2
+guid: 3191506e854feca4985e4fc339d30449
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Chest
+    100002: Chest_Control
+    100004: Global
+    100006: Head
+    100008: Head_Control
+    100010: joint1
+    100012: joint5
+    100014: joint9
+    100016: Left_Arm_Control
+    100018: Left_Elbow_Control
+    100020: Left_Foot_Control
+    100022: Left_Joint_Arm
+    100024: Left_Joint_Elbow
+    100026: Left_Joint_Foot
+    100028: Left_Joint_Knee
+    100030: Left_Joint_Shoulder
+    100032: Left_Joint_Thigh
+    100034: Left_Knee_Control
+    100036: Left_Shoulder_Control
+    100038: Left_Thigh_Control
+    100040: LeftArm
+    100042: LeftElbow
+    100044: LeftFoot
+    100046: LeftKnee
+    100048: LeftShoulder
+    100050: LeftThigh
+    100052: Right_Arm_Control
+    100054: Right_Elbow_Control
+    100056: Right_Foot_Control
+    100058: Right_Joint_Arm
+    100060: Right_Joint_Elbow
+    100062: Right_Joint_Foot
+    100064: Right_Joint_Knee
+    100066: Right_Joint_Shoulder
+    100068: Right_Joint_Thigh
+    100070: Right_Knee_Control
+    100072: Right_Shoulder_Control
+    100074: Right_Thigh_Control
+    100076: RightArm
+    100078: RightElbow
+    100080: RightFoot
+    100082: RightKnee
+    100084: RightShoulder
+    100086: RightThigh
+    100088: //RootNode
+    100090: Waist
+    100092: Waist_Control
+    400000: Chest
+    400002: Chest_Control
+    400004: Global
+    400006: Head
+    400008: Head_Control
+    400010: joint1
+    400012: joint5
+    400014: joint9
+    400016: Left_Arm_Control
+    400018: Left_Elbow_Control
+    400020: Left_Foot_Control
+    400022: Left_Joint_Arm
+    400024: Left_Joint_Elbow
+    400026: Left_Joint_Foot
+    400028: Left_Joint_Knee
+    400030: Left_Joint_Shoulder
+    400032: Left_Joint_Thigh
+    400034: Left_Knee_Control
+    400036: Left_Shoulder_Control
+    400038: Left_Thigh_Control
+    400040: LeftArm
+    400042: LeftElbow
+    400044: LeftFoot
+    400046: LeftKnee
+    400048: LeftShoulder
+    400050: LeftThigh
+    400052: Right_Arm_Control
+    400054: Right_Elbow_Control
+    400056: Right_Foot_Control
+    400058: Right_Joint_Arm
+    400060: Right_Joint_Elbow
+    400062: Right_Joint_Foot
+    400064: Right_Joint_Knee
+    400066: Right_Joint_Shoulder
+    400068: Right_Joint_Thigh
+    400070: Right_Knee_Control
+    400072: Right_Shoulder_Control
+    400074: Right_Thigh_Control
+    400076: RightArm
+    400078: RightElbow
+    400080: RightFoot
+    400082: RightKnee
+    400084: RightShoulder
+    400086: RightThigh
+    400088: //RootNode
+    400090: Waist
+    400092: Waist_Control
+    4300000: Head
+    4300002: LeftShoulder
+    4300004: RightShoulder
+    4300006: LeftArm
+    4300008: RightArm
+    4300010: Waist
+    4300012: RightFoot
+    4300014: LeftFoot
+    4300016: RightKnee
+    4300018: LeftKnee
+    4300020: RightElbow
+    4300022: LeftElbow
+    4300024: Chest
+    4300026: LeftThigh
+    4300028: RightThigh
+    7400000: SG_IdleStill
+    7400002: SG_IdleMoving
+    7400004: SG_Crush
+    7400006: SG_Activation
+    7400008: SG_Walk
+    9500000: //RootNode
+    13700000: Chest
+    13700002: Head
+    13700004: LeftArm
+    13700006: LeftElbow
+    13700008: LeftFoot
+    13700010: LeftKnee
+    13700012: LeftShoulder
+    13700014: LeftThigh
+    13700016: RightArm
+    13700018: RightElbow
+    13700020: RightFoot
+    13700022: RightKnee
+    13700024: RightShoulder
+    13700026: RightThigh
+    13700028: Waist
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: SG_IdleStill
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Chest
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/Chest_Control
+        weight: 1
+      - path: Global/Chest_Control/joint9
+        weight: 1
+      - path: Global/Head_Control
+        weight: 1
+      - path: Global/Head_Control/joint1
+        weight: 1
+      - path: Global/Left_Arm_Control
+        weight: 1
+      - path: Global/Left_Arm_Control/Right_Joint_Arm
+        weight: 1
+      - path: Global/Left_Elbow_Control
+        weight: 1
+      - path: Global/Left_Elbow_Control/Right_Joint_Elbow
+        weight: 1
+      - path: Global/Left_Foot_Control
+        weight: 1
+      - path: Global/Left_Foot_Control/Right_Joint_Foot
+        weight: 1
+      - path: Global/Left_Knee_Control
+        weight: 1
+      - path: Global/Left_Knee_Control/Right_Joint_Knee
+        weight: 1
+      - path: Global/Left_Shoulder_Control
+        weight: 1
+      - path: Global/Left_Shoulder_Control/Right_Joint_Shoulder
+        weight: 1
+      - path: Global/Left_Thigh_Control
+        weight: 1
+      - path: Global/Left_Thigh_Control/Right_Joint_Thigh
+        weight: 1
+      - path: Global/Right_Arm_Control
+        weight: 1
+      - path: Global/Right_Arm_Control/Left_Joint_Arm
+        weight: 1
+      - path: Global/Right_Elbow_Control
+        weight: 1
+      - path: Global/Right_Elbow_Control/Left_Joint_Elbow
+        weight: 1
+      - path: Global/Right_Foot_Control
+        weight: 1
+      - path: Global/Right_Foot_Control/Left_Joint_Foot
+        weight: 1
+      - path: Global/Right_Knee_Control
+        weight: 1
+      - path: Global/Right_Knee_Control/Left_Joint_Knee
+        weight: 1
+      - path: Global/Right_Shoulder_Control
+        weight: 1
+      - path: Global/Right_Shoulder_Control/Left_Joint_Shoulder
+        weight: 1
+      - path: Global/Right_Thigh_Control
+        weight: 1
+      - path: Global/Right_Thigh_Control/Left_Joint_Thigh
+        weight: 1
+      - path: Global/Waist_Control
+        weight: 1
+      - path: Global/Waist_Control/joint5
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: LeftArm
+        weight: 1
+      - path: LeftElbow
+        weight: 1
+      - path: LeftFoot
+        weight: 1
+      - path: LeftKnee
+        weight: 1
+      - path: LeftShoulder
+        weight: 1
+      - path: LeftThigh
+        weight: 1
+      - path: RightArm
+        weight: 1
+      - path: RightElbow
+        weight: 1
+      - path: RightFoot
+        weight: 1
+      - path: RightKnee
+        weight: 1
+      - path: RightShoulder
+        weight: 1
+      - path: RightThigh
+        weight: 1
+      - path: Waist
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: SG_IdleMoving
+      takeName: Take 001
+      firstFrame: 15
+      lastFrame: 165
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Chest
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/Chest_Control
+        weight: 1
+      - path: Global/Chest_Control/joint9
+        weight: 1
+      - path: Global/Head_Control
+        weight: 1
+      - path: Global/Head_Control/joint1
+        weight: 1
+      - path: Global/Left_Arm_Control
+        weight: 1
+      - path: Global/Left_Arm_Control/Right_Joint_Arm
+        weight: 1
+      - path: Global/Left_Elbow_Control
+        weight: 1
+      - path: Global/Left_Elbow_Control/Right_Joint_Elbow
+        weight: 1
+      - path: Global/Left_Foot_Control
+        weight: 1
+      - path: Global/Left_Foot_Control/Right_Joint_Foot
+        weight: 1
+      - path: Global/Left_Knee_Control
+        weight: 1
+      - path: Global/Left_Knee_Control/Right_Joint_Knee
+        weight: 1
+      - path: Global/Left_Shoulder_Control
+        weight: 1
+      - path: Global/Left_Shoulder_Control/Right_Joint_Shoulder
+        weight: 1
+      - path: Global/Left_Thigh_Control
+        weight: 1
+      - path: Global/Left_Thigh_Control/Right_Joint_Thigh
+        weight: 1
+      - path: Global/Right_Arm_Control
+        weight: 1
+      - path: Global/Right_Arm_Control/Left_Joint_Arm
+        weight: 1
+      - path: Global/Right_Elbow_Control
+        weight: 1
+      - path: Global/Right_Elbow_Control/Left_Joint_Elbow
+        weight: 1
+      - path: Global/Right_Foot_Control
+        weight: 1
+      - path: Global/Right_Foot_Control/Left_Joint_Foot
+        weight: 1
+      - path: Global/Right_Knee_Control
+        weight: 1
+      - path: Global/Right_Knee_Control/Left_Joint_Knee
+        weight: 1
+      - path: Global/Right_Shoulder_Control
+        weight: 1
+      - path: Global/Right_Shoulder_Control/Left_Joint_Shoulder
+        weight: 1
+      - path: Global/Right_Thigh_Control
+        weight: 1
+      - path: Global/Right_Thigh_Control/Left_Joint_Thigh
+        weight: 1
+      - path: Global/Waist_Control
+        weight: 1
+      - path: Global/Waist_Control/joint5
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: LeftArm
+        weight: 1
+      - path: LeftElbow
+        weight: 1
+      - path: LeftFoot
+        weight: 1
+      - path: LeftKnee
+        weight: 1
+      - path: LeftShoulder
+        weight: 1
+      - path: LeftThigh
+        weight: 1
+      - path: RightArm
+        weight: 1
+      - path: RightElbow
+        weight: 1
+      - path: RightFoot
+        weight: 1
+      - path: RightKnee
+        weight: 1
+      - path: RightShoulder
+        weight: 1
+      - path: RightThigh
+        weight: 1
+      - path: Waist
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: SG_Crush
+      takeName: Take 001
+      firstFrame: 175
+      lastFrame: 205
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Chest
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/Chest_Control
+        weight: 1
+      - path: Global/Chest_Control/joint9
+        weight: 1
+      - path: Global/Head_Control
+        weight: 1
+      - path: Global/Head_Control/joint1
+        weight: 1
+      - path: Global/Left_Arm_Control
+        weight: 1
+      - path: Global/Left_Arm_Control/Right_Joint_Arm
+        weight: 1
+      - path: Global/Left_Elbow_Control
+        weight: 1
+      - path: Global/Left_Elbow_Control/Right_Joint_Elbow
+        weight: 1
+      - path: Global/Left_Foot_Control
+        weight: 1
+      - path: Global/Left_Foot_Control/Right_Joint_Foot
+        weight: 1
+      - path: Global/Left_Knee_Control
+        weight: 1
+      - path: Global/Left_Knee_Control/Right_Joint_Knee
+        weight: 1
+      - path: Global/Left_Shoulder_Control
+        weight: 1
+      - path: Global/Left_Shoulder_Control/Right_Joint_Shoulder
+        weight: 1
+      - path: Global/Left_Thigh_Control
+        weight: 1
+      - path: Global/Left_Thigh_Control/Right_Joint_Thigh
+        weight: 1
+      - path: Global/Right_Arm_Control
+        weight: 1
+      - path: Global/Right_Arm_Control/Left_Joint_Arm
+        weight: 1
+      - path: Global/Right_Elbow_Control
+        weight: 1
+      - path: Global/Right_Elbow_Control/Left_Joint_Elbow
+        weight: 1
+      - path: Global/Right_Foot_Control
+        weight: 1
+      - path: Global/Right_Foot_Control/Left_Joint_Foot
+        weight: 1
+      - path: Global/Right_Knee_Control
+        weight: 1
+      - path: Global/Right_Knee_Control/Left_Joint_Knee
+        weight: 1
+      - path: Global/Right_Shoulder_Control
+        weight: 1
+      - path: Global/Right_Shoulder_Control/Left_Joint_Shoulder
+        weight: 1
+      - path: Global/Right_Thigh_Control
+        weight: 1
+      - path: Global/Right_Thigh_Control/Left_Joint_Thigh
+        weight: 1
+      - path: Global/Waist_Control
+        weight: 1
+      - path: Global/Waist_Control/joint5
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: LeftArm
+        weight: 1
+      - path: LeftElbow
+        weight: 1
+      - path: LeftFoot
+        weight: 1
+      - path: LeftKnee
+        weight: 1
+      - path: LeftShoulder
+        weight: 1
+      - path: LeftThigh
+        weight: 1
+      - path: RightArm
+        weight: 1
+      - path: RightElbow
+        weight: 1
+      - path: RightFoot
+        weight: 1
+      - path: RightKnee
+        weight: 1
+      - path: RightShoulder
+        weight: 1
+      - path: RightThigh
+        weight: 1
+      - path: Waist
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: SG_Activation
+      takeName: Take 001
+      firstFrame: 210
+      lastFrame: 270
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Chest
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/Chest_Control
+        weight: 1
+      - path: Global/Chest_Control/joint9
+        weight: 1
+      - path: Global/Head_Control
+        weight: 1
+      - path: Global/Head_Control/joint1
+        weight: 1
+      - path: Global/Left_Arm_Control
+        weight: 1
+      - path: Global/Left_Arm_Control/Right_Joint_Arm
+        weight: 1
+      - path: Global/Left_Elbow_Control
+        weight: 1
+      - path: Global/Left_Elbow_Control/Right_Joint_Elbow
+        weight: 1
+      - path: Global/Left_Foot_Control
+        weight: 1
+      - path: Global/Left_Foot_Control/Right_Joint_Foot
+        weight: 1
+      - path: Global/Left_Knee_Control
+        weight: 1
+      - path: Global/Left_Knee_Control/Right_Joint_Knee
+        weight: 1
+      - path: Global/Left_Shoulder_Control
+        weight: 1
+      - path: Global/Left_Shoulder_Control/Right_Joint_Shoulder
+        weight: 1
+      - path: Global/Left_Thigh_Control
+        weight: 1
+      - path: Global/Left_Thigh_Control/Right_Joint_Thigh
+        weight: 1
+      - path: Global/Right_Arm_Control
+        weight: 1
+      - path: Global/Right_Arm_Control/Left_Joint_Arm
+        weight: 1
+      - path: Global/Right_Elbow_Control
+        weight: 1
+      - path: Global/Right_Elbow_Control/Left_Joint_Elbow
+        weight: 1
+      - path: Global/Right_Foot_Control
+        weight: 1
+      - path: Global/Right_Foot_Control/Left_Joint_Foot
+        weight: 1
+      - path: Global/Right_Knee_Control
+        weight: 1
+      - path: Global/Right_Knee_Control/Left_Joint_Knee
+        weight: 1
+      - path: Global/Right_Shoulder_Control
+        weight: 1
+      - path: Global/Right_Shoulder_Control/Left_Joint_Shoulder
+        weight: 1
+      - path: Global/Right_Thigh_Control
+        weight: 1
+      - path: Global/Right_Thigh_Control/Left_Joint_Thigh
+        weight: 1
+      - path: Global/Waist_Control
+        weight: 1
+      - path: Global/Waist_Control/joint5
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: LeftArm
+        weight: 1
+      - path: LeftElbow
+        weight: 1
+      - path: LeftFoot
+        weight: 1
+      - path: LeftKnee
+        weight: 1
+      - path: LeftShoulder
+        weight: 1
+      - path: LeftThigh
+        weight: 1
+      - path: RightArm
+        weight: 1
+      - path: RightElbow
+        weight: 1
+      - path: RightFoot
+        weight: 1
+      - path: RightKnee
+        weight: 1
+      - path: RightShoulder
+        weight: 1
+      - path: RightThigh
+        weight: 1
+      - path: Waist
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: SG_Walk
+      takeName: Take 001
+      firstFrame: 275
+      lastFrame: 335
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Chest
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/Chest_Control
+        weight: 1
+      - path: Global/Chest_Control/joint9
+        weight: 1
+      - path: Global/Head_Control
+        weight: 1
+      - path: Global/Head_Control/joint1
+        weight: 1
+      - path: Global/Left_Arm_Control
+        weight: 1
+      - path: Global/Left_Arm_Control/Right_Joint_Arm
+        weight: 1
+      - path: Global/Left_Elbow_Control
+        weight: 1
+      - path: Global/Left_Elbow_Control/Right_Joint_Elbow
+        weight: 1
+      - path: Global/Left_Foot_Control
+        weight: 1
+      - path: Global/Left_Foot_Control/Right_Joint_Foot
+        weight: 1
+      - path: Global/Left_Knee_Control
+        weight: 1
+      - path: Global/Left_Knee_Control/Right_Joint_Knee
+        weight: 1
+      - path: Global/Left_Shoulder_Control
+        weight: 1
+      - path: Global/Left_Shoulder_Control/Right_Joint_Shoulder
+        weight: 1
+      - path: Global/Left_Thigh_Control
+        weight: 1
+      - path: Global/Left_Thigh_Control/Right_Joint_Thigh
+        weight: 1
+      - path: Global/Right_Arm_Control
+        weight: 1
+      - path: Global/Right_Arm_Control/Left_Joint_Arm
+        weight: 1
+      - path: Global/Right_Elbow_Control
+        weight: 1
+      - path: Global/Right_Elbow_Control/Left_Joint_Elbow
+        weight: 1
+      - path: Global/Right_Foot_Control
+        weight: 1
+      - path: Global/Right_Foot_Control/Left_Joint_Foot
+        weight: 1
+      - path: Global/Right_Knee_Control
+        weight: 1
+      - path: Global/Right_Knee_Control/Left_Joint_Knee
+        weight: 1
+      - path: Global/Right_Shoulder_Control
+        weight: 1
+      - path: Global/Right_Shoulder_Control/Left_Joint_Shoulder
+        weight: 1
+      - path: Global/Right_Thigh_Control
+        weight: 1
+      - path: Global/Right_Thigh_Control/Left_Joint_Thigh
+        weight: 1
+      - path: Global/Waist_Control
+        weight: 1
+      - path: Global/Waist_Control/joint5
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: LeftArm
+        weight: 1
+      - path: LeftElbow
+        weight: 1
+      - path: LeftFoot
+        weight: 1
+      - path: LeftKnee
+        weight: 1
+      - path: LeftShoulder
+        weight: 1
+      - path: LeftThigh
+        weight: 1
+      - path: RightArm
+        weight: 1
+      - path: RightElbow
+        weight: 1
+      - path: RightFoot
+        weight: 1
+      - path: RightKnee
+        weight: 1
+      - path: RightShoulder
+        weight: 1
+      - path: RightThigh
+        weight: 1
+      - path: Waist
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Global
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

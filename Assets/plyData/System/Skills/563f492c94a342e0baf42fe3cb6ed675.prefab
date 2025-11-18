@@ -1,0 +1,842 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &152608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 452608}
+  - 114: {fileID: 11452606}
+  - 114: {fileID: 11452608}
+  m_Layer: 0
+  m_Name: 563f492c94a342e0baf42fe3cb6ed675
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &452608
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152608}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11452606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 677389920, guid: ee437a4da0b2668478cfbed61746a8ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plyBloxGlobalPrefab: {fileID: 174866, guid: 2a01205c3fef6d542a5ed4f8089020f0, type: 2}
+  states:
+  - name: State 0
+    data:
+      eventTypes:
+      - plyGame.SkillActivateEvent
+      - plyGame.SkillHitEvent
+      - plyGame.SkillFizzleEvent
+      eventNames:
+      - On Skill Activate
+      - On Skill Hit
+      - On Skill Fizzle
+      eventIdents:
+      - On Skill Activate
+      - On Skill Hit
+      - On Skill Fizzle
+      eventFirstBlock: 020000001c0000002e000000
+      blockTypes:
+      - plyBloxKit.String_Value
+      - plyBloxKit.FindObjectByName_plyBlock
+      - plyBloxKit.Mecanim_Play_plyBlock
+      - plyBloxKit.UnityObject_Value
+      - plyBloxKit.GetScale_plyBlock
+      - plyBloxKit.GetTempVar_asGameObject_plyBlock
+      - plyBloxKit.GameObject_Value
+      - plyBloxKit.AudioSource_PlayOneShotAuto_plyBlock
+      - plyBloxKit.IfCondition_plyBlock
+      - plyBloxKit.IsNotEqualComparison_plyBlock
+      - plyBloxKit.GetTempVar_asGameObject_plyBlock
+      - plyBloxKit.FindObjectByName_plyBlock
+      - plyBloxKit.GetTempVar_asGameObject_plyBlock
+      - plyBloxKit.Float_Value
+      - plyGame.ActorAttribute_Change_plyBlock
+      - plyBloxKit.GameObject_Value
+      - plyBloxKit.GetTempVar_asVector3_plyBlock
+      - plyBloxKit.InstantiateObject_plyBlock
+      - plyBloxKit.String_Value
+      - plyBloxKit.GetTempVar_asGameObject_plyBlock
+      - plyBloxKit.IsNotEqualComparison_plyBlock
+      - plyBloxKit.GetTempVar_asGameObject_plyBlock
+      - plyBloxKit.FindObjectByName_plyBlock
+      - plyGame.ActorAttribute_Change_plyBlock
+      - plyBloxKit.GetTempVar_asGameObject_plyBlock
+      - plyBloxKit.Float_Value
+      - plyBloxKit.GameObject_Value
+      - plyBloxKit.GetTempVar_asVector3_plyBlock
+      - plyBloxKit.Mecanim_Play_plyBlock
+      - plyBloxKit.UnityObject_Value
+      - plyBloxKit.GetScale_plyBlock
+      - plyBloxKit.GetTempVar_asGameObject_plyBlock
+      - plyBloxKit.GameObject_Value
+      - plyBloxKit.IfCondition_plyBlock
+      - plyBloxKit.IsNotEqualComparison_plyBlock
+      - plyBloxKit.GetTempVar_asGameObject_plyBlock
+      - plyBloxKit.FindObjectByName_plyBlock
+      - plyGame.ActorAttribute_Change_plyBlock
+      - plyBloxKit.GetTempVar_asGameObject_plyBlock
+      - plyBloxKit.Float_Value
+      - plyBloxKit.InstantiateObject_plyBlock
+      - plyBloxKit.GameObject_Value
+      - plyBloxKit.GetTempVar_asVector3_plyBlock
+      - plyBloxKit.AudioSource_PlayOneShotAuto_plyBlock
+      - plyBloxKit.GameObject_Value
+      - plyBloxKit.GetTempVar_asVector3_plyBlock
+      - plyBloxKit.InstantiateObject_plyBlock
+      - plyBloxKit.GameObject_Value
+      - plyBloxKit.InstantiateObject_plyBlock
+      - plyBloxKit.GetScale_plyBlock
+      blockLinks:
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 2
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 2
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: 7
+        prevIdx: -1
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 7
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 7
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 4
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 7
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: 2
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: 43
+        ownerIdx: -1
+        childIdx: 14
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 8
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 9
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 9
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 14
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 14
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: 17
+        prevIdx: -1
+        ownerIdx: 8
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 17
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 17
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: 14
+        ownerIdx: 8
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 28
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 28
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 8
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 9
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 9
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: 17
+        prevIdx: -1
+        ownerIdx: 8
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 14
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 14
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 17
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 17
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: 43
+        prevIdx: -1
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 43
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 43
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 30
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 43
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: 43
+        ownerIdx: -1
+        childIdx: 14
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 8
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 9
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 9
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: 17
+        prevIdx: -1
+        ownerIdx: 8
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 14
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 14
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: 14
+        ownerIdx: 8
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 17
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 17
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: 8
+        prevIdx: 28
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 46
+        childIdx: -1
+        eventIdx: 2
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 46
+        childIdx: -1
+        eventIdx: 2
+      - nextIdx: 48
+        prevIdx: -1
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 2
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 48
+        childIdx: -1
+        eventIdx: 2
+      - nextIdx: -1
+        prevIdx: 46
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 2
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 48
+        childIdx: -1
+        eventIdx: 2
+      blockDataIdx: 000000000100000003000000090000000a0000000d0000000f000000100000001400000015000000180000001a0000001c0000001e0000001f0000002600000027000000290000002d0000002e000000300000003300000035000000370000003e000000400000004100000042000000440000004a0000004b0000004e00000050000000510000005200000055000000570000005900000060000000620000006300000067000000680000006a0000006e0000006f0000007100000075000000760000007a000000
+      blockDataCnt: 0100000002000000060000000100000003000000020000000100000004000000010000000300000002000000020000000200000001000000070000000100000002000000040000000100000002000000030000000200000002000000070000000200000001000000010000000200000006000000010000000300000002000000010000000100000003000000020000000200000007000000020000000100000004000000010000000200000004000000010000000200000004000000010000000400000003000000
+      blockData:
+      - type: 9
+        name: value
+        data: 52616e67654d61676963
+      - type: 9
+        name: name
+        data: 5065726957696e6b6c655f416e696d6174696f6e73
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 3
+        name: stateName
+        data: 00000000
+      - type: 3
+        name: target
+        data: 01000000
+      - type: 3
+        name: layer
+        data: ffffffff
+      - type: 3
+        name: normalizedTime
+        data: ffffffff
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 5
+        name: cacheState
+        data: 00
+      - type: 11
+        name: value
+        data: 00000000
+      - type: 4
+        name: sp
+        data: 01000000
+      - type: 3
+        name: target
+        data: 05000000
+      - type: 14
+        name: value
+        data: 000000000000000000000000
+      - type: 9
+        name: varName
+        data: 736b696c6c4f776e6572
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 10
+        name: value
+        data: 00000000
+      - type: 3
+        name: clip
+        data: 03000000
+      - type: 3
+        name: pos
+        data: 04000000
+      - type: 3
+        name: fab
+        data: 06000000
+      - type: 3
+        name: scale
+        data: ffffffff
+      - type: 3
+        name: val
+        data: 09000000
+      - type: 3
+        name: var1
+        data: 0a000000
+      - type: 3
+        name: var2
+        data: 0b000000
+      - type: 5
+        name: value
+        data: 00
+      - type: 9
+        name: varName
+        data: 6869744f626a656374
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 9
+        name: name
+        data: 46616c6c656e20536f6c64696572
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 9
+        name: varName
+        data: 6869744f626a656374
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 8
+        name: value
+        data: 000080bf
+      - type: 4
+        name: valueType
+        data: 01000000
+      - type: 9
+        name: attribName
+        data: 4865616c7468
+      - type: 4
+        name: identType
+        data: 01000000
+      - type: 3
+        name: target
+        data: 0c000000
+      - type: 3
+        name: val
+        data: 0d000000
+      - type: 3
+        name: influence
+        data: ffffffff
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 10
+        name: value
+        data: 01000000
+      - type: 9
+        name: varName
+        data: 686974506f696e74
+      - type: 14
+        name: value
+        data: 000000000000000000000000
+      - type: 3
+        name: prefab
+        data: 0f000000
+      - type: 3
+        name: pos
+        data: 10000000
+      - type: 3
+        name: rot
+        data: ffffffff
+      - type: 3
+        name: saveIn
+        data: ffffffff
+      - type: 9
+        name: value
+        data: 466c696e6368
+      - type: 9
+        name: varName
+        data: 6869744f626a656374
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 3
+        name: var1
+        data: 0a000000
+      - type: 3
+        name: var2
+        data: 0b000000
+      - type: 5
+        name: value
+        data: 00
+      - type: 9
+        name: varName
+        data: 6869744f626a656374
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 9
+        name: name
+        data: 46616c6c656e20536f6c64696572
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 4
+        name: valueType
+        data: 01000000
+      - type: 9
+        name: attribName
+        data: 4865616c7468
+      - type: 4
+        name: identType
+        data: 01000000
+      - type: 3
+        name: target
+        data: 0c000000
+      - type: 3
+        name: val
+        data: 0d000000
+      - type: 3
+        name: influence
+        data: ffffffff
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 9
+        name: varName
+        data: 6869744f626a656374
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 8
+        name: value
+        data: 000080bf
+      - type: 10
+        name: value
+        data: 01000000
+      - type: 9
+        name: varName
+        data: 686974506f696e74
+      - type: 14
+        name: value
+        data: 000000000000000000000000
+      - type: 3
+        name: stateName
+        data: 12000000
+      - type: 3
+        name: target
+        data: 13000000
+      - type: 3
+        name: layer
+        data: ffffffff
+      - type: 3
+        name: normalizedTime
+        data: ffffffff
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 5
+        name: cacheState
+        data: 00
+      - type: 11
+        name: value
+        data: 00000000
+      - type: 4
+        name: sp
+        data: 01000000
+      - type: 3
+        name: target
+        data: 1f000000
+      - type: 14
+        name: value
+        data: 000000000000000000000000
+      - type: 9
+        name: varName
+        data: 6869744f626a656374
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 10
+        name: value
+        data: 00000000
+      - type: 3
+        name: val
+        data: 09000000
+      - type: 3
+        name: var1
+        data: 0a000000
+      - type: 3
+        name: var2
+        data: 0b000000
+      - type: 5
+        name: value
+        data: 00
+      - type: 9
+        name: varName
+        data: 6869744f626a656374
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 9
+        name: name
+        data: 46616c6c656e20536f6c64696572
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 4
+        name: valueType
+        data: 01000000
+      - type: 9
+        name: attribName
+        data: 4865616c7468
+      - type: 4
+        name: identType
+        data: 01000000
+      - type: 3
+        name: target
+        data: 0c000000
+      - type: 3
+        name: val
+        data: 0d000000
+      - type: 3
+        name: influence
+        data: ffffffff
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 9
+        name: varName
+        data: 6869744f626a656374
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 8
+        name: value
+        data: 000080bf
+      - type: 3
+        name: prefab
+        data: 0f000000
+      - type: 3
+        name: pos
+        data: 10000000
+      - type: 3
+        name: rot
+        data: ffffffff
+      - type: 3
+        name: saveIn
+        data: ffffffff
+      - type: 10
+        name: value
+        data: 01000000
+      - type: 9
+        name: varName
+        data: 686974506f696e74
+      - type: 14
+        name: value
+        data: 000000000000000000000000
+      - type: 3
+        name: clip
+        data: 1d000000
+      - type: 3
+        name: pos
+        data: 1e000000
+      - type: 3
+        name: fab
+        data: 20000000
+      - type: 3
+        name: scale
+        data: ffffffff
+      - type: 10
+        name: value
+        data: 02000000
+      - type: 9
+        name: varName
+        data: 686974506f696e74
+      - type: 14
+        name: value
+        data: 000000000000000000000000
+      - type: 3
+        name: prefab
+        data: 2c000000
+      - type: 3
+        name: pos
+        data: 2d000000
+      - type: 3
+        name: rot
+        data: ffffffff
+      - type: 3
+        name: saveIn
+        data: ffffffff
+      - type: 10
+        name: value
+        data: 01000000
+      - type: 3
+        name: prefab
+        data: 2f000000
+      - type: 3
+        name: pos
+        data: 31000000
+      - type: 3
+        name: rot
+        data: ffffffff
+      - type: 3
+        name: saveIn
+        data: ffffffff
+      - type: 4
+        name: sp
+        data: 01000000
+      - type: 3
+        name: target
+        data: ffffffff
+      - type: 14
+        name: value
+        data: 000000000000000000000000
+      gameObjects:
+      - {fileID: 129998, guid: ccd4569de0787774cb7da60a85b850a7, type: 2}
+      - {fileID: 166984, guid: e50fc509a8fa5114c82b49c8f06f13a3, type: 2}
+      - {fileID: 199476, guid: 8f1ed690f0add544bb1b69a5a8ebc69f, type: 2}
+      unityObjects:
+      - {fileID: 8300000, guid: 3b96c9ff6cd575c4688b0d75c5488354, type: 3}
+      arrayData: []
+      arrayDataNfo: []
+      customData: []
+      customDataNfo: []
+      eventActive: 010101
+      blockActive: 0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010100010001
+  vars: []
+  uniqueIdOnObject: -1
+  NeedObjectActive: 0
+--- !u!114 &11452608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1992572321, guid: 357936f588f68fb4e8f1d038fdfe02c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showDebugInfo: 1
+  def:
+    ident: 
+    screenName: Fireball
+    shortName: 
+    meta: 
+    description: Fireball Attack
+    images:
+    - {fileID: 2800000, guid: 44e568bbc1c20e34aa854fbd73f199d2, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  id:
+    savedIdent: 563f492c94a342e0baf42fe3cb6ed675
+  blox: {fileID: 11452606}
+  executionTimeout: 0
+  cooldownTimeout: 2
+  mayPerformWhileMove: 1
+  forceStop: 1
+  canBeQueued: 1
+  autoQueue: 0
+  activation: 0
+  deliveryMethod: 1
+  targetingMethodMask: 4
+  validTargetsMask: 12
+  targetLocation: 4
+  maxEffects: 1
+  targetingDistance: 100
+  targetingAngle: 30
+  targetingRadius: 5
+  obstacleCheckMask:
+    serializedVersion: 2
+    m_Bits: 2147485184
+  obstacbleCheckHeight: 1.5
+  instantHitDelay: 0
+  secondaryMaxTargets: 2
+  secondaryRadius: 4
+  secondaryObstacleCheckMask:
+    serializedVersion: 2
+    m_Bits: 0
+  secondaryObstacbleCheckHeight: 1.5
+  projectileFabs:
+  - {fileID: 115290, guid: 4112559a7f56ddb4aa2cc71f7c9589d3, type: 2}
+  - {fileID: 130782, guid: fcf62ad51cdbaed428d9fc05752bc6f9, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  projectileCreateDelay: .300000012
+  projectileCreateDelayBetween: 0
+  projectileMoveMethod: 2
+  moveMethod_b_opt: 1
+  useVectorOffset: 1
+  projectileCreateOffset: {x: -.5, y: 1, z: .300000012}
+  projectileCreateAtTagged: 
+  hitHeightPercentage: 50
+  maxFlightDistance: 100
+  maxLiveTime: 3
+  projectileMoveSpeed: 11
+  triggerSecondaryOnFizzle: 0
+  triggerSecondaryOnFizzleOnlyIfObstacle: 1
+  collisionRayWidth: .200000003
+  destroyProjectileOnHit: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 152608}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

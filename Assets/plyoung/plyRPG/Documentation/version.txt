@@ -1,0 +1,7 @@
+version: x
+© Leslie Young
+http://plyoung.com/plygame/
+
+===============================================================
+
+For version notes, visit http://forum.plyoung.com/c/announce 

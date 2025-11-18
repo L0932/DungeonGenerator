@@ -1,0 +1,400 @@
+fileFormatVersion: 2
+guid: ba6c69e090efb8a45bd6d936dc245653
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Bot_Skull_Control
+    100002: Bot_Skull_Joint
+    100004: Crown
+    100006: Global
+    100008: Mid_Skull_Control
+    100010: Mid_Skull_Joint
+    100012: //RootNode
+    100014: Skull02_Control
+    100016: Skull02_Joint
+    100018: Skull04_Control
+    100020: Skull04_Joint
+    100022: Skull05_Control
+    100024: Skull05_Joint
+    100026: Skull_02
+    100028: Skull_04
+    100030: Skull_05
+    100032: Skull_Bottom
+    100034: Skull_Mid
+    100036: Skull_Top
+    100038: Top_Skull_Control
+    100040: Top_Skull_Joint
+    400000: Bot_Skull_Control
+    400002: Bot_Skull_Joint
+    400004: Crown
+    400006: Global
+    400008: Mid_Skull_Control
+    400010: Mid_Skull_Joint
+    400012: //RootNode
+    400014: Skull02_Control
+    400016: Skull02_Joint
+    400018: Skull04_Control
+    400020: Skull04_Joint
+    400022: Skull05_Control
+    400024: Skull05_Joint
+    400026: Skull_02
+    400028: Skull_04
+    400030: Skull_05
+    400032: Skull_Bottom
+    400034: Skull_Mid
+    400036: Skull_Top
+    400038: Top_Skull_Control
+    400040: Top_Skull_Joint
+    4300000: Skull_Bottom
+    4300002: Skull_02
+    4300004: Skull_Mid
+    4300006: Skull_04
+    4300008: Skull_05
+    4300010: Skull_Top
+    4300012: Crown
+    7400000: Pillar_Idle
+    7400002: Pillar_SummonSpawn
+    7400004: Pillar_BeamPrep
+    7400006: Pillar_BeamShot
+    9500000: //RootNode
+    13700000: Crown
+    13700002: Skull_02
+    13700004: Skull_04
+    13700006: Skull_05
+    13700008: Skull_Bottom
+    13700010: Skull_Mid
+    13700012: Skull_Top
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Pillar_Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Crown
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/Bot_Skull_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint/Skull04_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint/Skull04_Joint/Skull05_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint/Skull04_Joint/Skull05_Joint/Top_Skull_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control/Skull04_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control/Skull04_Control/Skull05_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control/Skull04_Control/Skull05_Control/Top_Skull_Control
+        weight: 1
+      - path: Skull_02
+        weight: 1
+      - path: Skull_04
+        weight: 1
+      - path: Skull_05
+        weight: 1
+      - path: Skull_Bottom
+        weight: 1
+      - path: Skull_Mid
+        weight: 1
+      - path: Skull_Top
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Pillar_SummonSpawn
+      takeName: Take 001
+      firstFrame: 95
+      lastFrame: 155
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Crown
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/Bot_Skull_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint/Skull04_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint/Skull04_Joint/Skull05_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint/Skull04_Joint/Skull05_Joint/Top_Skull_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control/Skull04_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control/Skull04_Control/Skull05_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control/Skull04_Control/Skull05_Control/Top_Skull_Control
+        weight: 1
+      - path: Skull_02
+        weight: 1
+      - path: Skull_04
+        weight: 1
+      - path: Skull_05
+        weight: 1
+      - path: Skull_Bottom
+        weight: 1
+      - path: Skull_Mid
+        weight: 1
+      - path: Skull_Top
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Pillar_BeamPrep
+      takeName: Take 001
+      firstFrame: 160
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Crown
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/Bot_Skull_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint/Skull04_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint/Skull04_Joint/Skull05_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint/Skull04_Joint/Skull05_Joint/Top_Skull_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control/Skull04_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control/Skull04_Control/Skull05_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control/Skull04_Control/Skull05_Control/Top_Skull_Control
+        weight: 1
+      - path: Skull_02
+        weight: 1
+      - path: Skull_04
+        weight: 1
+      - path: Skull_05
+        weight: 1
+      - path: Skull_Bottom
+        weight: 1
+      - path: Skull_Mid
+        weight: 1
+      - path: Skull_Top
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Pillar_BeamShot
+      takeName: Take 001
+      firstFrame: 195
+      lastFrame: 225
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Crown
+        weight: 1
+      - path: Global
+        weight: 1
+      - path: Global/Bot_Skull_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint/Skull04_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint/Skull04_Joint/Skull05_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Bot_Skull_Joint/Skull02_Joint/Mid_Skull_Joint/Skull04_Joint/Skull05_Joint/Top_Skull_Joint
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control/Skull04_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control/Skull04_Control/Skull05_Control
+        weight: 1
+      - path: Global/Bot_Skull_Control/Skull02_Control/Mid_Skull_Control/Skull04_Control/Skull05_Control/Top_Skull_Control
+        weight: 1
+      - path: Skull_02
+        weight: 1
+      - path: Skull_04
+        weight: 1
+      - path: Skull_05
+        weight: 1
+      - path: Skull_Bottom
+        weight: 1
+      - path: Skull_Mid
+        weight: 1
+      - path: Skull_Top
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Global
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

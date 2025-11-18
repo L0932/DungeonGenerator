@@ -1,0 +1,1480 @@
+fileFormatVersion: 2
+guid: cd128402a870c36499e54fa547330f42
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Arrow
+    100002: Arrow1
+    100004: Arrow2
+    100006: Arrow3
+    100008: Body
+    100010: Bow
+    100012: Bow_Control
+    100014: Bow_Joint
+    100016: Crown
+    100018: Head
+    100020: joint2
+    100022: LeftArm
+    100024: LeftLeg
+    100026: LeftShinG
+    100028: PeriRig:Chest_Control
+    100030: PeriRig:COG
+    100032: PeriRig:curve1
+    100034: PeriRig:Global
+    100036: PeriRig:group1
+    100038: PeriRig:group2
+    100040: PeriRig:group3
+    100042: PeriRig:group4
+    100044: PeriRig:Head_Bone_01
+    100046: PeriRig:Head_Bone_02
+    100048: PeriRig:Head_Bone_03
+    100050: PeriRig:Head_Bone_04
+    100052: PeriRig:Head_Control
+    100054: PeriRig:Hip_Control
+    100056: PeriRig:Left_Ankle_Bone
+    100058: PeriRig:Left_Ball_Bone
+    100060: PeriRig:Left_Clavicle_Control
+    100062: PeriRig:Left_Collar_Bone
+    100064: PeriRig:Left_Elbow_Bone
+    100066: PeriRig:Left_Elbow_Control
+    100068: PeriRig:Left_FK_Elbow_Control
+    100070: PeriRig:Left_FK_Shoulder_Control
+    100072: PeriRig:Left_FK_Wrist_Control
+    100074: PeriRig:Left_Foot_Control
+    100076: PeriRig:Left_Hand_Bone
+    100078: PeriRig:Left_IK_Ankle
+    100080: PeriRig:Left_IK_Arm
+    100082: PeriRig:Left_IK_ARM_Control
+    100084: PeriRig:Left_IK_Ball
+    100086: PeriRig:Left_IK_Toe
+    100088: PeriRig:Left_Knee_Bone
+    100090: PeriRig:Left_knee_Control
+    100092: PeriRig:Left_RF_Ankle_Bone
+    100094: PeriRig:Left_RF_Ball_Bone
+    100096: PeriRig:Left_RF_Heel_Bone
+    100098: PeriRig:Left_RF_Toe_Bone
+    100100: PeriRig:Left_Shoulder_Bone
+    100102: PeriRig:Left_Thigh_Bone
+    100104: PeriRig:Left_Toe_Bone
+    100106: PeriRig:Left_Wrist_Bone
+    100108: PeriRig:LeftBank_LBone
+    100110: PeriRig:LeftBank_RBone
+    100112: PeriRig:Neck_Control
+    100114: PeriRig:Right_Ankle_Bone
+    100116: PeriRig:Right_Ball_Bone
+    100118: PeriRig:Right_Clavicle_Control
+    100120: PeriRig:Right_Collar_Bone
+    100122: PeriRig:Right_Elbow_Bone
+    100124: PeriRig:Right_Elbow_Control
+    100126: PeriRig:Right_FK_Elbow_Control
+    100128: PeriRig:Right_FK_Shoulder_Control
+    100130: PeriRig:Right_FK_Wrist_Control
+    100132: PeriRig:Right_Foot_Control
+    100134: PeriRig:Right_Hand_Bone
+    100136: PeriRig:Right_IK_Ankle
+    100138: PeriRig:Right_IK_Arm
+    100140: PeriRig:Right_IK_Arm_Control
+    100142: PeriRig:Right_IK_Ball
+    100144: PeriRig:Right_IK_Toe
+    100146: PeriRig:Right_Knee_Bone
+    100148: PeriRig:Right_Knee_Control
+    100150: PeriRig:Right_RF_Ankle_Bone
+    100152: PeriRig:Right_RF_Ball_Bone
+    100154: PeriRig:Right_RF_Heel_Bone
+    100156: PeriRig:Right_RF_Toe_Bone
+    100158: PeriRig:Right_Shoulder_Bone
+    100160: PeriRig:Right_Thigh_Bone
+    100162: PeriRig:Right_Toe_Bone
+    100164: PeriRig:Right_Wrist_Bone
+    100166: PeriRig:RightBank_LBone
+    100168: PeriRig:RightBank_RBone
+    100170: PeriRig:Root
+    100172: PeriRig:Spine02_FK_Control
+    100174: PeriRig:Spine03_FK_Control
+    100176: PeriRig:Spine_Bone_01
+    100178: PeriRig:Spine_Bone_02
+    100180: PeriRig:Spine_Bone_03
+    100182: PeriRig:Spine_Bone_04
+    100184: PeriRig:Spine_Bone_05
+    100186: PeriRig:Spine_Cluster01
+    100188: PeriRig:Spine_Cluster02
+    100190: PeriRig:Spine_Cluster03
+    100192: PeriRig:Spine_Cluster04
+    100194: PeriRig:Spine_FK_Control
+    100196: PeriRig:Spine_IK
+    100198: Quiver
+    100200: RightArm
+    100202: RightLeg
+    100204: RightShinG
+    100206: //RootNode
+    400000: Arrow
+    400002: Arrow1
+    400004: Arrow2
+    400006: Arrow3
+    400008: Body
+    400010: Bow
+    400012: Bow_Control
+    400014: Bow_Joint
+    400016: Crown
+    400018: Head
+    400020: joint2
+    400022: LeftArm
+    400024: LeftLeg
+    400026: LeftShinG
+    400028: PeriRig:Chest_Control
+    400030: PeriRig:COG
+    400032: PeriRig:curve1
+    400034: PeriRig:Global
+    400036: PeriRig:group1
+    400038: PeriRig:group2
+    400040: PeriRig:group3
+    400042: PeriRig:group4
+    400044: PeriRig:Head_Bone_01
+    400046: PeriRig:Head_Bone_02
+    400048: PeriRig:Head_Bone_03
+    400050: PeriRig:Head_Bone_04
+    400052: PeriRig:Head_Control
+    400054: PeriRig:Hip_Control
+    400056: PeriRig:Left_Ankle_Bone
+    400058: PeriRig:Left_Ball_Bone
+    400060: PeriRig:Left_Clavicle_Control
+    400062: PeriRig:Left_Collar_Bone
+    400064: PeriRig:Left_Elbow_Bone
+    400066: PeriRig:Left_Elbow_Control
+    400068: PeriRig:Left_FK_Elbow_Control
+    400070: PeriRig:Left_FK_Shoulder_Control
+    400072: PeriRig:Left_FK_Wrist_Control
+    400074: PeriRig:Left_Foot_Control
+    400076: PeriRig:Left_Hand_Bone
+    400078: PeriRig:Left_IK_Ankle
+    400080: PeriRig:Left_IK_Arm
+    400082: PeriRig:Left_IK_ARM_Control
+    400084: PeriRig:Left_IK_Ball
+    400086: PeriRig:Left_IK_Toe
+    400088: PeriRig:Left_Knee_Bone
+    400090: PeriRig:Left_knee_Control
+    400092: PeriRig:Left_RF_Ankle_Bone
+    400094: PeriRig:Left_RF_Ball_Bone
+    400096: PeriRig:Left_RF_Heel_Bone
+    400098: PeriRig:Left_RF_Toe_Bone
+    400100: PeriRig:Left_Shoulder_Bone
+    400102: PeriRig:Left_Thigh_Bone
+    400104: PeriRig:Left_Toe_Bone
+    400106: PeriRig:Left_Wrist_Bone
+    400108: PeriRig:LeftBank_LBone
+    400110: PeriRig:LeftBank_RBone
+    400112: PeriRig:Neck_Control
+    400114: PeriRig:Right_Ankle_Bone
+    400116: PeriRig:Right_Ball_Bone
+    400118: PeriRig:Right_Clavicle_Control
+    400120: PeriRig:Right_Collar_Bone
+    400122: PeriRig:Right_Elbow_Bone
+    400124: PeriRig:Right_Elbow_Control
+    400126: PeriRig:Right_FK_Elbow_Control
+    400128: PeriRig:Right_FK_Shoulder_Control
+    400130: PeriRig:Right_FK_Wrist_Control
+    400132: PeriRig:Right_Foot_Control
+    400134: PeriRig:Right_Hand_Bone
+    400136: PeriRig:Right_IK_Ankle
+    400138: PeriRig:Right_IK_Arm
+    400140: PeriRig:Right_IK_Arm_Control
+    400142: PeriRig:Right_IK_Ball
+    400144: PeriRig:Right_IK_Toe
+    400146: PeriRig:Right_Knee_Bone
+    400148: PeriRig:Right_Knee_Control
+    400150: PeriRig:Right_RF_Ankle_Bone
+    400152: PeriRig:Right_RF_Ball_Bone
+    400154: PeriRig:Right_RF_Heel_Bone
+    400156: PeriRig:Right_RF_Toe_Bone
+    400158: PeriRig:Right_Shoulder_Bone
+    400160: PeriRig:Right_Thigh_Bone
+    400162: PeriRig:Right_Toe_Bone
+    400164: PeriRig:Right_Wrist_Bone
+    400166: PeriRig:RightBank_LBone
+    400168: PeriRig:RightBank_RBone
+    400170: PeriRig:Root
+    400172: PeriRig:Spine02_FK_Control
+    400174: PeriRig:Spine03_FK_Control
+    400176: PeriRig:Spine_Bone_01
+    400178: PeriRig:Spine_Bone_02
+    400180: PeriRig:Spine_Bone_03
+    400182: PeriRig:Spine_Bone_04
+    400184: PeriRig:Spine_Bone_05
+    400186: PeriRig:Spine_Cluster01
+    400188: PeriRig:Spine_Cluster02
+    400190: PeriRig:Spine_Cluster03
+    400192: PeriRig:Spine_Cluster04
+    400194: PeriRig:Spine_FK_Control
+    400196: PeriRig:Spine_IK
+    400198: Quiver
+    400200: RightArm
+    400202: RightLeg
+    400204: RightShinG
+    400206: //RootNode
+    4300000: Arrow
+    4300002: Arrow1
+    4300004: Arrow2
+    4300006: Arrow3
+    4300008: LeftArm
+    4300010: Crown
+    4300012: Head
+    4300014: Quiver
+    4300016: RightArm
+    4300018: Body
+    4300020: RightLeg
+    4300022: RightShinG
+    4300024: LeftShinG
+    4300026: LeftLeg
+    4300028: Bow
+    7400000: SA_Idle
+    7400002: SA_Attack
+    9500000: //RootNode
+    13700000: Arrow
+    13700002: Arrow1
+    13700004: Arrow2
+    13700006: Arrow3
+    13700008: Body
+    13700010: Bow
+    13700012: Crown
+    13700014: Head
+    13700016: LeftArm
+    13700018: LeftLeg
+    13700020: LeftShinG
+    13700022: Quiver
+    13700024: RightArm
+    13700026: RightLeg
+    13700028: RightShinG
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: SA_Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arrow
+        weight: 0
+      - path: Arrow1
+        weight: 0
+      - path: Arrow2
+        weight: 0
+      - path: Arrow3
+        weight: 0
+      - path: Body
+        weight: 0
+      - path: Bow
+        weight: 0
+      - path: Crown
+        weight: 0
+      - path: Head
+        weight: 0
+      - path: LeftArm
+        weight: 0
+      - path: LeftLeg
+        weight: 0
+      - path: LeftShinG
+        weight: 0
+      - path: PeriRig:curve1
+        weight: 0
+      - path: PeriRig:Global
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group1
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group1/PeriRig:Spine_Cluster01
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group2
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group2/PeriRig:Spine_Cluster02
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone/PeriRig:Left_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone/PeriRig:Left_Ball_Bone/PeriRig:Left_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone/PeriRig:Right_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone/PeriRig:Right_Ball_Bone/PeriRig:Right_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/PeriRig:Spine_Bone_05
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group3
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group3/PeriRig:Spine_Cluster03
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group4
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group4/PeriRig:Spine_Cluster04
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02/PeriRig:Head_Bone_03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02/PeriRig:Head_Bone_03/PeriRig:Head_Bone_04
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone/PeriRig:Left_Hand_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone/PeriRig:Left_Hand_Bone/joint2
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone/PeriRig:Left_Hand_Bone/joint2/Bow_Joint
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone/PeriRig:Right_Wrist_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone/PeriRig:Right_Wrist_Bone/PeriRig:Right_Hand_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control/PeriRig:Left_FK_Wrist_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control/PeriRig:Left_FK_Wrist_Control/Bow_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_IK_ARM_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_IK_ARM_Control/PeriRig:Left_IK_Arm
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Neck_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Neck_Control/PeriRig:Head_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control/PeriRig:Right_FK_Elbow_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control/PeriRig:Right_FK_Elbow_Control/PeriRig:Right_FK_Wrist_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_IK_Arm_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_IK_Arm_Control/PeriRig:Right_IK_Arm
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Elbow_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:Left_knee_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_IK_Toe
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_IK_Ball
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_RF_Ankle_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_RF_Ankle_Bone/PeriRig:Left_IK_Ankle
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Elbow_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:Right_Knee_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_IK_Toe
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_IK_Ball
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_RF_Ankle_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_RF_Ankle_Bone/PeriRig:Right_IK_Ankle
+        weight: 0
+      - path: PeriRig:Spine_IK
+        weight: 0
+      - path: Quiver
+        weight: 0
+      - path: RightArm
+        weight: 0
+      - path: RightLeg
+        weight: 0
+      - path: RightShinG
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: SA_Attack
+      takeName: Take 001
+      firstFrame: 95
+      lastFrame: 125
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Arrow
+        weight: 0
+      - path: Arrow1
+        weight: 0
+      - path: Arrow2
+        weight: 0
+      - path: Arrow3
+        weight: 0
+      - path: Body
+        weight: 0
+      - path: Bow
+        weight: 0
+      - path: Crown
+        weight: 0
+      - path: Head
+        weight: 0
+      - path: LeftArm
+        weight: 0
+      - path: LeftLeg
+        weight: 0
+      - path: LeftShinG
+        weight: 0
+      - path: PeriRig:curve1
+        weight: 0
+      - path: PeriRig:Global
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group1
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group1/PeriRig:Spine_Cluster01
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group2
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:group2/PeriRig:Spine_Cluster02
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone/PeriRig:Left_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Left_Thigh_Bone/PeriRig:Left_Knee_Bone/PeriRig:Left_Ankle_Bone/PeriRig:Left_Ball_Bone/PeriRig:Left_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone/PeriRig:Right_Ball_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Hip_Control/PeriRig:Root/PeriRig:Right_Thigh_Bone/PeriRig:Right_Knee_Bone/PeriRig:Right_Ankle_Bone/PeriRig:Right_Ball_Bone/PeriRig:Right_Toe_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_Bone_01/PeriRig:Spine_Bone_02/PeriRig:Spine_Bone_03/PeriRig:Spine_Bone_04/PeriRig:Spine_Bone_05
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group3
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group3/PeriRig:Spine_Cluster03
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group4
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:group4/PeriRig:Spine_Cluster04
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02/PeriRig:Head_Bone_03
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Head_Bone_01/PeriRig:Head_Bone_02/PeriRig:Head_Bone_03/PeriRig:Head_Bone_04
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone/PeriRig:Left_Hand_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone/PeriRig:Left_Hand_Bone/joint2
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Left_Collar_Bone/PeriRig:Left_Shoulder_Bone/PeriRig:Left_Elbow_Bone/PeriRig:Left_Wrist_Bone/PeriRig:Left_Hand_Bone/joint2/Bow_Joint
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone/PeriRig:Right_Wrist_Bone
+        weight: 1
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Chest_Control/PeriRig:Right_Collar_Bone/PeriRig:Right_Shoulder_Bone/PeriRig:Right_Elbow_Bone/PeriRig:Right_Wrist_Bone/PeriRig:Right_Hand_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control/PeriRig:Left_FK_Wrist_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_FK_Shoulder_Control/PeriRig:Left_FK_Elbow_Control/PeriRig:Left_FK_Wrist_Control/Bow_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_IK_ARM_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Left_Clavicle_Control/PeriRig:Left_IK_ARM_Control/PeriRig:Left_IK_Arm
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Neck_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Neck_Control/PeriRig:Head_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control/PeriRig:Right_FK_Elbow_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_FK_Shoulder_Control/PeriRig:Right_FK_Elbow_Control/PeriRig:Right_FK_Wrist_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_IK_Arm_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:COG/PeriRig:Spine_FK_Control/PeriRig:Spine02_FK_Control/PeriRig:Spine03_FK_Control/PeriRig:Right_Clavicle_Control/PeriRig:Right_IK_Arm_Control/PeriRig:Right_IK_Arm
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Elbow_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:Left_knee_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_IK_Toe
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_IK_Ball
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_RF_Ankle_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Left_Foot_Control/PeriRig:LeftBank_RBone/PeriRig:LeftBank_LBone/PeriRig:Left_RF_Heel_Bone/PeriRig:Left_RF_Toe_Bone/PeriRig:Left_RF_Ball_Bone/PeriRig:Left_RF_Ankle_Bone/PeriRig:Left_IK_Ankle
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Elbow_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:Right_Knee_Control
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_IK_Toe
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_IK_Ball
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_RF_Ankle_Bone
+        weight: 0
+      - path: PeriRig:Global/PeriRig:Right_Foot_Control/PeriRig:RightBank_RBone/PeriRig:RightBank_LBone/PeriRig:Right_RF_Heel_Bone/PeriRig:Right_RF_Toe_Bone/PeriRig:Right_RF_Ball_Bone/PeriRig:Right_RF_Ankle_Bone/PeriRig:Right_IK_Ankle
+        weight: 0
+      - path: PeriRig:Spine_IK
+        weight: 0
+      - path: Quiver
+        weight: 0
+      - path: RightArm
+        weight: 0
+      - path: RightLeg
+        weight: 0
+      - path: RightShinG
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: PeriRig:COG
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Left_Thigh_Bone
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Right_Thigh_Bone
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Left_Knee_Bone
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Right_Knee_Bone
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Left_Ankle_Bone
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Right_Ankle_Bone
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Chest_Control
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Head_Bone_01
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Left_Collar_Bone
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Right_Collar_Bone
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Left_Shoulder_Bone
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Right_Shoulder_Bone
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Left_Elbow_Bone
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Right_Elbow_Bone
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Left_Wrist_Bone
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Right_Wrist_Bone
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Left_Toe_Bone
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Right_Toe_Bone
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Head_Bone_03
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PeriRig:Left_Hand_Bone
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bow_Joint
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: SkeletalArcher(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Arrow
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Arrow1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Arrow2
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Arrow3
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Body
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Bow
+      position: {x: 3.46389584e-14, y: -.00642761122, z: -.138184533}
+      rotation: {x: .00953251682, y: 1.38812917e-17, z: 3.01370926e-19, w: .999954581}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Crown
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Head
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LeftArm
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LeftLeg
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: LeftShinG
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:curve1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Global
+      position: {x: 0, y: .335936874, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:COG
+      position: {x: -.000896475394, y: 17.9475727, z: -.61504674}
+      rotation: {x: .0373942666, y: .0117187891, z: -.00619244017, w: .999212682}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Hip_Control
+      position: {x: .000896475394, y: .166832522, z: -.0033787915}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:group1
+      position: {x: -.249948233, y: .774578691, z: .230274126}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Spine_Cluster01
+      position: {x: .25, y: -.25, z: -.25}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:group2
+      position: {x: -.252808928, y: 3.39137983, z: .226729318}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Spine_Cluster02
+      position: {x: .25, y: -.25, z: -.25}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Root
+      position: {x: -.000896475394, y: -.166832522, z: .0033787915}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_Thigh_Bone
+      position: {x: -1.9383477, y: -1.46195114, z: -.530232728}
+      rotation: {x: .460244805, y: .624635339, z: .377641052, w: .505363882}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_Knee_Bone
+      position: {x: -7.05829716, y: -1.97893726e-15, z: -.938562214}
+      rotation: {x: .940777719, y: .337212771, z: -.0328919739, w: .0119602364}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_Ankle_Bone
+      position: {x: -8.42072296, y: -5.9003142e-15, z: -.0999852717}
+      rotation: {x: .867991984, y: .485477775, z: -.0398000702, w: .0965264738}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_Ball_Bone
+      position: {x: -2.43556356, y: 9.74207109e-16, z: .0999852717}
+      rotation: {x: -3.13547344e-09, y: 1.74676462e-09, z: -.486671954, w: .873584807}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_Toe_Bone
+      position: {x: -2.88023806, y: 8.59638227e-16, z: -.0522122979}
+      rotation: {x: -.00406363141, y: -.707095146, z: -.00406363141, w: .707095146}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_Thigh_Bone
+      position: {x: 1.94013643, y: -1.46192956, z: -.530233264}
+      rotation: {x: .502800286, y: -.365737081, z: .624147832, w: -.473146737}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_Knee_Bone
+      position: {x: 7.05827427, y: -6.19090906e-06, z: .938570023}
+      rotation: {x: .941020072, y: .336555541, z: -.0325051956, w: .0124475602}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_Ankle_Bone
+      position: {x: 8.42076683, y: 7.03694423e-06, z: .0999900028}
+      rotation: {x: .869267941, y: .485486388, z: -.03817508, w: .084964484}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_Ball_Bone
+      position: {x: 2.43556476, y: -1.71000215e-06, z: -.0999799967}
+      rotation: {x: 5.34021138e-09, y: 9.58577395e-09, z: -.486671954, w: .873584807}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_Toe_Bone
+      position: {x: 2.88023615, y: 2.22777867e-08, z: .0522099994}
+      rotation: {x: -.00406363141, y: -.707095146, z: -.00406363141, w: .707095146}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Spine_FK_Control
+      position: {x: .000169187755, y: 2.0925045, z: -.035865318}
+      rotation: {x: -.0161766186, y: .015595248, z: .00217823614, w: .99974519}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Spine02_FK_Control
+      position: {x: .001656687, y: 2.75757504, z: -.0124003114}
+      rotation: {x: .0485658944, y: -.0294530783, z: -.00188100687, w: .99838388}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Spine03_FK_Control
+      position: {x: -.00179394567, y: 2.24720287, z: -.0161017552}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Chest_Control
+      position: {x: -.0150798382, y: 2.5007267, z: .0353198908}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:group3
+      position: {x: -.22870943, y: -2.89244151, z: .209401906}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Spine_Cluster03
+      position: {x: .25, y: -.25, z: -.25}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:group4
+      position: {x: -.245712131, y: -.275907397, z: .231256157}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Spine_Cluster04
+      position: {x: .25, y: -.25, z: -.25}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_Collar_Bone
+      position: {x: .454345167, y: -.0733578727, z: -.0587847866}
+      rotation: {x: .999086261, y: .042739626, z: 9.5181929e-10, w: 7.41667749e-09}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_Shoulder_Bone
+      position: {x: 5.50531435, y: .788722456, z: -.12403699}
+      rotation: {x: .0949627832, y: .0252074488, z: .0299379379, w: .99471122}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_Elbow_Bone
+      position: {x: 6.17041016, y: .22046037, z: .330766082}
+      rotation: {x: -.00725279795, y: -.0328982286, z: .00833171792, w: .999397695}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_Wrist_Bone
+      position: {x: 4.11255217, y: -.00875840429, z: -.268747926}
+      rotation: {x: 5.5790778e-16, y: 5.7507015e-16, z: .0151463021, w: .999885321}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_Hand_Bone
+      position: {x: 3.1329, y: -1.84145144e-10, z: -.14470996}
+      rotation: {x: 0, y: 0, z: -.707106829, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_Collar_Bone
+      position: {x: -.389967889, y: -.0733931512, z: -.0587848797}
+      rotation: {x: 0, y: 0, z: -.042739626, w: .999086261}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_Shoulder_Bone
+      position: {x: -5.5376811, y: -.791495025, z: .124037489}
+      rotation: {x: .216464534, y: .0502384938, z: .0451172143, w: .973952591}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_Elbow_Bone
+      position: {x: -6.17037487, y: -.220451593, z: -.330766618}
+      rotation: {x: -.00705878902, y: -.0341308452, z: .00639606314, w: .999372065}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_Wrist_Bone
+      position: {x: -4.11258841, y: .00875099096, z: .268747896}
+      rotation: {x: 5.52420396e-17, y: 1.81860356e-17, z: .0151463021, w: .999885321}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_Hand_Bone
+      position: {x: -3.13287187, y: -1.25549036e-14, z: .144710407}
+      rotation: {x: .0161166843, y: -.0690549463, z: -.984271884, w: -.161804184}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint2
+      position: {x: .639316857, y: .276885122, z: .0347213261}
+      rotation: {x: -.0106826117, y: -.0536224395, z: -.431892902, w: .900266111}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Bow_Joint
+      position: {x: .805658102, y: 3.45585561, z: -.00694012921}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Head_Bone_01
+      position: {x: -.02434632, y: .390742779, z: -.248074278}
+      rotation: {x: 0, y: 0, z: -.707106829, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Head_Bone_02
+      position: {x: -1.00473857, y: 2.23218248e-16, z: -.106388867}
+      rotation: {x: -.00216026232, y: -.0668089464, z: .0176208112, w: .997607827}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Head_Bone_03
+      position: {x: -2.07350874, y: .0128404656, z: -.150382325}
+      rotation: {x: -.707038701, y: .00981242955, z: .00108347461, w: .707105935}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Head_Bone_04
+      position: {x: -2.09589505, y: -1.08200371, z: 7.80703237e-15}
+      rotation: {x: .496132791, y: -.503837526, z: .496132791, w: .503837526}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_Clavicle_Control
+      position: {x: -.405047715, y: 2.42733359, z: -.0234649889}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_FK_Shoulder_Control
+      position: {x: -5.58504438, y: -.315679133, z: .124037489}
+      rotation: {x: .0104771489, y: .153509662, z: -.104393348, w: .982561469}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_FK_Elbow_Control
+      position: {x: -.137853786, y: -6.17263412, z: -.333343059}
+      rotation: {x: -.209556788, y: 0, z: -0, w: .977796495}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_FK_Wrist_Control
+      position: {x: -.0977368578, y: -4.11126709, z: .271324337}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Bow_Control
+      position: {x: 1.46350682, y: .599203706, z: .0204503667}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_IK_ARM_Control
+      position: {x: -5.82063484, y: -10.5995808, z: .0620187446}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_IK_Arm
+      position: {x: 1.23611629, y: 6.71112061, z: 9.28776646}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Neck_Control
+      position: {x: -.0394261591, y: 2.89146948, z: -.212754384}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Head_Control
+      position: {x: -.0127574364, y: 3.07824802, z: -.256771207}
+      rotation: {x: -.0668210089, y: .00174784381, z: .0114627546, w: .997697592}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_Clavicle_Control
+      position: {x: .439265311, y: 2.42736888, z: -.0234648939}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_FK_Shoulder_Control
+      position: {x: 5.55255938, y: -.315680861, z: .124036998}
+      rotation: {x: -.0430179499, y: -.0515442789, z: .0691596717, w: .995343983}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_FK_Elbow_Control
+      position: {x: .137853548, y: -6.17266941, z: -.333343416}
+      rotation: {x: -.232085556, y: 0, z: -0, w: .97269541}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_FK_Wrist_Control
+      position: {x: .0977364555, y: -4.11123085, z: .271325409}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_IK_Arm_Control
+      position: {x: 5.78814936, y: -10.5995808, z: .0620190017}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_IK_Arm
+      position: {x: 1.09979236, y: .866371512, z: 2.7353766}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Spine_Bone_01
+      position: {x: .000896475394, y: .166832522, z: -.0033787915}
+      rotation: {x: .49716863, y: -.502811313, z: -.496982872, w: .50300312}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Spine_Bone_02
+      position: {x: -1.92592013, y: -.0100256931, z: 7.62016515e-17}
+      rotation: {x: .999788225, y: .0133217657, z: -.00182625186, w: .015581551}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Spine_Bone_03
+      position: {x: -2.75760055, y: -.00400312617, z: -9.92678029e-18}
+      rotation: {x: .998464704, y: .0469040535, z: -.00140525785, w: -.0294327028}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Spine_Bone_04
+      position: {x: -2.24725628, y: .00473389775, z: -8.23083256e-18}
+      rotation: {x: .999898553, y: -.0142316986, z: .000569877157, w: -5.90828895e-05}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Spine_Bone_05
+      position: {x: -2.50093865, y: .0126782935, z: -.0159336291}
+      rotation: {x: .493550241, y: -.506367624, z: .493550241, w: .506367624}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_Elbow_Control
+      position: {x: -6.09323359, y: 21.693964, z: -3.8787415}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_Foot_Control
+      position: {x: -2.63403177, y: .00566626107, z: -1.82656193}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_knee_Control
+      position: {x: -.243774563, y: 10.3714514, z: 8.15232658}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:LeftBank_RBone
+      position: {x: 1.45097959, y: .0430043638, z: 2.03854632}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:LeftBank_LBone
+      position: {x: -2.92277884, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_RF_Heel_Bone
+      position: {x: 1.47179914, y: -.0430043638, z: -2.03854632}
+      rotation: {x: -.000446400023, y: .507295251, z: -.000758325681, w: .861771941}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_RF_Toe_Bone
+      position: {x: -4.34716177, y: .00224971143, z: 2.30305576}
+      rotation: {x: -.00642911438, y: .97028774, z: .0011769206, w: -.241865784}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_IK_Toe
+      position: {x: 6.66133815e-15, y: 1.11022302e-16, z: 2.22044605e-15}
+      rotation: {x: -.00409962051, y: .713474751, z: .00402597198, w: .700657427}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_RF_Ball_Bone
+      position: {x: -2.88071132, y: 1.04083409e-16, z: -2.42861287e-16}
+      rotation: {x: -.0241598934, y: .0422870889, z: -.485487133, w: .87288624}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_IK_Ball
+      position: {x: 2.3869795e-15, y: 3.96904731e-15, z: 3.55271368e-15}
+      rotation: {x: -.333203733, y: .591065943, z: .360738486, w: .639909446}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_RF_Ankle_Bone
+      position: {x: -2.43761492, y: -1.55431223e-15, z: -2.49800181e-16}
+      rotation: {x: -.333203733, y: .591065943, z: .360738486, w: .639909446}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Left_IK_Ankle
+      position: {x: -2.66453526e-15, y: 4.4408921e-16, z: 5.77315973e-15}
+      rotation: {x: -7.9636513e-15, y: -5.34294831e-16, z: -1.87189133e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_Elbow_Control
+      position: {x: 6.09322977, y: 21.693964, z: -3.87874126}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_Foot_Control
+      position: {x: 2.6340301, y: .00566611951, z: -1.82656002}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_Knee_Control
+      position: {x: .243780002, y: 10.3714972, z: 6.72217035}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:RightBank_RBone
+      position: {x: 1.33038878, y: .0430045091, z: 2.03854442}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:RightBank_LBone
+      position: {x: -2.92277884, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_RF_Heel_Bone
+      position: {x: 1.59238994, y: -.0430045091, z: -2.03854442}
+      rotation: {x: .861771941, y: .000758325681, z: .507295251, w: .000446400023}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_RF_Toe_Bone
+      position: {x: 4.34715986, y: -.00225034729, z: -2.30305052}
+      rotation: {x: -.00642911438, y: .97028774, z: .0011769206, w: -.241865784}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_IK_Toe
+      position: {x: -1.77635684e-15, y: -1.44328993e-15, z: 1.42108547e-14}
+      rotation: {x: -.700657427, y: -.00402597198, z: .713474751, w: -.00409962051}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_RF_Ball_Bone
+      position: {x: 2.88070941, y: -2.34587674e-08, z: -2.26456905e-06}
+      rotation: {x: -.0241598934, y: .0422870889, z: -.485487133, w: .87288624}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_IK_Ball
+      position: {x: 5.55111512e-17, y: -2.19269047e-15, z: 6.21724894e-15}
+      rotation: {x: .639909446, y: .360738486, z: -.591065943, w: .333203733}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_RF_Ankle_Bone
+      position: {x: 2.43761587, y: 1.3481291e-06, z: 5.41754025e-06}
+      rotation: {x: -.333203733, y: .591065943, z: .360738486, w: .639909446}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Right_IK_Ankle
+      position: {x: -4.88498131e-15, y: -8.8817842e-16, z: -4.4408921e-16}
+      rotation: {x: 1, y: -6.28973474e-16, z: -9.99200722e-16, w: 1.13855069e-14}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PeriRig:Spine_IK
+      position: {x: .0967381671, y: 27.8271103, z: .289290398}
+      rotation: {x: -.453982413, y: .540472209, z: -.46357438, w: .535619795}
+      scale: {x: 1, y: .99999994, z: .999999881}
+      transformModified: 1
+    - name: Quiver
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RightArm
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RightLeg
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RightShinG
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

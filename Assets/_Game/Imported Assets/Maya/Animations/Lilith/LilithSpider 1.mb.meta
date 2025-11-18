@@ -1,0 +1,1448 @@
+fileFormatVersion: 2
+guid: a4a245644e360a74abf0e21e62ae8b49
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Body_Control
+    100002: Global_Control
+    100004: Head_Control
+    100006: Head_Joint
+    100008: Head_Tip
+    100010: ikHandle_Left_Back_01
+    100012: ikHandle_Left_Front_01
+    100014: ikHandle_Left_Mid_01
+    100016: ikHandle_Right_Back_01
+    100018: ikHandle_Right_Front_01
+    100020: ikHandle_Right_Mid_01
+    100022: Left_Back_Leg_01
+    100024: Left_Back_Leg_02
+    100026: Left_Back_Leg_Base
+    100028: Left_Back_Leg_Tip
+    100030: Left_BackAnkle_Control
+    100032: Left_BackLeg_Control
+    100034: Left_BotFang_Control01
+    100036: Left_BotFang_Control02
+    100038: Left_Bottom_Fang_01
+    100040: Left_Bottom_Fang_02
+    100042: Left_Bottom_Fang_03
+    100044: Left_Bottom_Fang_Tip
+    100046: Left_Front_Leg_01
+    100048: Left_Front_Leg_02
+    100050: Left_Front_Leg_Base
+    100052: Left_Front_Leg_Tip
+    100054: Left_FrontAnkle_Control
+    100056: Left_FrontLeg_Control
+    100058: Left_Mid_Leg_01
+    100060: Left_Mid_Leg_02
+    100062: Left_Mid_Leg_Base
+    100064: Left_Mid_Leg_Tip
+    100066: Left_MidLeg_Control
+    100068: Left_Top_Fang_Joint_01
+    100070: Left_Top_Fang_Joint_02
+    100072: Left_Top_Fang_Joint_Tip
+    100074: Left_TopFang_Control
+    100076: Lilith_Body
+    100078: Lilith_Left_Back_Leg
+    100080: Lilith_Left_Front_Leg
+    100082: Lilith_Left_Mid_Leg
+    100084: Lilith_Right_Back_Leg
+    100086: Lilith_Right_Front_Leg
+    100088: Lilith_Right_Mid_Leg
+    100090: //RootNode
+    100092: Neck_Joint
+    100094: Right_Back_Leg_01
+    100096: Right_Back_Leg_02
+    100098: Right_Back_Leg_Base
+    100100: Right_Back_Leg_Tip
+    100102: Right_BackAnkle_Control
+    100104: Right_BackLeg_Control
+    100106: Right_BotFang_Control01
+    100108: Right_BotFang_Control02
+    100110: Right_Bottom_Fang_01
+    100112: Right_Bottom_Fang_02
+    100114: Right_Bottom_Fang_03
+    100116: Right_Bottom_Fang_Tip
+    100118: Right_Front_Leg_01
+    100120: Right_Front_Leg_02
+    100122: Right_Front_Leg_Base
+    100124: Right_Front_Leg_Tip
+    100126: Right_FrontAnkle_Control
+    100128: Right_FrontLeg_control
+    100130: Right_Mid_Leg_01
+    100132: Right_Mid_Leg_02
+    100134: Right_Mid_Leg_Base
+    100136: Right_Mid_Leg_Tip
+    100138: Right_MidAnkle_Control
+    100140: Right_MidAnkle_Control2
+    100142: Right_MidLeg_Control
+    100144: Right_Top_Fang_Joint_01
+    100146: Right_Top_Fang_Joint_02
+    100148: Right_Top_Fang_Joint_Tip
+    100150: Right_TopFang_Control
+    100152: Spine_Joint_01
+    100154: Spine_Joint_02
+    100156: Spine_Joint_03
+    100158: Spine_Joint_04
+    100160: Spine_Joint_05
+    100162: Spine_Joint_06
+    100164: Spine_Joint_Tail
+    100166: Spinner_Control
+    100168: Spinner_Control01
+    100170: Spinner_Control02
+    400000: Body_Control
+    400002: Global_Control
+    400004: Head_Control
+    400006: Head_Joint
+    400008: Head_Tip
+    400010: ikHandle_Left_Back_01
+    400012: ikHandle_Left_Front_01
+    400014: ikHandle_Left_Mid_01
+    400016: ikHandle_Right_Back_01
+    400018: ikHandle_Right_Front_01
+    400020: ikHandle_Right_Mid_01
+    400022: Left_Back_Leg_01
+    400024: Left_Back_Leg_02
+    400026: Left_Back_Leg_Base
+    400028: Left_Back_Leg_Tip
+    400030: Left_BackAnkle_Control
+    400032: Left_BackLeg_Control
+    400034: Left_BotFang_Control01
+    400036: Left_BotFang_Control02
+    400038: Left_Bottom_Fang_01
+    400040: Left_Bottom_Fang_02
+    400042: Left_Bottom_Fang_03
+    400044: Left_Bottom_Fang_Tip
+    400046: Left_Front_Leg_01
+    400048: Left_Front_Leg_02
+    400050: Left_Front_Leg_Base
+    400052: Left_Front_Leg_Tip
+    400054: Left_FrontAnkle_Control
+    400056: Left_FrontLeg_Control
+    400058: Left_Mid_Leg_01
+    400060: Left_Mid_Leg_02
+    400062: Left_Mid_Leg_Base
+    400064: Left_Mid_Leg_Tip
+    400066: Left_MidLeg_Control
+    400068: Left_Top_Fang_Joint_01
+    400070: Left_Top_Fang_Joint_02
+    400072: Left_Top_Fang_Joint_Tip
+    400074: Left_TopFang_Control
+    400076: Lilith_Body
+    400078: Lilith_Left_Back_Leg
+    400080: Lilith_Left_Front_Leg
+    400082: Lilith_Left_Mid_Leg
+    400084: Lilith_Right_Back_Leg
+    400086: Lilith_Right_Front_Leg
+    400088: Lilith_Right_Mid_Leg
+    400090: //RootNode
+    400092: Neck_Joint
+    400094: Right_Back_Leg_01
+    400096: Right_Back_Leg_02
+    400098: Right_Back_Leg_Base
+    400100: Right_Back_Leg_Tip
+    400102: Right_BackAnkle_Control
+    400104: Right_BackLeg_Control
+    400106: Right_BotFang_Control01
+    400108: Right_BotFang_Control02
+    400110: Right_Bottom_Fang_01
+    400112: Right_Bottom_Fang_02
+    400114: Right_Bottom_Fang_03
+    400116: Right_Bottom_Fang_Tip
+    400118: Right_Front_Leg_01
+    400120: Right_Front_Leg_02
+    400122: Right_Front_Leg_Base
+    400124: Right_Front_Leg_Tip
+    400126: Right_FrontAnkle_Control
+    400128: Right_FrontLeg_control
+    400130: Right_Mid_Leg_01
+    400132: Right_Mid_Leg_02
+    400134: Right_Mid_Leg_Base
+    400136: Right_Mid_Leg_Tip
+    400138: Right_MidAnkle_Control
+    400140: Right_MidAnkle_Control2
+    400142: Right_MidLeg_Control
+    400144: Right_Top_Fang_Joint_01
+    400146: Right_Top_Fang_Joint_02
+    400148: Right_Top_Fang_Joint_Tip
+    400150: Right_TopFang_Control
+    400152: Spine_Joint_01
+    400154: Spine_Joint_02
+    400156: Spine_Joint_03
+    400158: Spine_Joint_04
+    400160: Spine_Joint_05
+    400162: Spine_Joint_06
+    400164: Spine_Joint_Tail
+    400166: Spinner_Control
+    400168: Spinner_Control01
+    400170: Spinner_Control02
+    4300000: Lilith_Left_Front_Leg
+    4300002: Lilith_Left_Mid_Leg
+    4300004: Lilith_Left_Back_Leg
+    4300006: Lilith_Right_Front_Leg
+    4300008: Lilith_Right_Mid_Leg
+    4300010: Lilith_Right_Back_Leg
+    4300012: Lilith_Body
+    7400000: Lilith_Idle
+    7400002: Lilith_WebAttack
+    7400004: Lilith_LegStrike
+    7400006: Lilith_Death
+    7400008: Lilith_Walk
+    7400010: Lilith_KnockBack
+    9500000: //RootNode
+    13700000: Lilith_Body
+    13700002: Lilith_Left_Back_Leg
+    13700004: Lilith_Left_Front_Leg
+    13700006: Lilith_Left_Mid_Leg
+    13700008: Lilith_Right_Back_Leg
+    13700010: Lilith_Right_Front_Leg
+    13700012: Lilith_Right_Mid_Leg
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Lilith_Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Global_Control
+        weight: 1
+      - path: Global_Control/Body_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_BotFang_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_BotFang_Control01/Left_BotFang_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_TopFang_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_BotFang_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_BotFang_Control01/Right_BotFang_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_TopFang_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01/Left_Back_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01/Left_Back_Leg_02/Left_Back_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01/Right_Back_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01/Right_Back_Leg_02/Right_Back_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01/Left_Mid_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01/Left_Mid_Leg_02/Left_Mid_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Head_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02/Left_Bottom_Fang_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02/Left_Bottom_Fang_03/Left_Bottom_Fang_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01/Left_Top_Fang_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01/Left_Top_Fang_Joint_02/Left_Top_Fang_Joint_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02/Right_Bottom_Fang_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02/Right_Bottom_Fang_03/Right_Bottom_Fang_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01/Right_Top_Fang_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01/Right_Top_Fang_Joint_02/Right_Top_Fang_Joint_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01/Left_Front_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01/Left_Front_Leg_02/Left_Front_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01/Right_Front_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01/Right_Front_Leg_02/Right_Front_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01/Right_Mid_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01/Right_Mid_Leg_02/Right_Mid_Leg_Tip
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control/ikHandle_Left_Back_01
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control/Left_BackAnkle_Control
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control/ikHandle_Left_Front_01
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control/Left_FrontAnkle_Control
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control/ikHandle_Left_Mid_01
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control/Right_MidAnkle_Control2
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control/ikHandle_Right_Back_01
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control/Right_BackAnkle_Control
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control/ikHandle_Right_Front_01
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control/Right_FrontAnkle_Control
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control/ikHandle_Right_Mid_01
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control/Right_MidAnkle_Control
+        weight: 1
+      - path: Lilith_Body
+        weight: 1
+      - path: Lilith_Left_Back_Leg
+        weight: 1
+      - path: Lilith_Left_Front_Leg
+        weight: 1
+      - path: Lilith_Left_Mid_Leg
+        weight: 1
+      - path: Lilith_Right_Back_Leg
+        weight: 1
+      - path: Lilith_Right_Front_Leg
+        weight: 1
+      - path: Lilith_Right_Mid_Leg
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Lilith_WebAttack
+      takeName: Take 001
+      firstFrame: 95
+      lastFrame: 125
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Global_Control
+        weight: 1
+      - path: Global_Control/Body_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_BotFang_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_BotFang_Control01/Left_BotFang_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_TopFang_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_BotFang_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_BotFang_Control01/Right_BotFang_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_TopFang_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01/Left_Back_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01/Left_Back_Leg_02/Left_Back_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01/Right_Back_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01/Right_Back_Leg_02/Right_Back_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01/Left_Mid_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01/Left_Mid_Leg_02/Left_Mid_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Head_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02/Left_Bottom_Fang_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02/Left_Bottom_Fang_03/Left_Bottom_Fang_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01/Left_Top_Fang_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01/Left_Top_Fang_Joint_02/Left_Top_Fang_Joint_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02/Right_Bottom_Fang_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02/Right_Bottom_Fang_03/Right_Bottom_Fang_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01/Right_Top_Fang_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01/Right_Top_Fang_Joint_02/Right_Top_Fang_Joint_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01/Left_Front_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01/Left_Front_Leg_02/Left_Front_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01/Right_Front_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01/Right_Front_Leg_02/Right_Front_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01/Right_Mid_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01/Right_Mid_Leg_02/Right_Mid_Leg_Tip
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control/ikHandle_Left_Back_01
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control/Left_BackAnkle_Control
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control/ikHandle_Left_Front_01
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control/Left_FrontAnkle_Control
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control/ikHandle_Left_Mid_01
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control/Right_MidAnkle_Control2
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control/ikHandle_Right_Back_01
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control/Right_BackAnkle_Control
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control/ikHandle_Right_Front_01
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control/Right_FrontAnkle_Control
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control/ikHandle_Right_Mid_01
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control/Right_MidAnkle_Control
+        weight: 1
+      - path: Lilith_Body
+        weight: 1
+      - path: Lilith_Left_Back_Leg
+        weight: 1
+      - path: Lilith_Left_Front_Leg
+        weight: 1
+      - path: Lilith_Left_Mid_Leg
+        weight: 1
+      - path: Lilith_Right_Back_Leg
+        weight: 1
+      - path: Lilith_Right_Front_Leg
+        weight: 1
+      - path: Lilith_Right_Mid_Leg
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Lilith_LegStrike
+      takeName: Take 001
+      firstFrame: 130
+      lastFrame: 160
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Global_Control
+        weight: 1
+      - path: Global_Control/Body_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_BotFang_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_BotFang_Control01/Left_BotFang_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_TopFang_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_BotFang_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_BotFang_Control01/Right_BotFang_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_TopFang_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01/Left_Back_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01/Left_Back_Leg_02/Left_Back_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01/Right_Back_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01/Right_Back_Leg_02/Right_Back_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01/Left_Mid_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01/Left_Mid_Leg_02/Left_Mid_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Head_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02/Left_Bottom_Fang_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02/Left_Bottom_Fang_03/Left_Bottom_Fang_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01/Left_Top_Fang_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01/Left_Top_Fang_Joint_02/Left_Top_Fang_Joint_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02/Right_Bottom_Fang_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02/Right_Bottom_Fang_03/Right_Bottom_Fang_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01/Right_Top_Fang_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01/Right_Top_Fang_Joint_02/Right_Top_Fang_Joint_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01/Left_Front_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01/Left_Front_Leg_02/Left_Front_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01/Right_Front_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01/Right_Front_Leg_02/Right_Front_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01/Right_Mid_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01/Right_Mid_Leg_02/Right_Mid_Leg_Tip
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control/ikHandle_Left_Back_01
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control/Left_BackAnkle_Control
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control/ikHandle_Left_Front_01
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control/Left_FrontAnkle_Control
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control/ikHandle_Left_Mid_01
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control/Right_MidAnkle_Control2
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control/ikHandle_Right_Back_01
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control/Right_BackAnkle_Control
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control/ikHandle_Right_Front_01
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control/Right_FrontAnkle_Control
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control/ikHandle_Right_Mid_01
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control/Right_MidAnkle_Control
+        weight: 1
+      - path: Lilith_Body
+        weight: 1
+      - path: Lilith_Left_Back_Leg
+        weight: 1
+      - path: Lilith_Left_Front_Leg
+        weight: 1
+      - path: Lilith_Left_Mid_Leg
+        weight: 1
+      - path: Lilith_Right_Back_Leg
+        weight: 1
+      - path: Lilith_Right_Front_Leg
+        weight: 1
+      - path: Lilith_Right_Mid_Leg
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Lilith_Death
+      takeName: Take 001
+      firstFrame: 165
+      lastFrame: 205
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Global_Control
+        weight: 1
+      - path: Global_Control/Body_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_BotFang_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_BotFang_Control01/Left_BotFang_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_TopFang_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_BotFang_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_BotFang_Control01/Right_BotFang_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_TopFang_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01/Left_Back_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01/Left_Back_Leg_02/Left_Back_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01/Right_Back_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01/Right_Back_Leg_02/Right_Back_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01/Left_Mid_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01/Left_Mid_Leg_02/Left_Mid_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Head_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02/Left_Bottom_Fang_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02/Left_Bottom_Fang_03/Left_Bottom_Fang_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01/Left_Top_Fang_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01/Left_Top_Fang_Joint_02/Left_Top_Fang_Joint_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02/Right_Bottom_Fang_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02/Right_Bottom_Fang_03/Right_Bottom_Fang_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01/Right_Top_Fang_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01/Right_Top_Fang_Joint_02/Right_Top_Fang_Joint_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01/Left_Front_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01/Left_Front_Leg_02/Left_Front_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01/Right_Front_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01/Right_Front_Leg_02/Right_Front_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01/Right_Mid_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01/Right_Mid_Leg_02/Right_Mid_Leg_Tip
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control/ikHandle_Left_Back_01
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control/Left_BackAnkle_Control
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control/ikHandle_Left_Front_01
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control/Left_FrontAnkle_Control
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control/ikHandle_Left_Mid_01
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control/Right_MidAnkle_Control2
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control/ikHandle_Right_Back_01
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control/Right_BackAnkle_Control
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control/ikHandle_Right_Front_01
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control/Right_FrontAnkle_Control
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control/ikHandle_Right_Mid_01
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control/Right_MidAnkle_Control
+        weight: 1
+      - path: Lilith_Body
+        weight: 1
+      - path: Lilith_Left_Back_Leg
+        weight: 1
+      - path: Lilith_Left_Front_Leg
+        weight: 1
+      - path: Lilith_Left_Mid_Leg
+        weight: 1
+      - path: Lilith_Right_Back_Leg
+        weight: 1
+      - path: Lilith_Right_Front_Leg
+        weight: 1
+      - path: Lilith_Right_Mid_Leg
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Lilith_Walk
+      takeName: Take 001
+      firstFrame: 210
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Global_Control
+        weight: 1
+      - path: Global_Control/Body_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_BotFang_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_BotFang_Control01/Left_BotFang_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_TopFang_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_BotFang_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_BotFang_Control01/Right_BotFang_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_TopFang_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01/Left_Back_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01/Left_Back_Leg_02/Left_Back_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01/Right_Back_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01/Right_Back_Leg_02/Right_Back_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01/Left_Mid_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01/Left_Mid_Leg_02/Left_Mid_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Head_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02/Left_Bottom_Fang_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02/Left_Bottom_Fang_03/Left_Bottom_Fang_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01/Left_Top_Fang_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01/Left_Top_Fang_Joint_02/Left_Top_Fang_Joint_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02/Right_Bottom_Fang_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02/Right_Bottom_Fang_03/Right_Bottom_Fang_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01/Right_Top_Fang_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01/Right_Top_Fang_Joint_02/Right_Top_Fang_Joint_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01/Left_Front_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01/Left_Front_Leg_02/Left_Front_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01/Right_Front_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01/Right_Front_Leg_02/Right_Front_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01/Right_Mid_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01/Right_Mid_Leg_02/Right_Mid_Leg_Tip
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control/ikHandle_Left_Back_01
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control/Left_BackAnkle_Control
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control/ikHandle_Left_Front_01
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control/Left_FrontAnkle_Control
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control/ikHandle_Left_Mid_01
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control/Right_MidAnkle_Control2
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control/ikHandle_Right_Back_01
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control/Right_BackAnkle_Control
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control/ikHandle_Right_Front_01
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control/Right_FrontAnkle_Control
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control/ikHandle_Right_Mid_01
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control/Right_MidAnkle_Control
+        weight: 1
+      - path: Lilith_Body
+        weight: 1
+      - path: Lilith_Left_Back_Leg
+        weight: 1
+      - path: Lilith_Left_Front_Leg
+        weight: 1
+      - path: Lilith_Left_Mid_Leg
+        weight: 1
+      - path: Lilith_Right_Back_Leg
+        weight: 1
+      - path: Lilith_Right_Front_Leg
+        weight: 1
+      - path: Lilith_Right_Mid_Leg
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Lilith_KnockBack
+      takeName: Take 001
+      firstFrame: 255
+      lastFrame: 275
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Global_Control
+        weight: 1
+      - path: Global_Control/Body_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_BotFang_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_BotFang_Control01/Left_BotFang_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Left_TopFang_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_BotFang_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_BotFang_Control01/Right_BotFang_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Head_Control/Right_TopFang_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01/Left_Back_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Left_Back_Leg_Base/Left_Back_Leg_01/Left_Back_Leg_02/Left_Back_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01/Right_Back_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Right_Back_Leg_Base/Right_Back_Leg_01/Right_Back_Leg_02/Right_Back_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01/Left_Mid_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Left_Mid_Leg_Base/Left_Mid_Leg_01/Left_Mid_Leg_02/Left_Mid_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Head_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02/Left_Bottom_Fang_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Bottom_Fang_01/Left_Bottom_Fang_02/Left_Bottom_Fang_03/Left_Bottom_Fang_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01/Left_Top_Fang_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Left_Top_Fang_Joint_01/Left_Top_Fang_Joint_02/Left_Top_Fang_Joint_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02/Right_Bottom_Fang_03
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Bottom_Fang_01/Right_Bottom_Fang_02/Right_Bottom_Fang_03/Right_Bottom_Fang_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01/Right_Top_Fang_Joint_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Head_Joint/Right_Top_Fang_Joint_01/Right_Top_Fang_Joint_02/Right_Top_Fang_Joint_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01/Left_Front_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Left_Front_Leg_Base/Left_Front_Leg_01/Left_Front_Leg_02/Left_Front_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01/Right_Front_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Neck_Joint/Right_Front_Leg_Base/Right_Front_Leg_01/Right_Front_Leg_02/Right_Front_Leg_Tip
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01/Right_Mid_Leg_02
+        weight: 1
+      - path: Global_Control/Body_Control/Spinner_Control/Spinner_Control01/Spinner_Control02/Spine_Joint_Tail/Spine_Joint_01/Spine_Joint_02/Spine_Joint_03/Spine_Joint_04/Spine_Joint_05/Spine_Joint_06/Right_Mid_Leg_Base/Right_Mid_Leg_01/Right_Mid_Leg_02/Right_Mid_Leg_Tip
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control/ikHandle_Left_Back_01
+        weight: 1
+      - path: Global_Control/Left_BackLeg_Control/Left_BackAnkle_Control
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control/ikHandle_Left_Front_01
+        weight: 1
+      - path: Global_Control/Left_FrontLeg_Control/Left_FrontAnkle_Control
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control/ikHandle_Left_Mid_01
+        weight: 1
+      - path: Global_Control/Left_MidLeg_Control/Right_MidAnkle_Control2
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control/ikHandle_Right_Back_01
+        weight: 1
+      - path: Global_Control/Right_BackLeg_Control/Right_BackAnkle_Control
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control/ikHandle_Right_Front_01
+        weight: 1
+      - path: Global_Control/Right_FrontLeg_control/Right_FrontAnkle_Control
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control/ikHandle_Right_Mid_01
+        weight: 1
+      - path: Global_Control/Right_MidLeg_Control/Right_MidAnkle_Control
+        weight: 1
+      - path: Lilith_Body
+        weight: 1
+      - path: Lilith_Left_Back_Leg
+        weight: 1
+      - path: Lilith_Left_Front_Leg
+        weight: 1
+      - path: Lilith_Left_Mid_Leg
+        weight: 1
+      - path: Lilith_Right_Back_Leg
+        weight: 1
+      - path: Lilith_Right_Front_Leg
+        weight: 1
+      - path: Lilith_Right_Mid_Leg
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Global_Control
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

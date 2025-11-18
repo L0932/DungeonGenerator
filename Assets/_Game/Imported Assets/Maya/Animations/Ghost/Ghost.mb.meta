@@ -1,0 +1,391 @@
+fileFormatVersion: 2
+guid: 5697dfbc1525226409cb4e9d71363152
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: BottomCluster
+    100002: BottomCluster02
+    100004: curve1
+    100006: //RootNode
+    100008: GhostEnemy
+    100010: group1
+    100012: group2
+    100014: group3
+    100016: group4
+    100018: Head_Control
+    100020: Left_Elbow_Control
+    100022: Left_Shoulder_Control
+    100024: LeftArmBone
+    100026: LeftElbowBone
+    100028: LeftSholderBone
+    100030: Lower_Body_Control
+    100032: Mid_Body_Control
+    100034: Right_Elbow_Control
+    100036: Right_Shoulder_Control
+    100038: RightArmBone
+    100040: RightElbowBone
+    100042: RightShoulderBone
+    100044: SpineBone01
+    100046: SpineBone02
+    100048: SpineBone03
+    100050: SpineBone04
+    100052: SpineBone05
+    100054: SpineIKHandle
+    100056: TopCluster01
+    100058: TopCluster02
+    400000: BottomCluster
+    400002: BottomCluster02
+    400004: curve1
+    400006: //RootNode
+    400008: GhostEnemy
+    400010: group1
+    400012: group2
+    400014: group3
+    400016: group4
+    400018: Head_Control
+    400020: Left_Elbow_Control
+    400022: Left_Shoulder_Control
+    400024: LeftArmBone
+    400026: LeftElbowBone
+    400028: LeftSholderBone
+    400030: Lower_Body_Control
+    400032: Mid_Body_Control
+    400034: Right_Elbow_Control
+    400036: Right_Shoulder_Control
+    400038: RightArmBone
+    400040: RightElbowBone
+    400042: RightShoulderBone
+    400044: SpineBone01
+    400046: SpineBone02
+    400048: SpineBone03
+    400050: SpineBone04
+    400052: SpineBone05
+    400054: SpineIKHandle
+    400056: TopCluster01
+    400058: TopCluster02
+    4300000: GhostEnemy
+    7400000: GhostIdle
+    7400002: GhostAttack
+    7400004: GhostWalk
+    9500000: //RootNode
+    13700000: GhostEnemy
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .100000001
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: GhostIdle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: curve1
+        weight: 1
+      - path: GhostEnemy
+        weight: 1
+      - path: Lower_Body_Control
+        weight: 1
+      - path: Lower_Body_Control/group3
+        weight: 1
+      - path: Lower_Body_Control/group3/BottomCluster
+        weight: 1
+      - path: Lower_Body_Control/Head_Control
+        weight: 1
+      - path: Lower_Body_Control/Head_Control/group4
+        weight: 1
+      - path: Lower_Body_Control/Head_Control/group4/TopCluster02
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/group1
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/group1/TopCluster01
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/group2
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/group2/BottomCluster02
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/Left_Shoulder_Control
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/Left_Shoulder_Control/Left_Elbow_Control
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/Right_Shoulder_Control
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/Right_Shoulder_Control/Right_Elbow_Control
+        weight: 1
+      - path: SpineBone01
+        weight: 1
+      - path: SpineBone01/SpineBone02
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/LeftSholderBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/LeftSholderBone/LeftElbowBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/LeftSholderBone/LeftElbowBone/LeftArmBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/RightShoulderBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/RightShoulderBone/RightElbowBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/RightShoulderBone/RightElbowBone/RightArmBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/SpineBone04
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/SpineBone04/SpineBone05
+        weight: 1
+      - path: SpineIKHandle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: GhostWalk
+      takeName: Take 001
+      firstFrame: 65
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: curve1
+        weight: 1
+      - path: GhostEnemy
+        weight: 1
+      - path: Lower_Body_Control
+        weight: 1
+      - path: Lower_Body_Control/group3
+        weight: 1
+      - path: Lower_Body_Control/group3/BottomCluster
+        weight: 1
+      - path: Lower_Body_Control/Head_Control
+        weight: 1
+      - path: Lower_Body_Control/Head_Control/group4
+        weight: 1
+      - path: Lower_Body_Control/Head_Control/group4/TopCluster02
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/group1
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/group1/TopCluster01
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/group2
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/group2/BottomCluster02
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/Left_Shoulder_Control
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/Left_Shoulder_Control/Left_Elbow_Control
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/Right_Shoulder_Control
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/Right_Shoulder_Control/Right_Elbow_Control
+        weight: 1
+      - path: SpineBone01
+        weight: 1
+      - path: SpineBone01/SpineBone02
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/LeftSholderBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/LeftSholderBone/LeftElbowBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/LeftSholderBone/LeftElbowBone/LeftArmBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/RightShoulderBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/RightShoulderBone/RightElbowBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/RightShoulderBone/RightElbowBone/RightArmBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/SpineBone04
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/SpineBone04/SpineBone05
+        weight: 1
+      - path: SpineIKHandle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: GhostAttack
+      takeName: Take 001
+      firstFrame: 95
+      lastFrame: 124
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: curve1
+        weight: 1
+      - path: GhostEnemy
+        weight: 1
+      - path: Lower_Body_Control
+        weight: 1
+      - path: Lower_Body_Control/group3
+        weight: 1
+      - path: Lower_Body_Control/group3/BottomCluster
+        weight: 1
+      - path: Lower_Body_Control/Head_Control
+        weight: 1
+      - path: Lower_Body_Control/Head_Control/group4
+        weight: 1
+      - path: Lower_Body_Control/Head_Control/group4/TopCluster02
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/group1
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/group1/TopCluster01
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/group2
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/group2/BottomCluster02
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/Left_Shoulder_Control
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/Left_Shoulder_Control/Left_Elbow_Control
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/Right_Shoulder_Control
+        weight: 1
+      - path: Lower_Body_Control/Mid_Body_Control/Right_Shoulder_Control/Right_Elbow_Control
+        weight: 1
+      - path: SpineBone01
+        weight: 1
+      - path: SpineBone01/SpineBone02
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/LeftSholderBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/LeftSholderBone/LeftElbowBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/LeftSholderBone/LeftElbowBone/LeftArmBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/RightShoulderBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/RightShoulderBone/RightElbowBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/RightShoulderBone/RightElbowBone/RightArmBone
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/SpineBone04
+        weight: 1
+      - path: SpineBone01/SpineBone02/SpineBone03/SpineBone04/SpineBone05
+        weight: 1
+      - path: SpineIKHandle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .200000003
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Lower_Body_Control
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

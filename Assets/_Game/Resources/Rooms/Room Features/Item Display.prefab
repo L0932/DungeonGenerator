@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &124962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 424962}
+  m_Layer: 0
+  m_Name: Charge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &125390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 425390}
+  m_Layer: 0
+  m_Name: Passive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &125392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 425392}
+  - 114: {fileID: 11411682}
+  m_Layer: 0
+  m_Name: Item Display
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &424962
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124962}
+  m_LocalRotation: {x: 0, y: .939692676, z: 0, w: .342020094}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 425392}
+  m_RootOrder: 1
+--- !u!4 &425390
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125390}
+  m_LocalRotation: {x: 0, y: .939692676, z: 0, w: .342020035}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 425392}
+  m_RootOrder: 0
+--- !u!4 &425392
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125392}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 425390}
+  - {fileID: 424962}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11411682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 833ea5fe725484219b3eeba11d000c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemList:
+  - type: Passive
+    highlight: {fileID: 176492, guid: 4b7e070e8adbd465895a8b64067eaf40, type: 2}
+    items:
+    - {fileID: 186548, guid: d5271b45edc1ecf4a84f31bed888911f, type: 2}
+    - {fileID: 182954, guid: a8aab53a9586daf4da5d8d8b2ba1d145, type: 2}
+    - {fileID: 186548, guid: ca62ae61215fe3d4996e16453a5b31bc, type: 2}
+    - {fileID: 186548, guid: 9354e100129d2204eb004e6724e44a78, type: 2}
+    - {fileID: 182954, guid: 89275abf17cc2e74aaa58e72d7a0c3ae, type: 2}
+    - {fileID: 182954, guid: e02564e7742268a4e8cfb1a01ae0f1ea, type: 2}
+    - {fileID: 186548, guid: 8b801c6c487eb694695e8f72a5e37a32, type: 2}
+  - type: Charge
+    highlight: {fileID: 128266, guid: 6ed6d8b3e3bcc49aa92d344f3630661e, type: 2}
+    items:
+    - {fileID: 186548, guid: 158cfa2913575b04a8e4210e59bff37c, type: 2}
+    - {fileID: 182954, guid: f2e83857185095341ac03e194ad27462, type: 2}
+    - {fileID: 186548, guid: d8bebae8d8d9e9c41b1a2743b3d84d68, type: 2}
+    - {fileID: 186548, guid: 4c0c0994a33c98d43824d758eb05623e, type: 2}
+    - {fileID: 182954, guid: e96e5e2d8e940b340aca37bbbb5550b0, type: 2}
+    - {fileID: 182954, guid: 503f561a5ab73d742a89fc4654e2fca2, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 125392}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
