@@ -18,17 +18,25 @@ public class CameraLookDown : MonoBehaviour
     public float minHeight = 10f;   // min Y for perspective
     public float maxHeight = 150f;  // max Y for perspective
     public float perspectiveZoomSpeed = 40f;
+    public float defaultPerspectivePitch = 60f; // angle for SnapToFit in perspective
 
     [Header("Movement")]
     public float moveSpeed = 30f;
+
+    [Header("Rotation (RMB)")]
+    public bool allowRotation = true;
+    public float rotateSpeed = 3f;
+    public float minPitch = 20f;   // lowest angle (flatter)
+    public float maxPitch = 89f;   // near top-down
+    public float defaultOrthoPitch = 90f; // for SnapToFit in ortho
 
     private Camera cam;
 
     void Awake()
     {
         cam = GetComponent<Camera>();
-        // IMPORTANT: we do NOT change cam.orthographic here.
-        // Choose Orthographic or Perspective on the Camera component itself.
+        // IMPORTANT: we do NOT touch cam.orthographic here.
+        // Set Orthographic/Perspective on the Camera component itself.
     }
 
     void Start()
@@ -52,6 +60,7 @@ public class CameraLookDown : MonoBehaviour
 
         HandleMovement();
         HandleZoom();
+        HandleRotation();
     }
 
     // --- PUBLIC: called from DGenerator ---
@@ -84,13 +93,18 @@ public class CameraLookDown : MonoBehaviour
         float requiredHalfHeight =
             Mathf.Max(halfHeight, halfWidth / aspect) * padding;
 
+        // We’ll always reset to strict top-down
+        const float TOPDOWN_PITCH = 90f;
+        const float YAW = 0f; // or use transform.eulerAngles.y if you want to keep yaw
+
         if (cam.orthographic)
         {
             float targetSize = Mathf.Clamp(requiredHalfHeight, minOrthoSize, maxOrthoSize);
             cam.orthographicSize = targetSize;
 
+            // Y position fixed, looking straight down
             transform.position = new Vector3(center.x, orthographicHeight, center.z);
-            transform.rotation = Quaternion.Euler(90f, 0f, 0f);
+            transform.rotation = Quaternion.Euler(TOPDOWN_PITCH, YAW, 0f);
         }
         else
         {
@@ -99,30 +113,43 @@ public class CameraLookDown : MonoBehaviour
             height = Mathf.Clamp(height, minHeight, maxHeight);
 
             transform.position = new Vector3(center.x, height, center.z);
-            transform.rotation = Quaternion.Euler(90f, 0f, 0f);
+            transform.rotation = Quaternion.Euler(TOPDOWN_PITCH, YAW, 0f);
         }
     }
 
-    // --- Movement: WASD ---
+
+    // --- Movement: WASD, camera-relative on ground plane ---
     void HandleMovement()
     {
-        Vector3 dir = Vector3.zero;
+        Vector3 input = Vector3.zero;
 
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-            dir += Vector3.forward;
+            input += Vector3.forward;
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-            dir += Vector3.back;
-
+            input += Vector3.back;
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-            dir += Vector3.left;
+            input += Vector3.left;
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-            dir += Vector3.right;
+            input += Vector3.right;
 
-        if (dir.sqrMagnitude < 0.0001f)
+        if (input.sqrMagnitude < 0.0001f)
             return;
 
-        dir.Normalize();
-        transform.position += dir * moveSpeed * Time.deltaTime;
+        // Total War–style: movement based on camera yaw, projected to XZ
+        float yaw = transform.eulerAngles.y;
+        Quaternion yawRot = Quaternion.Euler(0f, yaw, 0f);
+
+        Vector3 forward = yawRot * Vector3.forward;  // on XZ plane
+        Vector3 right = yawRot * Vector3.right;
+
+        Vector3 moveDir =
+            forward * input.z +   // W/S
+            right * input.x;    // A/D
+
+        moveDir.y = 0f; // keep movement on ground plane
+        moveDir.Normalize();
+
+        transform.position += moveDir * moveSpeed * Time.deltaTime;
     }
 
     // --- Zoom: scroll wheel ---
@@ -135,7 +162,7 @@ public class CameraLookDown : MonoBehaviour
         if (cam.orthographic)
         {
             float size = cam.orthographicSize;
-            size -= scroll * orthoZoomSpeed;  // no deltaTime; wheel is discrete
+            size -= scroll * orthoZoomSpeed;  // wheel is discrete; no deltaTime
             cam.orthographicSize = Mathf.Clamp(size, minOrthoSize, maxOrthoSize);
         }
         else
@@ -148,5 +175,33 @@ public class CameraLookDown : MonoBehaviour
 
             transform.position = new Vector3(pos.x, height, pos.z);
         }
+    }
+
+    // --- RMB Rotation: yaw + pitch ---
+    void HandleRotation()
+    {
+        if (!allowRotation)
+            return;
+
+        if (!Input.GetMouseButton(1)) // RMB not held
+            return;
+
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
+
+        // Yaw (rotate around world up)
+        transform.Rotate(Vector3.up, mouseX * rotateSpeed, Space.World);
+
+        // Pitch (tilt up/down)
+        Vector3 e = transform.eulerAngles;
+
+        // Unity uses 0..360, convert to -180..180 range for clamping
+        float pitch = e.x;
+        if (pitch > 180f) pitch -= 360f;
+
+        pitch -= mouseY * rotateSpeed; // invert if it feels wrong
+        pitch = Mathf.Clamp(pitch, minPitch, maxPitch);
+
+        transform.eulerAngles = new Vector3(pitch, transform.eulerAngles.y, 0f);
     }
 }
