@@ -22,6 +22,7 @@ public class CameraLookDown : MonoBehaviour
 
     [Header("Movement")]
     public float moveSpeed = 30f;
+    public float fastMoveMultiplier = 2.5f;   // Shift multiplier
 
     [Header("Rotation (RMB)")]
     public bool allowRotation = true;
@@ -135,22 +136,30 @@ public class CameraLookDown : MonoBehaviour
         if (input.sqrMagnitude < 0.0001f)
             return;
 
+        // -------------------------
+        // SHIFT SPEED MULTIPLIER
+        // -------------------------
+        float speed = moveSpeed;
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            speed *= fastMoveMultiplier;
+
         // Total War–style: movement based on camera yaw, projected to XZ
         float yaw = transform.eulerAngles.y;
         Quaternion yawRot = Quaternion.Euler(0f, yaw, 0f);
 
-        Vector3 forward = yawRot * Vector3.forward;  // on XZ plane
-        Vector3 right = yawRot * Vector3.right;
+        Vector3 forward = yawRot * Vector3.forward;  // W/S
+        Vector3 right = yawRot * Vector3.right;    // A/D
 
         Vector3 moveDir =
             forward * input.z +   // W/S
             right * input.x;    // A/D
 
-        moveDir.y = 0f; // keep movement on ground plane
+        moveDir.y = 0f;
         moveDir.Normalize();
 
-        transform.position += moveDir * moveSpeed * Time.deltaTime;
+        transform.position += moveDir * speed * Time.deltaTime;
     }
+
 
     // --- Zoom: scroll wheel ---
     void HandleZoom()
