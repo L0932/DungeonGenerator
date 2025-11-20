@@ -3,32 +3,70 @@ using UnityEngine;
 public class CameraLookDown : MonoBehaviour
 {
     [Header("Target")]
-    public BoxCollider dungeonBounds;    // Assign at runtime or in inspector
+    public BoxCollider dungeonBounds;   // Used only for SnapToFit
 
     [Header("Framing")]
-    public float padding = 1.2f;         // Extra zoom-out margin
-    public bool useOrthographic = true;  // Or perspective
+    public float padding = 1.2f;
 
-    [Header("Height (Top-Down)")]
-    public float orthographicHeight = 50f;   // Y position for ortho camera
-    public float minHeight = 10f;            // Clamp for perspective (optional)
-    public float maxHeight = 150f;
+    [Header("Ortho Settings")]
+    public float orthographicHeight = 50f; // camera Y position in ortho
+    public float minOrthoSize = 5f;
+    public float maxOrthoSize = 80f;
+    public float orthoZoomSpeed = 40f;
 
-    [Header("Smoothing")]
-    public bool smooth = true;
-    public float smoothTime = 0.25f;
+    [Header("Perspective Settings")]
+    public float minHeight = 10f;   // min Y for perspective
+    public float maxHeight = 150f;  // max Y for perspective
+    public float perspectiveZoomSpeed = 40f;
+
+    [Header("Movement")]
+    public float moveSpeed = 30f;
 
     private Camera cam;
-    private Vector3 moveVelocity;
-    private float sizeVelocity;
-    private float heightVelocity;
 
     void Awake()
     {
         cam = GetComponent<Camera>();
+        // IMPORTANT: we do NOT change cam.orthographic here.
+        // Choose Orthographic or Perspective on the Camera component itself.
     }
 
-    void LateUpdate()
+    void Start()
+    {
+        if (dungeonBounds != null)
+        {
+            SnapToFit();
+        }
+    }
+
+    void Update()
+    {
+        if (dungeonBounds == null)
+            return;
+
+        // Tab = zoom-to-fit overview
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            SnapToFit();
+        }
+
+        HandleMovement();
+        HandleZoom();
+    }
+
+    // --- PUBLIC: called from DGenerator ---
+    public void SetTarget(BoxCollider col)
+    {
+        dungeonBounds = col;
+
+        if (dungeonBounds != null)
+        {
+            SnapToFit();
+        }
+    }
+
+    // --- CORE: Zoom-to-fit ---
+    void SnapToFit()
     {
         if (dungeonBounds == null)
             return;
@@ -36,102 +74,79 @@ public class CameraLookDown : MonoBehaviour
         Bounds b = dungeonBounds.bounds;
         Vector3 center = b.center;
 
-        // X = width, Z = depth on the ground plane
         float sizeX = b.size.x;
         float sizeZ = b.size.z;
 
-        // Half extents we need to fit
         float halfWidth = sizeX * 0.5f;
         float halfHeight = sizeZ * 0.5f;
 
-        // Account for screen aspect (wider screens see more horizontally)
         float aspect = cam.aspect;
         float requiredHalfHeight =
             Mathf.Max(halfHeight, halfWidth / aspect) * padding;
 
-        if (useOrthographic)
+        if (cam.orthographic)
         {
-            cam.orthographic = true;
+            float targetSize = Mathf.Clamp(requiredHalfHeight, minOrthoSize, maxOrthoSize);
+            cam.orthographicSize = targetSize;
 
-            float targetSize = requiredHalfHeight;
-            float targetY = orthographicHeight;
-
-            // Position above the center, looking straight down
-            Vector3 targetPos = new Vector3(center.x, targetY, center.z);
-            Quaternion targetRot = Quaternion.Euler(90f, 0f, 0f);
-
-            if (smooth)
-            {
-                transform.position = Vector3.SmoothDamp(
-                    transform.position,
-                    targetPos,
-                    ref moveVelocity,
-                    smoothTime
-                );
-
-                cam.orthographicSize = Mathf.SmoothDamp(
-                    cam.orthographicSize,
-                    targetSize,
-                    ref sizeVelocity,
-                    smoothTime
-                );
-            }
-            else
-            {
-                transform.position = targetPos;
-                cam.orthographicSize = targetSize;
-            }
-
-            transform.rotation = targetRot;
+            transform.position = new Vector3(center.x, orthographicHeight, center.z);
+            transform.rotation = Quaternion.Euler(90f, 0f, 0f);
         }
         else
         {
-            cam.orthographic = false;
-
             float fovRad = cam.fieldOfView * Mathf.Deg2Rad;
+            float height = requiredHalfHeight / Mathf.Tan(fovRad * 0.5f);
+            height = Mathf.Clamp(height, minHeight, maxHeight);
 
-            // With a top-down cam, half-height on ground = height * tan(FOV/2)
-            float targetHeight = requiredHalfHeight / Mathf.Tan(fovRad * 0.5f);
-            targetHeight = Mathf.Clamp(targetHeight, minHeight, maxHeight);
-
-            Vector3 targetPos = new Vector3(center.x, targetHeight, center.z);
-            Quaternion targetRot = Quaternion.Euler(90f, 0f, 0f);
-
-            if (smooth)
-            {
-                float newY = Mathf.SmoothDamp(
-                    transform.position.y,
-                    targetHeight,
-                    ref heightVelocity,
-                    smoothTime
-                );
-
-                Vector3 pos = new Vector3(center.x, newY, center.z);
-                transform.position = Vector3.SmoothDamp(
-                    transform.position,
-                    pos,
-                    ref moveVelocity,
-                    smoothTime
-                );
-            }
-            else
-            {
-                transform.position = targetPos;
-            }
-
-            transform.rotation = targetRot;
+            transform.position = new Vector3(center.x, height, center.z);
+            transform.rotation = Quaternion.Euler(90f, 0f, 0f);
         }
     }
 
-    // Call this from your generator when dungeon is ready
-    public void SetTarget(BoxCollider col)
+    // --- Movement: WASD ---
+    void HandleMovement()
     {
-        dungeonBounds = col;
+        Vector3 dir = Vector3.zero;
 
-        // Optional: instant snap once when assigned
-        if (!smooth && dungeonBounds != null)
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            dir += Vector3.forward;
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            dir += Vector3.back;
+
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            dir += Vector3.left;
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            dir += Vector3.right;
+
+        if (dir.sqrMagnitude < 0.0001f)
+            return;
+
+        dir.Normalize();
+        transform.position += dir * moveSpeed * Time.deltaTime;
+    }
+
+    // --- Zoom: scroll wheel ---
+    void HandleZoom()
+    {
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
+        if (Mathf.Abs(scroll) < 0.0001f)
+            return;
+
+        if (cam.orthographic)
         {
-            LateUpdate();
+            float size = cam.orthographicSize;
+            size -= scroll * orthoZoomSpeed;  // no deltaTime; wheel is discrete
+            cam.orthographicSize = Mathf.Clamp(size, minOrthoSize, maxOrthoSize);
+        }
+        else
+        {
+            Vector3 pos = transform.position;
+            float height = pos.y;
+
+            height -= scroll * perspectiveZoomSpeed;
+            height = Mathf.Clamp(height, minHeight, maxHeight);
+
+            transform.position = new Vector3(pos.x, height, pos.z);
         }
     }
 }

@@ -229,14 +229,27 @@ public class DGenerator : MonoBehaviour
 			Debug.LogWarning ("Max attempts reached during dungeon generation. Generated " + currRoomNum + " out of " + totalRooms + " rooms.");
         }
 
-        boxCol = gameObject.AddComponent<BoxCollider> ();
-		boxCol.center = combinedBounds.center - transform.position;
-		boxCol.size = combinedBounds.size;
+        // Create or reuse the BoxCollider that represents the dungeon bounds
+        if (boxCol == null)
+        {
+            boxCol = gameObject.AddComponent<BoxCollider>();
+        }
+        else
+        {
+            boxCol.enabled = true;
+        }
+
+        // combinedBounds is in world space; convert to local space of this transform
+        boxCol.center = transform.InverseTransformPoint(combinedBounds.center);
+        boxCol.size = combinedBounds.size;
 
         // set camera to encompass dungeon
         CameraLookDown camScript = Camera.main.GetComponent<CameraLookDown>();
         if (camScript != null)
-            camScript.SetTarget(boxCol);
+        {
+            camScript.SetTarget(boxCol);   // this will SnapToFit() once
+        }
+
     }
 
     public void RegenerateDungeon()
