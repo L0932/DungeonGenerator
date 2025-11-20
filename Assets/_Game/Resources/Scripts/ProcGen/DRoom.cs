@@ -144,14 +144,14 @@ public class DRoom : MonoBehaviour {
 		}
 
 		//Init Room Trigger Var
-		trigger = GetComponentInChildren<RoomTrigger> ();
+		//trigger = GetComponentInChildren<RoomTrigger> ();
 
-		if (trigger)
-			trigger.SetRoomType (roomType);
-		else
-			Debug.LogError ("No RoomTrigger attached");
+		//if (trigger)
+		//	trigger.SetRoomType (roomType);
+		//else
+		//	Debug.LogError ("No RoomTrigger attached");
 
-		PopulateRoom();
+		// PopulateRoom();
 	}
 
 	private void PopulateRoom(){
@@ -166,12 +166,14 @@ public class DRoom : MonoBehaviour {
 			AddTorches();
 		}
 
-		if (traps) {
-			AddSpikes ();
+		if (traps)
+		{
+			AddSpikes();
 		}
 
-		if (boss) {
-			AddBoss ();
+		if (boss)
+		{
+			AddBoss();
 		}
 	}
 
@@ -306,9 +308,21 @@ public class DRoom : MonoBehaviour {
 	private bool ContainsTorches(){
 		if(Torches)
 			return true;
-		
-		GameObject torches = Instantiate (roomData.torchTypes [0]) as GameObject;
-		
+
+        GameObject torches = null;
+
+        if (roomData != null &&
+			roomData.torchTypes != null &&
+			roomData.torchTypes.Count > 0 &&
+			roomData.torchTypes[0] != null)
+        {
+            torches = Instantiate(roomData.torchTypes[0]);
+        }
+        else
+        {
+            Debug.LogWarning("Torch prefab missing on roomData: " + roomData);
+        }
+
 		Torches = torches.transform;
 		Torches.name = "Torches";
 		

@@ -2,8 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-//using UnityEditor;
-
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public static class Util {
 	
@@ -17,14 +18,17 @@ public static class Util {
 		{
 			int assetPathIndex = fileName.IndexOf("Assets");
 			string localPath = fileName.Substring(assetPathIndex);
-			
+
+#if UNITY_EDITOR
 			Object t = UnityEditor.AssetDatabase.LoadAssetAtPath(localPath, typeof(T));
-			
+
+
 			if(t != null)
 				al.Add (t);
-		}
-		
-		T[] result = new T[al.Count];
+#endif
+        }
+
+        T[] result = new T[al.Count];
 		for(int i = 0; i < al.Count; i++)
 			result[i] = (T)al[i];
 		

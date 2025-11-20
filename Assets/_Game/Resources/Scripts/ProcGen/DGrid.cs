@@ -125,45 +125,40 @@ public class DGrid {
 
 
 
-	public VectDir NextRoomPos(Vector3 v){
+    public VectDir NextRoomPos(Vector3 v)
+    {
+        if (isValidInput(v))
+        {
+            List<int> validDirections = new List<int>();
+            GridCoord nextGC;
 
-		int tries = 4;
-		//Look for directions to add to the list
-		if(isValidInput(v))
-		{
-			List<int> validDirections = new List<int>();
-			GridCoord nextGC;
+            // Collect all valid directions
+            for (int i = 0; i < dirs.Length; i++)
+            {
+                nextGC = VecToGridCoord(v) + dirs[i];
 
-			for(int i = 0; i < dirs.Length; i++)
-			{
-				nextGC = VecToGridCoord(v) + dirs[i];
+                // look for empty spots
+                if (isValidInput(nextGC) && dGrid[nextGC.x, nextGC.y] == 0)
+                {
+                    validDirections.Add(i);
+                }
+            }
 
-				//look for empty spots
-				if(isValidInput(nextGC) && dGrid[nextGC.x, nextGC.y] == 0){
-					validDirections.Add(i);
-				}
-			}
-			//Choose a direction from the list to return to add to a gridPosition and return it
-			if(validDirections.Count > 0)
-			{
-				for(int i = 0; i < tries; i++)
-				{
-					int d = validDirections[Random.Range(0, validDirections.Count)];
+            // If we have at least one possible direction, choose one at random
+            if (validDirections.Count > 0)
+            {
+                int randomIndex = Random.Range(0, validDirections.Count);
+                int d = validDirections[randomIndex];      // this is the direction (0..3)
+                Vector3 nextV = v + GridCoordToVec(dirs[d]);
+                return new VectDir(nextV, d);
+            }
+        }
 
-					if(validDirections[d] != null){
-						Vector3 nextV = v + GridCoordToVec(dirs[d]);
-						return new VectDir(nextV, d);
-					}
-				}
-			}
-		}
+        // No valid direction found
+        return new VectDir(new Vector3(-1, -1, -1), 0);
+    }
 
-		//return new Vector3(-1000, -1000, -1000); // Vector gets ignored at PlaceAt()
-		return new VectDir (new Vector3(-1,-1,-1), 0);
-	}
-
-
-	public List<GridCoord> getNeighbors(Vector3 v){
+    public List<GridCoord> getNeighbors(Vector3 v){
 
 		if(isValidInput(v))
 		{

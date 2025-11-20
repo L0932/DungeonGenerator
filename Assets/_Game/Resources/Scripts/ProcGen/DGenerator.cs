@@ -163,7 +163,10 @@ public class DGenerator : MonoBehaviour
 			{			
 				next = roomGrid.NextRoomPos(prevRoomPos); // pick random unused spots
 
-				nextRoomPos = next.vect;
+                if (next.vect.x < 0f)  // means no valid neighbor
+                    continue;
+
+                nextRoomPos = next.vect;
 
 				if(roomGrid.PlaceAt(nextRoomPos))
 				{ 
