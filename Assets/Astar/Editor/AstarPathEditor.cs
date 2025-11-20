@@ -16,6 +16,9 @@ using System.Collections.Generic;
 using System.Reflection;
 using Pathfinding;
 
+using Object = UnityEngine.Object;
+using UIImage = UnityEngine.UI.Image;
+
 [CustomEditor (typeof(AstarPath))]
 public class AstarPathEditor : Editor {
 	
@@ -1279,17 +1282,30 @@ public class AstarPathEditor : Editor {
 				Ray ray = HandleUtility.GUIPointToWorldRay (Event.current.mousePosition);
 				
 				GraphNode node = script.GetNearest (ray);
-				
-				if (firstShiftNode != null) {
+
+                if (firstShiftNode != null)
+                {
+                    Handles.color = Color.yellow;
+                    Handles.SphereHandleCap(
+                        GUIUtility.GetControlID(FocusType.Passive),
+                        (Vector3)firstShiftNode.position,
+                        Quaternion.identity,
+                        HandleUtility.GetHandleSize((Vector3)node.position) * 0.12f,
+                        EventType.Repaint
+                    );
+                }
+
+                if (node != null) {
 					Handles.color = Color.yellow;
-					Handles.SphereCap (GUIUtility.GetControlID (FocusType.Passive),(Vector3)firstShiftNode.position,Quaternion.identity,HandleUtility.GetHandleSize ((Vector3)node.position)*0.12F);
-				}
-				
-				if (node != null) {
-					Handles.color = Color.yellow;
-					Handles.SphereCap (GUIUtility.GetControlID (FocusType.Passive),(Vector3)node.position,Quaternion.identity,HandleUtility.GetHandleSize ((Vector3)node.position)*0.13F);
-					
-					if (firstShiftNode != null) {
+                    Handles.SphereHandleCap(
+                        GUIUtility.GetControlID(FocusType.Passive),
+                        (Vector3)node.position,
+                        Quaternion.identity,
+                        HandleUtility.GetHandleSize((Vector3)node.position) * 0.13f,
+                        EventType.Repaint
+                    );
+
+                    if (firstShiftNode != null) {
 						Handles.DrawLine ((Vector3)firstShiftNode.position,(Vector3)node.position);
 					}
 					
@@ -1357,10 +1373,23 @@ public class AstarPathEditor : Editor {
 				if (conn.oneWay) {
 					//Because of nothing... Why not?
 					Vector3 goldenRatio = (conn.p2-conn.p1)*0.618F;
-					
-					Handles.ConeCap (controlID,conn.p1+goldenRatio,Quaternion.LookRotation (goldenRatio),goldenRatio.magnitude*0.07F);
-					Handles.ConeCap (controlID,conn.p2-goldenRatio,Quaternion.LookRotation (goldenRatio),goldenRatio.magnitude*0.07F);
-					Handles.DrawLine (conn.p1,conn.p2);
+
+                    Handles.ConeHandleCap(
+                        controlID,
+                        conn.p1 + goldenRatio,
+                        Quaternion.LookRotation(goldenRatio),
+                        goldenRatio.magnitude * 0.07f,
+                        EventType.Repaint
+                    );
+                    Handles.ConeHandleCap(
+                        controlID,
+                        conn.p2 - goldenRatio,
+                        Quaternion.LookRotation(goldenRatio),
+                        goldenRatio.magnitude * 0.07f,
+                        EventType.Repaint
+                    );
+
+                    Handles.DrawLine (conn.p1,conn.p2);
 				} else {
 					Handles.DrawLine (conn.p1,conn.p2);
 				}
@@ -1372,10 +1401,23 @@ public class AstarPathEditor : Editor {
 					//Nice Red Color
 					Handles.color = new Color (0.651F, 0.125F, 0F, 0.6F);
 				}
-				
-				Handles.SphereCap (controlID,conn.p1,Quaternion.identity,HandleUtility.GetHandleSize (conn.p1)*0.1F);
-				Handles.SphereCap (controlID,conn.p2,Quaternion.identity,HandleUtility.GetHandleSize (conn.p2)*0.1F);
-			} else {
+
+				Handles.SphereHandleCap(
+					controlID,
+					conn.p1,
+					Quaternion.identity,
+					HandleUtility.GetHandleSize(conn.p1) * 0.1f,
+					EventType.Repaint
+				);
+
+                Handles.SphereHandleCap(
+					controlID,
+					conn.p2,
+					Quaternion.identity,
+					HandleUtility.GetHandleSize(conn.p2) * 0.1f,
+					EventType.Repaint
+				);
+            } else {
 				if (conn.enable) {
 					//Nice Blue Color
 					Handles.color = new Color (0.290F, 0.454F, 0.741F, 0.600F);
@@ -1383,9 +1425,15 @@ public class AstarPathEditor : Editor {
 					//Nice Red Color
 					Handles.color = new Color (0.651F, 0.125F, 0F, 0.6F);
 				}
-				
-				Handles.SphereCap (controlID,conn.p1,Quaternion.identity,HandleUtility.GetHandleSize (conn.p1)*0.15F);
-			}
+
+                Handles.SphereHandleCap(
+                    controlID,
+                    conn.p1,
+                    Quaternion.identity,
+                    HandleUtility.GetHandleSize(conn.p1) * 0.15f,
+                    EventType.Repaint
+                );
+            }
 		}
 		
 		if (Event.current.type == EventType.Layout && linkSettings) {
@@ -2442,7 +2490,7 @@ public class AstarPathEditor : Editor {
 		UnityEditor.EditorUtility.DisplayProgressBar ("Scanning","Scanning...",0);
 		
 		try {
-			OnScanStatus info = delegate (Progress p) {
+			OnScanStatus info = delegate (Pathfinding.Progress p) {
 				UnityEditor.EditorUtility.DisplayProgressBar ("Scanning",p.description,p.progress);
 			};
 			AstarPath.active.ScanLoop (info);
