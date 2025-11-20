@@ -212,10 +212,6 @@ public class AIPath : MonoBehaviour {
 		seeker.pathCallback -= OnPathComplete;
 	}
 
-	public void OnDestroy(){
-		dRoomScript.EnemyKilled ();
-	}
-
 	//New custom Function added for PA 
 	public void SetRoomScript(DRoom sc){
 		dRoomScript = sc;

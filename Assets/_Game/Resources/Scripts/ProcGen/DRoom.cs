@@ -1,5 +1,4 @@
 using UnityEngine;
-using plyGame;
 using System.Collections.Generic;
 
 [System.Serializable]
@@ -22,21 +21,10 @@ public class DRoom : MonoBehaviour {
 	public RoomData roomData;
 	public bool traps;
 
-	//public int enemyCount;
-	//public List<GameObject> Enemies, Items;
-	
 	public Entity[] Enemies;
 	public GameObject boss, itemDisplay;
 
-	//public delegate void EnemyDeath();
-	//public static event EnemyDeath OnEnemyKilled;
-
-	
-	//public Entity[] Items;
-	private ActorClass player;
-	private ActorAttribute charge;
 	private ClearRoomGUI clearGUI;
-
 
 	private bool active;
 	private int roomNumber, enemyDeathCount;
@@ -52,14 +40,9 @@ public class DRoom : MonoBehaviour {
 
 	private Transform Entries, Floor, Torches;
 
-
-	
 	void Awake(){
 
 		active = false;
-
-		//Test.OnEnemyKilled += EnemyKilled;
-		//DGenerator.OnEnemyKilled += EnemyKilled;
 
 		clearGUI = ScriptManager.ClearRoomScript;
 		floorBounds = transform.Find ("Floor").GetComponent<BoxCollider> ().bounds;
@@ -83,50 +66,9 @@ public class DRoom : MonoBehaviour {
 
 	void Start(){
 		RoomSetup();
-
-		//player = Player.Instance.actor.actorClass;//DGenerator.player.GetComponent<ActorClass>();
-		//charge = player.GetAttribute ("Charge", plyGameObjectIdentifyingType.screenName);
 	}
-
-
-	void Update(){
-		
-		if (!player && Player.IsReady) {
-			player = Player.Instance.actor.actorClass;
-			charge = player.GetAttribute ("Charges", plyGameObjectIdentifyingType.screenName);
-		}
-	}
-
 
 	#region public functions
-
-
-
-	public void EnemyKilled(){
-
-		enemyDeathCount++;
-		//clearGUI.ClearRoom(transform);
-
-
-		if (enemyDeathCount >= enemyInstances.Count) {
-			Debug.Log ("Increasing Charges!!!");
-
-			Debug.Log ("Charge Consumable Value: " + charge.ConsumableValue);
-			//Debug.Log ("Charge Base Valie" + charge.
-			if(charge.ConsumableValue <= 6){
-				//charge.ChangeBaseValueBy(1);
-				//charge.SetBaseValue((int)charge.lastValue + 1);
-				charge.SetConsumableValue(charge.ConsumableValue + 1, null);
-
-				//if(clearGUI)
-					//clearGUI.ClearRoom(transform);
-
-				Debug.Log ("Charge Consumable Value After: " + charge.ConsumableValue);
-			}
-		}
-
-		Debug.Log ("Enemy killed in room " + roomNumber);
-	}
 
 	public void SetRoomActive(bool b){
 		active = b;
@@ -170,7 +112,6 @@ public class DRoom : MonoBehaviour {
 			Quaternion rot = doorTransforms[index].rotation;
 			GameObject doorObject = Instantiate (door, pos, rot) as GameObject;
 
-			//doorObject.GetComponentInChildren<DEntry>().SetIndex(index);
 			doorObject.transform.parent = transform;
 		}
 	}
@@ -178,13 +119,6 @@ public class DRoom : MonoBehaviour {
 	public void AssignParent(Transform t){
 		transform.parent = t;
 	}
-
-	/*
-	public void RoomTrigger(){
-
-		if(itemDisplay)
-
-	}*/
 
 	#endregion
 
@@ -318,34 +252,9 @@ public class DRoom : MonoBehaviour {
 			
 				int r = Random.Range (0, items.Count);
 
-				//items[r].gameObject.SetActive(true);
 				Instances.Add (items[r].gameObject);
 			}
 		}
-
-		/*
-		int roll, count, chance;
-		GameObject obj, prefab;
-		
-		for (int i = 0; i < Items.Length; i++) {
-			
-			roll = Random.Range (0, 100);
-			count = Items[i].Count;
-			chance = Items[i].Chance;
-			prefab = Items[i].Prefab;
-			
-			for(int j = 0; j < count; j++){
-				roll = Random.Range (0, 100);
-				if(prefab != null && roll < chance){
-					int r = Random.Range (0, floorTransforms.Count);
-					obj = Instantiate(prefab, floorTransforms[r].position + new Vector3(0,1,0), Quaternion.identity) as GameObject;
-					obj.SetActive(false);
-					obj.transform.parent = _items.transform;
-					Instances.Add(obj);
-				}
-			}
-		}
-		*/
 	}
 	
 	private void AddTorches(){
