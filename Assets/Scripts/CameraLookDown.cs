@@ -54,6 +54,7 @@ public class CameraLookDown : MonoBehaviour
     private Vector3 lastMousePos;
 
     private float lastClickTime = -1f;
+    private Transform lastClickTarget;
 
     void Awake()
     {
@@ -78,6 +79,11 @@ public class CameraLookDown : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             SnapToFit();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ClearZoomFocus();  // unfocus, but keep current view
         }
 
         if (enableDoubleClickFocus)
@@ -107,6 +113,8 @@ public class CameraLookDown : MonoBehaviour
     // Center & frame the whole dungeon from a strict top-down view
     void SnapToFit()
     {
+        ClearZoomFocus();
+
         if (dungeonBounds == null)
             return;
 
@@ -292,7 +300,7 @@ public class CameraLookDown : MonoBehaviour
                 transform.position = newPos;
             }
 
-            return; // <-- done
+            return;
         }
 
         // ----------- No focus target: normal zoom behavior -----------
@@ -314,6 +322,8 @@ public class CameraLookDown : MonoBehaviour
     void ClearZoomFocus()
     {
         zoomFocusTarget = null;
+        lastClickTime = -1f;
+        lastClickTarget = null;
     }
 
     // -------------------------------------------------------------
@@ -330,19 +340,59 @@ public class CameraLookDown : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
 
-        // Yaw (world up)
-        transform.Rotate(Vector3.up, mouseX * rotateSpeed, Space.World);
+        // If we have a zoom focus target, orbit around it
+        if (zoomTowardsFocus && zoomFocusTarget != null)
+        {
+            Vector3 pivot = GetBoundsCenter(zoomFocusTarget);
+            Vector3 offset = transform.position - pivot;
 
-        // Pitch
-        Vector3 e = transform.eulerAngles;
-        float pitch = e.x;
-        if (pitch > 180f) pitch -= 360f; // convert to -180..180
+            if (offset.sqrMagnitude < 0.0001f)
+                offset = -transform.forward; // fallback
 
-        pitch -= mouseY * rotateSpeed;   // invert if you prefer opposite
-        pitch = Mathf.Clamp(pitch, minPitch, maxPitch);
+            // --- YAW: rotate around world up axis around pivot ---
+            Quaternion yawRot = Quaternion.AngleAxis(mouseX * rotateSpeed, Vector3.up);
+            offset = yawRot * offset;
 
-        transform.eulerAngles = new Vector3(pitch, transform.eulerAngles.y, 0f);
+            // --- PITCH: rotate around camera-local right axis through pivot ---
+            Vector3 right = Vector3.Cross(Vector3.up, offset).normalized;
+            if (right.sqrMagnitude > 0.0001f)
+            {
+                Quaternion pitchRot = Quaternion.AngleAxis(-mouseY * rotateSpeed, right);
+                Vector3 candidateOffset = pitchRot * offset;
+
+                // Clamp pitch by measuring angle from straight-down
+                // 0°  = perfectly top-down
+                // 90° = horizontal
+                float pitchDown = Vector3.Angle(candidateOffset.normalized, Vector3.down);
+
+                if (pitchDown >= minPitch && pitchDown <= maxPitch)
+                {
+                    offset = candidateOffset;
+                }
+            }
+
+            transform.position = pivot + offset;
+            transform.LookAt(pivot);
+        }
+        else
+        {
+            // --- Fallback: old behavior (rotate camera around itself) ---
+
+            // Yaw
+            transform.Rotate(Vector3.up, mouseX * rotateSpeed, Space.World);
+
+            // Pitch
+            Vector3 e = transform.eulerAngles;
+            float pitch = e.x;
+            if (pitch > 180f) pitch -= 360f; // convert to -180..180
+
+            pitch -= mouseY * rotateSpeed;   // invert if you prefer opposite
+            pitch = Mathf.Clamp(pitch, minPitch, maxPitch);
+
+            transform.eulerAngles = new Vector3(pitch, transform.eulerAngles.y, 0f);
+        }
     }
+
 
     // -------------------------------------------------------------
     // Middle Mouse Drag Pan
@@ -375,7 +425,7 @@ public class CameraLookDown : MonoBehaviour
         Vector3 right = yawRot * Vector3.right;
         Vector3 forward = yawRot * Vector3.forward;
 
-        // Drag screen direction -> move world opposite direction
+        // Drag screen direction
         Vector3 dragMove =
             (-right * delta.x + -forward * delta.y) * dragPanSpeed * Time.deltaTime;
 
@@ -389,28 +439,47 @@ public class CameraLookDown : MonoBehaviour
     // -------------------------------------------------------------
     void HandleDoubleClickFocus()
     {
+        if (!enableDoubleClickFocus)
+            return;
+
         if (Input.GetMouseButtonDown(0))
         {
             float t = Time.time;
-            if (lastClickTime > 0f && (t - lastClickTime) <= doubleClickTime)
+
+            // Raycast under mouse
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            Transform hitTransform = null;
+
+            if (Physics.Raycast(ray, out RaycastHit hit, 1000f))
             {
-                // Double click detected
-                TryFocusUnderMouse();
+                hitTransform = hit.transform;
+            }
+
+            // If we clicked "empty" space, clear focus immediately
+            if (hitTransform == null)
+            {
+                ClearZoomFocus();
                 lastClickTime = -1f;
+                lastClickTarget = null;
+                return;
+            }
+
+            // We clicked on something:
+            if (lastClickTime > 0f &&
+                (t - lastClickTime) <= doubleClickTime &&
+                lastClickTarget == hitTransform)
+            {
+                // Double-click detected on the same object
+                FocusOn(hitTransform);
+                lastClickTime = -1f;
+                lastClickTarget = null;
             }
             else
             {
+                // First click (or different target) – start tracking
                 lastClickTime = t;
+                lastClickTarget = hitTransform;
             }
-        }
-    }
-
-    void TryFocusUnderMouse()
-    {
-        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hit, 1000f))
-        {
-            FocusOn(hit.transform);
         }
     }
 
@@ -418,22 +487,21 @@ public class CameraLookDown : MonoBehaviour
     {
         if (target == null) return;
 
-        zoomFocusTarget = target;  // <-- NEW LINE
+        zoomFocusTarget = target;  // keep using this as zoom + orbit pivot
 
         Vector3 center = GetBoundsCenter(target);
 
         if (cam.orthographic)
         {
-            // Recenter XZ, keep top-down height
             Vector3 pos = transform.position;
             pos.x = center.x;
             pos.z = center.z;
             pos.y = orthographicHeight;
             transform.position = pos;
+            // optional: keep rotation as-is for ortho
         }
         else
         {
-            // Keep the same distance, pivot around the object
             Vector3 camPos = transform.position;
             float distance = Vector3.Distance(camPos, center);
 
@@ -441,13 +509,14 @@ public class CameraLookDown : MonoBehaviour
             if (dir.sqrMagnitude < 0.0001f)
                 dir = -transform.forward;
 
-            float minDist = 0.5f; // don’t go through object
+            float minDist = 0.5f;
             distance = Mathf.Max(distance, minDist);
 
             Vector3 newPos = center + dir * distance;
-
             newPos.y = Mathf.Clamp(newPos.y, minHeight, maxHeight);
+
             transform.position = newPos;
+            transform.LookAt(center);
         }
     }
 
