@@ -254,71 +254,62 @@ public class CameraLookDown : MonoBehaviour
 
     void ApplyZoom(float scroll)
     {
-        if (!zoomTowardsFocus || zoomFocusTarget == null)
+        // If there is a focus target and feature is enabled, zoom around it
+        if (zoomTowardsFocus && zoomFocusTarget != null)
         {
-            // --- Original behavior (no focus) ---
+            Vector3 center = GetBoundsCenter(zoomFocusTarget);
+
             if (cam.orthographic)
             {
                 float size = cam.orthographicSize;
                 size -= scroll * orthoZoomSpeed;
                 cam.orthographicSize = Mathf.Max(0.1f, size);
+
+                // Always center on the object when zoom-focused
+                Vector3 pos = transform.position;
+                pos.x = center.x;
+                pos.z = center.z;
+                pos.y = orthographicHeight;
+                transform.position = pos;
             }
             else
             {
-                Vector3 pos = transform.position;
-                float height = pos.y;
+                Vector3 camPos = transform.position;
+                Vector3 dir = (camPos - center).normalized;
 
-                height -= scroll * perspectiveZoomSpeed;
-                pos.y = height;
+                if (dir.sqrMagnitude < 0.0001f)
+                    dir = -transform.forward;
 
-                transform.position = pos;
+                // Adjust distance
+                float distance = Vector3.Distance(camPos, center);
+                distance -= scroll * perspectiveZoomSpeed;
+
+                float minDist = 0.5f;
+                distance = Mathf.Max(minDist, distance);
+
+                Vector3 newPos = center + dir * distance;
+
+                transform.position = newPos;
             }
 
-            return;
+            return; // <-- done
         }
 
-        // --- Zoom relative to focus target ---
-        Vector3 focus = GetBoundsCenter(zoomFocusTarget);
-
+        // ----------- No focus target: normal zoom behavior -----------
         if (cam.orthographic)
         {
-            // Zoom by changing size, and keep focus centered on screen
             float size = cam.orthographicSize;
             size -= scroll * orthoZoomSpeed;
             cam.orthographicSize = Mathf.Max(0.1f, size);
-
-            // Recenter camera on focus in XZ
-            Vector3 pos = transform.position;
-            pos.x = focus.x;
-            pos.z = focus.z;
-            // Keep current height, or force ortho height if you prefer:
-            // pos.y = orthographicHeight;
-            transform.position = pos;
         }
         else
         {
-            // Perspective: zoom by moving camera along line from focus to camera
-            Vector3 camPos = transform.position;
-
-            // Direction from focus to camera
-            Vector3 dir = (camPos - focus).normalized;
-            if (dir.sqrMagnitude < 0.0001f)
-                dir = -transform.forward; // fallback
-
-            float distance = Vector3.Distance(camPos, focus);
-
-            // Move closer/farther
-            distance -= scroll * perspectiveZoomSpeed;
-
-            // Optional: prevent going *through* the target
-            float minDist = 0.5f;  // tweak if needed
-            if (distance < minDist)
-                distance = minDist;
-
-            Vector3 newPos = focus + dir * distance;
-            transform.position = newPos;
+            Vector3 pos = transform.position;
+            pos.y -= scroll * perspectiveZoomSpeed;
+            transform.position = pos;
         }
     }
+
 
     void ClearZoomFocus()
     {
@@ -423,17 +414,17 @@ public class CameraLookDown : MonoBehaviour
         }
     }
 
-    // Center camera on a target, keeping current zoom / distance
     public void FocusOn(Transform target)
     {
         if (target == null) return;
 
-        zoomFocusTarget = target;   // <-- remember this as zoom focus
+        zoomFocusTarget = target;  // <-- NEW LINE
+
         Vector3 center = GetBoundsCenter(target);
 
         if (cam.orthographic)
         {
-            // For ortho, just recenter on XZ and keep fixed height
+            // Recenter XZ, keep top-down height
             Vector3 pos = transform.position;
             pos.x = center.x;
             pos.z = center.z;
@@ -442,20 +433,20 @@ public class CameraLookDown : MonoBehaviour
         }
         else
         {
-            // For perspective: keep the same distance to target,
-            // move camera so the target is centered in view.
-            Vector3 currentPos = transform.position;
-            float distance = Vector3.Distance(currentPos, center);
+            // Keep the same distance, pivot around the object
+            Vector3 camPos = transform.position;
+            float distance = Vector3.Distance(camPos, center);
 
-            Vector3 forward = transform.forward;
-            if (forward.sqrMagnitude < 0.0001f)
-                forward = Vector3.forward;
+            Vector3 dir = (camPos - center).normalized;
+            if (dir.sqrMagnitude < 0.0001f)
+                dir = -transform.forward;
 
-            Vector3 newPos = center - forward.normalized * distance;
+            float minDist = 0.5f; // don’t go through object
+            distance = Mathf.Max(distance, minDist);
 
-            // Clamp height so we don't go out of allowed zoom range
+            Vector3 newPos = center + dir * distance;
+
             newPos.y = Mathf.Clamp(newPos.y, minHeight, maxHeight);
-
             transform.position = newPos;
         }
     }
