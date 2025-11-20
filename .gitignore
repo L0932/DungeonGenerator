@@ -71,3 +71,10 @@ Icon?
 
 # =============== Scriptable Render Pipeline Cache ===============
 **/[Ss]ettings/ShaderCache/
+
+# Visual Studio Directories
+.vs/
+.vscode/
+.idea/
+.sln/
+.csproj/
