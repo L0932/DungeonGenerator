@@ -6,8 +6,8 @@ using Pathfinding;
 //using UnityEditor;
 
 
-public class DGenerator : MonoBehaviour {
-	
+public class DGenerator : MonoBehaviour 
+{	
 	public RoomData roomData;
 	public Transform spawnPoint;
 	
@@ -17,7 +17,6 @@ public class DGenerator : MonoBehaviour {
 	public static GameObject player;
 	//public int roomsPerKey;
 	private static GridGraph gridGraph;
-	private List<int> keyRooms;
 	private List<Transform> doorTransforms;
 	
 	//public GameObject player;
@@ -56,20 +55,24 @@ public class DGenerator : MonoBehaviour {
 	int mapSizeY = 10;
 	
 	
-	void Awake () {
+	void Awake () 
+	{
 		InitData();
 		Generate();
 	}
 
-	void Start(){
+	void Start()
+	{
 		InitGridGraph();
 	}
 
-	public Vector3 GetStartPos(){
+	public Vector3 GetStartPos()
+	{
 		return startPos;
 	}
 
-	void InitGridGraph(){
+	void InitGridGraph()
+	{
 		if ( AstarPath.active == null ) throw new System.Exception ("There is no AstarPath object in the scene");
 		
 		AstarData data = AstarPath.active.astarData;
@@ -81,11 +84,14 @@ public class DGenerator : MonoBehaviour {
 		AstarPath.active.Scan();
 	}
 	
-	void InitData(){
+	void InitData()
+	{
 		FogEffect = GameObject.Find ("Fog");
 
 		totalRooms = maxRegularRooms + maxItemRooms + maxBossRooms;
-		maxRooms = new List<int> ();
+		totalRooms = Mathf.Clamp (totalRooms, 1, mapSizeX * mapSizeY);
+
+        maxRooms = new List<int> ();
 
 		//TODO: make it a public list with named entries. Example, for the inspector: (Boss: 5, Item: 1, etc.)
 		maxRooms.Add (0); //Padding to increase size. Temp solution.
@@ -93,22 +99,21 @@ public class DGenerator : MonoBehaviour {
 		maxRooms.Add (maxItemRooms);
 		maxRooms.Add (maxBossRooms);
 
-		//TODO: Add checks to Avoid having totalRooms be greater than mapSizeX * mapSizeY
 		dRooms = new DRoom[mapSizeX, mapSizeY];
-		keyRooms = new List<int>();
 		roomGrid = new DGrid(mapSizeX, mapSizeY);
 
 		roomPositions = new Vector3[totalRooms];
 	}
 	
-	public void Generate() {
+	public void Generate() 
+	{
 		GenerateStartRoom();
 		GenerateRooms();
 	}
 	
-	void GenerateStartRoom() {
-		
-		Vector3 startPos = new Vector3(mapSizeX/2, 0, mapSizeY/2);
+	void GenerateStartRoom() 
+	{	
+		startPos = new Vector3(mapSizeX/2, 0, mapSizeY/2);
 		
 		roomGrid.PlaceAt(startPos);
 		roomPositions[0] = startPos;
@@ -128,37 +133,41 @@ public class DGenerator : MonoBehaviour {
 		dRooms [pos.x, pos.y].SetRoomNum (roomInstance);
 		dRooms[pos.x, pos.y].AssignParent(transform);
 
-		spawnPoint.transform.position = startWorldPos + new Vector3(0, 5, 0); //Vector3.zero + new Vector3(0, 5, 0);
+		spawnPoint.transform.position = startWorldPos + new Vector3(0, 5, 0);
 	}
 	
-	void GenerateRooms() {
-
+	void GenerateRooms() 
+	{
 		VectDir next;
 
 		Vector3 prevRoomPos, nextRoomPos, worldPos;
 		GridCoord prevGridPos, nextGridPos;
-		int currRoomNum = 0, roomGroup = 1, nextSpecialRoom = 0, currRoomGroupCount = 0;
-		bool keyRoom = false;
-		//DRoom currCoord, nextRoom;
 		
-		while(currRoomNum < totalRooms) {
+		int currRoomNum = 1;
+		int roomGroup = 1;
+		int currRoomGroupCount = 0;
+
+		int attempts = 0;
+		int maxAttempts = totalRooms * 50; // Arbitrary high number to avoid infinite loops
+
+        while (currRoomNum < totalRooms && attempts < maxAttempts) 
+		{
+			attempts++;
 			roomInstance += 1;
+
 			//Choose random room that has already been placed
 			prevRoomPos = roomPositions[Random.Range(0, currRoomNum)];
 			
-			//Util.Assert(roomsPerKey != 0);
-			//keyRoom = (roomNum % roomsPerKey == 0) ? true : false;
-			
 			//Look for unused nearby spots for the picked room
-			if(roomGrid.CellsAvailable(prevRoomPos)){
-			
+			if(roomGrid.CellsAvailable(prevRoomPos))
+			{			
 				next = roomGrid.NextRoomPos(prevRoomPos); // pick random unused spots
 
 				nextRoomPos = next.vect;
 
-				if(roomGrid.PlaceAt(nextRoomPos)){ //If the grid placement was sucessful, then place rooms in the world.
-
-	
+				if(roomGrid.PlaceAt(nextRoomPos))
+				{ 
+					//If the grid placement was sucessful, then place rooms in the world.
 					if(maxRooms[roomGroup] == 0 || currRoomGroupCount >= maxRooms[roomGroup]){ // roomGroup 1 = regularRooms, roomGroup 2 = ItemRooms, roomGroup 3 = BossRooms
 						currRoomGroupCount = 0;
 						roomGroup++;
@@ -175,22 +184,13 @@ public class DGenerator : MonoBehaviour {
 
 						worldPos = Vector3.Scale(nextRoomPos, room.floorSize);
 
-
 						//worldPos = Vector3.Scale (new Vector3(1,0,0), room.floorSize);
 						GameObject roomObject = Instantiate(room.gameObject, worldPos, Quaternion.identity) as GameObject;
 
 						DRoom nextDRoom = dRooms[nextGridPos.x, nextGridPos.y] = roomObject.GetComponent<DRoom>();
 						
-						//dRooms[nextGridPos.x, nextGridPos.y].AssignParent(transform);
-						//dRooms[nextGridPos.x, nextGridPos.y].PopulateRoom();
-
-						//dRooms[currGridPos.x, currGridPos.y].AddNeighbor(nextDRoom, next.index);
-
-						//roomArr[nextGridPos.x, nextGridPos.y] = Instantiate(room.gameObject, worldPos, Quaternion.identity) as GameObject;
-						//roomArr[nextGridPos.x, nextGridPos.y].transform.parent = transform;
-
-
-						switch(nextDRoom.roomType){
+						switch(nextDRoom.roomType)
+						{
 							case ObjectType.Boss:
 							bossRoom = roomObject.transform;
 							break;
@@ -205,43 +205,30 @@ public class DGenerator : MonoBehaviour {
 						nextDRoom.SetRoomNum(roomInstance);
 						nextDRoom.AssignParent(transform);
 
-						//combinedBounds.Encapsulate(dRooms[nextGridPos.x, nextGridPos.y].GetFloorBounds());
-						//dRooms[nextGridPos.x, nextGridPos.y].AssignParent(transform);
-
-
-
-						//dRooms[nextGridPos.x, nextGridPos.y].PopulateRoom();
-
-
-						//roomArr[nextGridPos.x, nextGridPos.y].GetComponent<DRoom>().worldPosition = worldPos;
-							
-						//ConnectRooms(roomGrid.getNeighbors(nextRoomPos), nextGridPos);
-							
-							/*
-						if(keyRoom){
-							keyRooms.Add(roomNum);
-						}*/
 						roomPositions[currRoomNum] = nextRoomPos;
 						currRoomGroupCount++;
 						currRoomNum++;
 					}
-
 				}
 			}
 		}
 
+		if (attempts >= maxAttempts) 
+		{
+			Debug.LogWarning ("Max attempts reached during dungeon generation. Generated " + currRoomNum + " out of " + totalRooms + " rooms.");
+        }
 
-		boxCol = gameObject.AddComponent<BoxCollider> ();
+        boxCol = gameObject.AddComponent<BoxCollider> ();
 		boxCol.center = combinedBounds.center - transform.position;
 		boxCol.size = combinedBounds.size;
-
-		//NavMeshBuilder.BuildNavMesh();
 	}
 			
-	void PlaceDoors(GridCoord prev, GridCoord next){
+	void PlaceDoors(GridCoord prev, GridCoord next)
+	{
 		GridCoord idx = roomGrid.PolarDirectionIndeces(prev, next);
 	
-		if(!idx.Equals(GridCoord.Zero)){
+		if(!idx.Equals(GridCoord.Zero))
+		{
 			//Alpha code. results of idx values Change depending on room orientation. TODO: Get rid of that dependency in later revisions. 
 			DRoom roomA = dRooms[prev.x, prev.y];
 			DRoom roomB = dRooms[next.x, next.y];
@@ -254,7 +241,8 @@ public class DGenerator : MonoBehaviour {
 		}
 	}
 
-	public Transform GetRoomByType(ObjectType type){
+	public Transform GetRoomByType(ObjectType type)
+	{
 
 		switch (type) {
 			case ObjectType.Boss:
@@ -268,24 +256,35 @@ public class DGenerator : MonoBehaviour {
 		return null;
 	}
 
-	public static Bounds GetDungeonBounds(){
-		return boxCol.bounds;
+	public static Bounds GetDungeonBounds()
+	{
+		if (boxCol == null) 
+		{
+			Debug.LogError ("BoxCollider not initialized in DGenerator.GetDungeonBounds");
+			return new Bounds ();
+        }
+
+        return boxCol.bounds;
 	}
 
-	public static void EnterRoom(Vector3 floorSize, Vector3 center){
+	public static void EnterRoom(Vector3 floorSize, Vector3 center)
+	{
+		if (gridGraph == null || AstarPath.active == null) 
+		{
+			Debug.LogError ("Grid graph not initialized in DGenerator.EnterRoom");
+			return;
+        }
 
-		if (FogEffect) {
+        if (FogEffect) 
+		{
 			FogEffect.transform.position = center;
 		}
-
 
 		gridGraph.width = (int)floorSize.x;
 		gridGraph.depth = (int)floorSize.z;
 		gridGraph.center = center;
 
-		// Updates internal size from the above values
 		gridGraph.UpdateSizeFromWidthDepth();
-		// Scans all graphs, 
 		AstarPath.active.Scan();
 	}
 }

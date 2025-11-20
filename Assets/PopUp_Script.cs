@@ -10,7 +10,7 @@ public class PopUp_Script : MonoBehaviour {
 	{
 		TimerActive = false;
 		Timer = .7f;
-		PopUp = transform.FindChild("PopUp").gameObject;
+		PopUp = transform.Find("PopUp").gameObject;
 	
 	}
 	

@@ -83,11 +83,11 @@ namespace plyRPG
 		protected void Awake()
 		{
 			_instance = this;
-			playerStatus = statusArea.transform.FindChild("Player").gameObject;
-			targetStatus = statusArea.transform.FindChild("Target").gameObject;
-			playerHPBar = playerStatus.transform.FindChild("HP/Bar").GetComponent<UnityEngine.UI.Slider>();
-			playerArmorBar = playerStatus.transform.FindChild("HP/Bar2").GetComponent<UnityEngine.UI.Slider>();
-			targetHPBar = targetStatus.transform.FindChild("HP/Bar").GetComponent<UnityEngine.UI.Slider>();
+			playerStatus = statusArea.transform.Find("Player").gameObject;
+			targetStatus = statusArea.transform.Find("Target").gameObject;
+			playerHPBar = playerStatus.transform.Find("HP/Bar").GetComponent<UnityEngine.UI.Slider>();
+			playerArmorBar = playerStatus.transform.Find("HP/Bar2").GetComponent<UnityEngine.UI.Slider>();
+			targetHPBar = targetStatus.transform.Find("HP/Bar").GetComponent<UnityEngine.UI.Slider>();
 		}
 		
 		protected void OnEnable()
@@ -205,9 +205,9 @@ namespace plyRPG
 		{
 			UnityEngine.UI.Text[] buttonText = new UnityEngine.UI.Text[]
 			{	// there are 3 buttons
-				gameMenuPanel.transform.FindChild("Save_0_Button/Text").GetComponent<UnityEngine.UI.Text>(),
-				gameMenuPanel.transform.FindChild("Save_1_Button/Text").GetComponent<UnityEngine.UI.Text>(),
-				gameMenuPanel.transform.FindChild("Save_2_Button/Text").GetComponent<UnityEngine.UI.Text>()
+				gameMenuPanel.transform.Find("Save_0_Button/Text").GetComponent<UnityEngine.UI.Text>(),
+				gameMenuPanel.transform.Find("Save_1_Button/Text").GetComponent<UnityEngine.UI.Text>(),
+				gameMenuPanel.transform.Find("Save_2_Button/Text").GetComponent<UnityEngine.UI.Text>()
 			};
 			
 			// the return value from GameGlobal.GetSlotDateTime will be empty if nothing is saved in that slot
@@ -311,14 +311,14 @@ namespace plyRPG
 					// green: friendly target
 					// yellow: neutral target
 					// red: hostile target
-					UnityEngine.UI.Image fill = targetHPBar.transform.FindChild("Fill Area/Fill").GetComponent<UnityEngine.UI.Image>();
+					UnityEngine.UI.Image fill = targetHPBar.transform.Find("Fill Area/Fill").GetComponent<UnityEngine.UI.Image>();
 					StatusTowardsOther status = currActor.HighestStatusToTarget(Player.Instance.actor);
 					if (status == StatusTowardsOther.Friendly) fill.color = Color.green;
 					else if (status == StatusTowardsOther.Neutral) fill.color = Color.yellow;
 					else if (status == StatusTowardsOther.Hostile) fill.color = Color.red;
 					
 					// update the name field of the status with name of target
-					UnityEngine.UI.Text name = targetStatus.transform.FindChild("Name").GetComponent<UnityEngine.UI.Text>();
+					UnityEngine.UI.Text name = targetStatus.transform.Find("Name").GetComponent<UnityEngine.UI.Text>();
 					name.text = currActor.Name();
 					
 					// make sure the status UI is visible
@@ -364,7 +364,7 @@ namespace plyRPG
 				if (Player.Instance.actionSlotCount > slotIdx)
 				{
 					string buttonName = "Button " + slotIdx.ToString(); // "Button 0", "Button 1", etc
-					Transform buttonTr = actionBarPanel.transform.FindChild(buttonName);
+					Transform buttonTr = actionBarPanel.transform.Find(buttonName);
 					UnityEngine.UI.RawImage img = buttonTr.GetComponent<UnityEngine.UI.RawImage>();
 					
 					
@@ -432,7 +432,7 @@ namespace plyRPG
 			OnBagSlotButton(-1);
 			
 			ItemBag bag = Player.Instance.gameObject.GetComponent<ItemBag>();
-			Transform container = bagPanel.transform.FindChild("ScrollView/Content");
+			Transform container = bagPanel.transform.Find("ScrollView/Content");
 			
 			// make sure there are enough slot button elements
 			if (container.childCount < bag.GetSlotCount())
@@ -486,10 +486,10 @@ namespace plyRPG
 		public void OnBagSlotButton(int slot)
 		{
 			selectedBagSlot = slot;
-			UnityEngine.UI.Text name = bagPanel.transform.FindChild("Info Panel/Name").GetComponent<UnityEngine.UI.Text>();
-			UnityEngine.UI.Text descr = bagPanel.transform.FindChild("Info Panel/Description").GetComponent<UnityEngine.UI.Text>();
-			Transform useButton = bagPanel.transform.FindChild("Info Panel/UseButton");
-			Transform dropButton = bagPanel.transform.FindChild("Info Panel/DropButton");
+			UnityEngine.UI.Text name = bagPanel.transform.Find("Info Panel/Name").GetComponent<UnityEngine.UI.Text>();
+			UnityEngine.UI.Text descr = bagPanel.transform.Find("Info Panel/Description").GetComponent<UnityEngine.UI.Text>();
+			Transform useButton = bagPanel.transform.Find("Info Panel/UseButton");
+			Transform dropButton = bagPanel.transform.Find("Info Panel/DropButton");
 			
 			ItemBag.ItemInBag iib = Player.Instance.gameObject.GetComponent<ItemBag>().GetItemInSlot(slot);
 			if (iib != null)
@@ -578,7 +578,7 @@ namespace plyRPG
 			// this might be called when the panel is not visible
 			if (false == charaSheetPanel.activeSelf) return;
 			
-			Transform container = charaSheetPanel.transform.FindChild("EquipSlots");
+			Transform container = charaSheetPanel.transform.Find("EquipSlots");
 			EquipmentSlots slots = Player.Instance.gameObject.GetComponent<EquipmentSlots>();
 			
 			// first clear all the buttons (slots)
@@ -627,7 +627,7 @@ namespace plyRPG
 			// this might be called when the panel is not visible
 			if (false == charaSheetPanel.activeSelf) return;
 			
-			Transform container = charaSheetPanel.transform.FindChild("Stats/ScrollView/Content");
+			Transform container = charaSheetPanel.transform.Find("Stats/ScrollView/Content");
 			for (int i = 0; i < Player.Instance.actor.actorClass.attributes.Count; i++)
 			{
 				ActorAttribute att = Player.Instance.actor.actorClass.attributes[i];
@@ -641,7 +641,7 @@ namespace plyRPG
 				// is opened will not have the entries present yet. i store the entries
 				// with the name set to the id of the attribute
 				
-				Transform t = container.FindChild(att.id.ToString());
+				Transform t = container.Find(att.id.ToString());
 				if (t == null)
 				{	// not found, add it now
 					GameObject go = (GameObject)Object.Instantiate(attNfoFab);
@@ -677,11 +677,11 @@ namespace plyRPG
 			}
 			
 			// show info panel
-			Transform infoPanel = charaSheetPanel.transform.FindChild("Info Panel");
+			Transform infoPanel = charaSheetPanel.transform.Find("Info Panel");
 			infoPanel.gameObject.SetActive(true);
 			
-			UnityEngine.UI.Text name = infoPanel.FindChild("Name").GetComponent<UnityEngine.UI.Text>();
-			UnityEngine.UI.Text descr = infoPanel.FindChild("Description").GetComponent<UnityEngine.UI.Text>();
+			UnityEngine.UI.Text name = infoPanel.Find("Name").GetComponent<UnityEngine.UI.Text>();
+			UnityEngine.UI.Text descr = infoPanel.Find("Description").GetComponent<UnityEngine.UI.Text>();
 			
 			name.text = item.def.screenName;
 			descr.text = item.def.description;
@@ -701,7 +701,7 @@ namespace plyRPG
 		
 		public void CloseEquipInfo()
 		{
-			charaSheetPanel.transform.FindChild("Info Panel").gameObject.SetActive(false);
+			charaSheetPanel.transform.Find("Info Panel").gameObject.SetActive(false);
 		}
 		
 		#endregion
@@ -744,14 +744,14 @@ namespace plyRPG
 			if (node != null)
 			{
 				// update panel with correct text
-				UnityEngine.UI.Text dialogueText = dialoguePanel.transform.FindChild("Text").GetComponent<UnityEngine.UI.Text>();
+				UnityEngine.UI.Text dialogueText = dialoguePanel.transform.Find("Text").GetComponent<UnityEngine.UI.Text>();
 				dialogueText.text = node.ParsedDialogueText(true);
 				
 				// update buttons (there are 3 buttons)
 				for (int responseIdx = 0; responseIdx < 3; responseIdx++)
 				{
 					string buttonObjectName = "Button " + (responseIdx + 1).ToString(); // "Button 1", "Button 2", "Button 3" ...
-					Transform button = dialoguePanel.transform.FindChild(buttonObjectName);
+					Transform button = dialoguePanel.transform.Find(buttonObjectName);
 					
 					// check if the node has this many responses and show/ hide button depending on result
 					if (node.responses.Length > responseIdx)
@@ -815,10 +815,10 @@ namespace plyRPG
 		public void UpdateQuestLogPanel()
 		{
 			// clear the quest text
-			questLogPanel.transform.FindChild("QuestText").GetComponent<UnityEngine.UI.Text>().text = "";
+			questLogPanel.transform.Find("QuestText").GetComponent<UnityEngine.UI.Text>().text = "";
 			
 			// remove all existing quest buttons
-			Transform container = questLogPanel.transform.FindChild("List/ScrollView/Content");
+			Transform container = questLogPanel.transform.Find("List/ScrollView/Content");
 			for (int i = container.childCount - 1; i >= 0; i--)
 			{
 				Destroy(container.GetChild(i).gameObject);
@@ -845,7 +845,7 @@ namespace plyRPG
 		
 		public void OnQuestButton(int id)
 		{
-			UnityEngine.UI.Text questText = questLogPanel.transform.FindChild("QuestText").GetComponent<UnityEngine.UI.Text>();
+			UnityEngine.UI.Text questText = questLogPanel.transform.Find("QuestText").GetComponent<UnityEngine.UI.Text>();
 			DiaQuest quest = DiaQEngine.Instance.questManager.GetQuestById(id);
 			if (quest != null)
 			{
@@ -868,16 +868,16 @@ namespace plyRPG
 			
 			if (show)
 			{
-				skillsPanel.transform.FindChild("Info").gameObject.SetActive(false);
-				skillsPanel.transform.FindChild("SlotLinks").gameObject.SetActive(false);
+				skillsPanel.transform.Find("Info").gameObject.SetActive(false);
+				skillsPanel.transform.Find("SlotLinks").gameObject.SetActive(false);
 				UpdateSkillsPanel();
 			}
 		}
 		
 		public void UpdateSkillsPanel()
 		{
-			skillsPanel.transform.FindChild("SlotLinks").gameObject.SetActive(false);
-			Transform container = skillsPanel.transform.FindChild("Skills/Content");
+			skillsPanel.transform.Find("SlotLinks").gameObject.SetActive(false);
+			Transform container = skillsPanel.transform.Find("Skills/Content");
 			
 			// remove all the existing buttons
 			if (container.childCount > 0)
@@ -906,20 +906,20 @@ namespace plyRPG
 		
 		public void ShowSkillsEquipButtons()
 		{
-			skillsPanel.transform.FindChild("SlotLinks").gameObject.SetActive(true);
+			skillsPanel.transform.Find("SlotLinks").gameObject.SetActive(true);
 		}
 		
 		public void OnSkillButton(int i)
 		{
 			selectedSkillIdx = i;
-			skillsPanel.transform.FindChild("Info").gameObject.SetActive(true);
-			skillsPanel.transform.FindChild("Info/Head").GetComponent<UnityEngine.UI.Text>().text = Player.Instance.actor.knownSkills[i].ToString();
-			skillsPanel.transform.FindChild("Info/Descr").GetComponent<UnityEngine.UI.Text>().text = Player.Instance.actor.knownSkills[i].def.description;
+			skillsPanel.transform.Find("Info").gameObject.SetActive(true);
+			skillsPanel.transform.Find("Info/Head").GetComponent<UnityEngine.UI.Text>().text = Player.Instance.actor.knownSkills[i].ToString();
+			skillsPanel.transform.Find("Info/Descr").GetComponent<UnityEngine.UI.Text>().text = Player.Instance.actor.knownSkills[i].def.description;
 		}
 		
 		public void SetSkillToSlot(int slot)
 		{
-			skillsPanel.transform.FindChild("SlotLinks").gameObject.SetActive(false);
+			skillsPanel.transform.Find("SlotLinks").gameObject.SetActive(false);
 			Player.Instance.actionSlots.EquipSkill(slot, Player.Instance.actor.knownSkills[selectedSkillIdx].id);
 			UpdateActionBar();
 		}
