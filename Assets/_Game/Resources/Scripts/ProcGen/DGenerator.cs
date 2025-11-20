@@ -66,7 +66,15 @@ public class DGenerator : MonoBehaviour
 		InitGridGraph();
 	}
 
-	public Vector3 GetStartPos()
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.R))
+        {
+            RegenerateDungeon();
+        }
+    }
+
+    public Vector3 GetStartPos()
 	{
 		return startPos;
 	}
@@ -130,7 +138,7 @@ public class DGenerator : MonoBehaviour
 		combinedBounds = new Bounds (roomObject.transform.position, Vector3.one);
 		combinedBounds.Encapsulate(dRooms[pos.x, pos.y].GetFloorBounds());
 
-		dRooms [pos.x, pos.y].SetRoomNum (roomInstance);
+        dRooms [pos.x, pos.y].SetRoomNum (roomInstance);
 		dRooms[pos.x, pos.y].AssignParent(transform);
 
 		spawnPoint.transform.position = startWorldPos + new Vector3(0, 5, 0);
@@ -224,9 +232,33 @@ public class DGenerator : MonoBehaviour
         boxCol = gameObject.AddComponent<BoxCollider> ();
 		boxCol.center = combinedBounds.center - transform.position;
 		boxCol.size = combinedBounds.size;
-	}
-			
-	void PlaceDoors(GridCoord prev, GridCoord next)
+
+        // set camera to encompass dungeon
+        CameraLookDown camScript = Camera.main.GetComponent<CameraLookDown>();
+        if (camScript != null)
+            camScript.SetTarget(boxCol);
+    }
+
+    public void RegenerateDungeon()
+    {
+        // Clear existing dungeon
+        foreach (Transform child in transform)
+            Destroy(child.gameObject);
+
+        // Reset data
+        roomInstance = 0;
+        InitData();
+
+        // Generate new dungeon
+        Generate();
+
+        // Update A* graph
+        InitGridGraph();
+
+        Debug.Log("Dungeon regenerated!");
+    }
+
+    void PlaceDoors(GridCoord prev, GridCoord next)
 	{
 		GridCoord idx = roomGrid.PolarDirectionIndeces(prev, next);
 	
