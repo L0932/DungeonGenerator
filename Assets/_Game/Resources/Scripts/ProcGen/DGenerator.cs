@@ -63,6 +63,12 @@ public class DGenerator : MonoBehaviour
     private float floorCenterY;
     private float floorHeight = 5f; // fallback
 
+    // Door side indices: must match DRoom.PlaceDoor ordering
+    private const int NORTH = 0;
+    private const int EAST = 1;
+    private const int SOUTH = 2;
+    private const int WEST = 3;
+
     void Awake()
     {
         InitData();
@@ -372,20 +378,65 @@ public class DGenerator : MonoBehaviour
 
     void PlaceDoors(GridCoord prev, GridCoord next)
     {
-        GridCoord idx = roomGrid.PolarDirectionIndeces(prev, next);
+        DRoom roomA = dRooms[prev.x, prev.y];
+        DRoom roomB = dRooms[next.x, next.y];
 
-        if (!idx.Equals(GridCoord.Zero))
+        if (roomA == null || roomB == null)
         {
-            // alpha code. results of idx values change depending on room orientation.
-            DRoom roomA = dRooms[prev.x, prev.y];
-            DRoom roomB = dRooms[next.x, next.y];
-
-            int AIdx = (int)roomA.roomType;
-            int BIdx = (int)roomB.roomType;
-
-            roomA.PlaceDoor(idx.y, roomData.doorTypes[BIdx]);
-            roomB.PlaceDoor(idx.x, roomData.doorTypes[AIdx]);
+            Debug.LogWarning("PlaceDoors called with null room(s).");
+            return;
         }
+
+        // Direction from A to B in grid space
+        int dx = next.x - prev.x;
+        int dy = next.y - prev.y;
+
+        // Only allow direct neighbors
+        if (Mathf.Abs(dx) + Mathf.Abs(dy) != 1)
+        {
+            Debug.LogWarning($"PlaceDoors: rooms at {prev.x},{prev.y} and {next.x},{next.y} are not 4-way neighbors.");
+            return;
+        }
+
+        int sideA = -1;
+        int sideB = -1;
+
+        if (dx == 1)        // B is east of A
+        {
+            sideA = EAST;
+            sideB = WEST;
+        }
+        else if (dx == -1)  // B is west of A
+        {
+            sideA = WEST;
+            sideB = EAST;
+        }
+        else if (dy == 1)   // B is north of A
+        {
+            sideA = NORTH;
+            sideB = SOUTH;
+        }
+        else if (dy == -1)  // B is south of A
+        {
+            sideA = SOUTH;
+            sideB = NORTH;
+        }
+
+        if (sideA < 0 || sideB < 0)
+        {
+            Debug.LogWarning("PlaceDoors: could not determine sides.");
+            return;
+        }
+
+        // Choose door prefab based on the OTHER room’s type (like you were doing)
+        int typeA = (int)roomA.roomType;
+        int typeB = (int)roomB.roomType;
+
+        GameObject doorForA = roomData.doorTypes[typeB];
+        GameObject doorForB = roomData.doorTypes[typeA];
+
+        roomA.PlaceDoor(sideA, doorForA);
+        roomB.PlaceDoor(sideB, doorForB);
     }
 
     public Transform GetRoomByType(ObjectType type)

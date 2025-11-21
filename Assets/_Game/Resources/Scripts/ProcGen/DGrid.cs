@@ -240,20 +240,6 @@ public class DGrid {
 		return true;
 	}
 
-	public GridCoord PolarDirectionIndeces(GridCoord a, GridCoord b){
-		GridCoord diff= b-a; GridCoord result = new GridCoord(0, 0);
-
-		for(int i = 0; i < dirs.Length; i++){
-			if(dirs[i].Equals(diff)){
-				result.x = i;
-				result.y = Direction.Polar(i);
-				return result;
-			}
-		}
-
-		return result;
-	}
-
 	public static GridCoord VecToGridCoord(Vector3 v){
 		
 		return new GridCoord((int)Mathf.Ceil(v.x), (int)Mathf.Ceil(v.z));
