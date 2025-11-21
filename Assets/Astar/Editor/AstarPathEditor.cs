@@ -431,7 +431,7 @@ public class AstarPathEditor : Editor {
 #endif
 		
 		AstarProfiler.StartProfile ("Check Updates and Editors");
-		CheckForUpdates ();
+		//CheckForUpdates ();
 		CheckGraphEditors ();
 		AstarProfiler.EndProfile ("Check Updates and Editors");
 		
@@ -615,47 +615,13 @@ public class AstarPathEditor : Editor {
 	 * \returns True if an update check is progressing (WWW request)
 	 */
 	public static bool CheckForUpdates () {
+        // Disabled in Unity 6.x: HTTP requests from editor are blocked ("Insecure connection not allowed").
+        // This no-op prevents the editor from trying to call WWW / UnityWebRequest.
+		return false;
+    }
 
-		if (updateCheckObject != null && updateCheckObject.isDone) {
-			
-			if (!string.IsNullOrEmpty (updateCheckObject.error)) {
-				Debug.LogWarning ("There was an error checking for updates for the A* Pathfinding Project\n" +
-				"The error might dissapear if you switch build target from Webplayer to Standalone because of the webplayer security emulation\nError: " +
-				updateCheckObject.error);
-				updateCheckObject = null;
-				return false;
-			}
-			Debug.Log ("Got response\n" +updateCheckObject.text);
-			UpdateCheckCompleted (updateCheckObject.text);
-			updateCheckObject = null;
-		}
-
-		if (System.DateTime.Compare (lastUpdateCheck.AddDays (updateCheckRate),System.DateTime.UtcNow) < 0) {
-			Debug.Log ("Checking For Updates... " + System.DateTime.UtcNow.ToString (System.Globalization.CultureInfo.InvariantCulture)+"\nA* Pathfinding Project");
-
-			bool use = AstarPath.active != null || GameObject.FindObjectOfType(typeof(AstarPath)) != null;
-			bool mecanim = false;
-#if !UNITY_BEFORE_4
-			mecanim = GameObject.FindObjectOfType(typeof(Animator)) != null;
-#endif
-			string query = updateURL+"?v="+AstarPath.Version.ToString()+"&pro="+(AstarPath.HasPro ? "1":"0")+
-				"&check="+updateCheckRate+"&distr="+AstarPath.Distribution+
-				"&unitypro="+(Application.HasProLicense()?"1":"0")+
-				"&inscene="+(use?"1":"0")+
-				"&targetplatform="+EditorUserBuildSettings.activeBuildTarget.ToString()+
-				"&devplatform="+Application.platform.ToString()+
-				"&mecanim="+(mecanim?"1":"0")+
-				"&unityversion="+Application.unityVersion+
-				"&branch="+AstarPath.Branch;
-			updateCheckObject = new WWW (query);
-			lastUpdateCheck = System.DateTime.UtcNow;
-		}
-
-		return updateCheckObject != null;
-	}
-	
-	/** Handles the data from the update page */
-	public static void UpdateCheckCompleted (string result) {
+    /** Handles the data from the update page */
+    public static void UpdateCheckCompleted (string result) {
 		
 		ParseServerMessage (result);
 	}

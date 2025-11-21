@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
+using static System.Net.Mime.MediaTypeNames;
 
 public class CameraLookDown : MonoBehaviour
 {
@@ -27,6 +29,8 @@ public class CameraLookDown : MonoBehaviour
 
     [Header("Edge Scrolling")]
     public bool useEdgeScroll = true;
+    public bool requireEdgeScrollKey = false;
+    public KeyCode edgeScrollKey = KeyCode.LeftAlt;
     public float edgeSize = 20f;              // pixels from screen edge
     public float edgeScrollSpeed = 1f;        // multiplier relative to moveSpeed
 
@@ -72,6 +76,9 @@ public class CameraLookDown : MonoBehaviour
 
     void Update()
     {
+        if (!UnityEngine.Application.isFocused)
+            return;
+
         if (dungeonBounds == null)
             return;
 
@@ -106,6 +113,10 @@ public class CameraLookDown : MonoBehaviour
 
         if (dungeonBounds != null)
         {
+            // Ensure cam is initialized even if Awake hasn't run yet
+            if (cam == null)
+                cam = GetComponent<Camera>();
+
             SnapToFit();
         }
     }
@@ -175,15 +186,27 @@ public class CameraLookDown : MonoBehaviour
         // Edge scrolling
         if (useEdgeScroll)
         {
-            Vector3 mouse = Input.mousePosition;
-            float w = Screen.width;
-            float h = Screen.height;
+            // If configured, require a key to be held (like LeftAlt)
+            if (requireEdgeScrollKey && !Input.GetKey(edgeScrollKey))
+            {
+                // key not held -> no edge scroll
+            }
+            else if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+            {
+                // mouse over UI -> no edge scroll
+            }
+            else
+            {
+                Vector3 mouse = Input.mousePosition;
+                float w = Screen.width;
+                float h = Screen.height;
 
-            if (mouse.x <= edgeSize) input.x -= edgeScrollSpeed;
-            else if (mouse.x >= w - edgeSize) input.x += edgeScrollSpeed;
+                if (mouse.x <= edgeSize) input.x -= edgeScrollSpeed;
+                else if (mouse.x >= w - edgeSize) input.x += edgeScrollSpeed;
 
-            if (mouse.y <= edgeSize) input.y -= edgeScrollSpeed;
-            else if (mouse.y >= h - edgeSize) input.y += edgeScrollSpeed;
+                if (mouse.y <= edgeSize) input.y -= edgeScrollSpeed;
+                else if (mouse.y >= h - edgeSize) input.y += edgeScrollSpeed;
+            }
         }
 
         if (input.sqrMagnitude > 1f)
@@ -392,7 +415,6 @@ public class CameraLookDown : MonoBehaviour
             transform.eulerAngles = new Vector3(pitch, transform.eulerAngles.y, 0f);
         }
     }
-
 
     // -------------------------------------------------------------
     // Middle Mouse Drag Pan

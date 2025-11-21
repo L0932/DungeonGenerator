@@ -71,7 +71,7 @@ public class DGenerator : MonoBehaviour
 
     void Start()
     {
-        InitGridGraph();
+        //InitGridGraph();
     }
 
     void Update()
@@ -87,19 +87,19 @@ public class DGenerator : MonoBehaviour
         return startPos;
     }
 
-    void InitGridGraph()
-    {
-        if (AstarPath.active == null)
-            throw new System.Exception("There is no AstarPath object in the scene");
+    //void InitGridGraph()
+    //{
+    //    if (AstarPath.active == null)
+    //        throw new System.Exception("There is no AstarPath object in the scene");
 
-        AstarData data = AstarPath.active.astarData;
-        gridGraph = data.gridGraph;
+    //    AstarData data = AstarPath.active.astarData;
+    //    gridGraph = data.gridGraph;
 
-        if (gridGraph == null)
-            UnityEngine.Debug.Log("Grid graph not available");
+    //    if (gridGraph == null)
+    //        UnityEngine.Debug.Log("Grid graph not available");
 
-        AstarPath.active.Scan();
-    }
+    //    AstarPath.active.Scan();
+    //}
 
     void InitData()
     {
@@ -295,7 +295,7 @@ public class DGenerator : MonoBehaviour
         Generate();
 
         // update A* graph
-        InitGridGraph();
+        //InitGridGraph();
 
         UnityEngine.Debug.Log("Dungeon regenerated!");
     }
@@ -414,11 +414,11 @@ public class DGenerator : MonoBehaviour
 
     public static void EnterRoom(Vector3 floorSize, Vector3 center)
     {
-        if (gridGraph == null || AstarPath.active == null)
-        {
-            UnityEngine.Debug.LogError("Grid graph not initialized in DGenerator.EnterRoom");
-            return;
-        }
+        //if (gridGraph == null || AstarPath.active == null)
+        //{
+        //    UnityEngine.Debug.LogError("Grid graph not initialized in DGenerator.EnterRoom");
+        //    return;
+        //}
 
         if (FogEffect)
         {
@@ -430,6 +430,6 @@ public class DGenerator : MonoBehaviour
         gridGraph.center = center;
 
         gridGraph.UpdateSizeFromWidthDepth();
-        AstarPath.active.Scan();
+        //AstarPath.active.Scan();
     }
 }
