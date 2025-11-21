@@ -450,7 +450,10 @@ public class CameraLookDown : MonoBehaviour
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             Transform hitTransform = null;
 
-            if (Physics.Raycast(ray, out RaycastHit hit, 1000f))
+            // Ignore the dungeon bounds layer
+            int mask = ~LayerMask.GetMask("DungeonBounds");
+
+            if (Physics.Raycast(ray, out RaycastHit hit, 1000f, mask))            
             {
                 hitTransform = hit.transform;
             }

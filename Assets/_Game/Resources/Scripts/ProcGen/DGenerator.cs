@@ -291,7 +291,7 @@ public class DGenerator : MonoBehaviour
         roomInstance = 0;
         InitData();
 
-        // Generate new dungeon
+        // generate new dungeon
         Generate();
 
         // update A* graph
@@ -322,7 +322,7 @@ public class DGenerator : MonoBehaviour
         float depth = cellsY * cellSize.z;
         float height = Mathf.Max(floorHeight, 5f);
 
-        // ✅ correct center index (no +1)
+        // correct center index (no +1)
         float centerGridX = (minGridX + maxGridX) * 0.5f;
         float centerGridY = (minGridY + maxGridY) * 0.5f;
 
@@ -337,6 +337,7 @@ public class DGenerator : MonoBehaviour
         if (boxCol == null)
             boxCol = gameObject.AddComponent<BoxCollider>();
 
+        boxCol.gameObject.layer = LayerMask.NameToLayer("DungeonBounds");
         boxCol.center = transform.InverseTransformPoint(combinedBounds.center);
         boxCol.size = combinedBounds.size;
 
