@@ -1,70 +1,78 @@
-﻿using UnityEngine;
+﻿using Pathfinding;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
-using Pathfinding;
+using UnityEngine;
 //using UnityEditor;
 
+using Debug = UnityEngine.Debug;
 
-public class DGenerator : MonoBehaviour 
-{	
-	public RoomData roomData;
-	public Transform spawnPoint;
-	
-	public int maxRegularRooms;
-	public List<List<GameObject>> roomLists;
-	
-	public static GameObject player;
-	//public int roomsPerKey;
-	private static GridGraph gridGraph;
-	private List<Transform> doorTransforms;
-	
-	//public GameObject player;
+public class DGenerator : MonoBehaviour
+{
+    public RoomData roomData;
+    public Transform spawnPoint;
 
-	private int roomInstance;
-	private Vector3 startPos;
-	private Vector3	camPos;
-	private Vector3	newCamPos;
-	private int	camSpeed = 10;
-	private DGrid roomGrid;
-	
-	private Vector3[] roomPositions;
-	//private GameObject[,] roomArr;
-	private DRoom[,] dRooms;
-	
-	private Transform floor;
-	private RoomClass room;
+    public int maxRegularRooms;
+    public List<List<GameObject>> roomLists;
 
-	private static GameObject FogEffect;
-	private static BoxCollider boxCol;
+    public static GameObject player;
+    private static GridGraph gridGraph;
+    private List<Transform> doorTransforms;
 
+    private int roomInstance;
+    private Vector3 startPos;
+    private Vector3 camPos;
+    private Vector3 newCamPos;
+    private int camSpeed = 10;
+    private DGrid roomGrid;
 
-	private Bounds combinedBounds;
+    private Vector3[] roomPositions;
+    private DRoom[,] dRooms;
 
-	private int maxBossRooms = 1;
-	private int maxItemRooms = 1;
-	private List<int> maxRooms;
-	private int totalRooms;
+    private Transform floor;
+    private RoomClass room;
 
-	[HideInInspector]
-	public Transform bossRoom;
-	public Transform itemRoom;
+    private static GameObject FogEffect;
+    private static BoxCollider boxCol;
 
+    private Bounds combinedBounds;
 
-	int mapSizeX = 10;
-	int mapSizeY = 10;
-	
-	
-	void Awake () 
-	{
-		InitData();
-		Generate();
-	}
+    private int maxBossRooms = 1;
+    private int maxItemRooms = 1;
+    private List<int> maxRooms;
+    private int totalRooms;
 
-	void Start()
-	{
-		InitGridGraph();
-	}
+    [HideInInspector]
+    public Transform bossRoom;
+    [HideInInspector]
+    public Transform itemRoom;
+
+    int mapSizeX = 10;
+    int mapSizeY = 10;
+
+    // track which grid cells actually got rooms
+    private int minGridX, maxGridX, minGridY, maxGridY;
+    private bool hasAnyRoom;
+
+    // world-space grid cell size (X/Z)
+    private Vector3 cellSize;
+
+    // for Y of dungeon bounds
+    private float floorCenterY;
+    private float floorHeight = 5f; // fallback
+
+    void Awake()
+    {
+        InitData();
+        Generate();
+    }
+
+    void Start()
+    {
+        InitGridGraph();
+    }
 
     void Update()
     {
@@ -75,264 +83,352 @@ public class DGenerator : MonoBehaviour
     }
 
     public Vector3 GetStartPos()
-	{
-		return startPos;
-	}
+    {
+        return startPos;
+    }
 
-	void InitGridGraph()
-	{
-		if ( AstarPath.active == null ) throw new System.Exception ("There is no AstarPath object in the scene");
-		
-		AstarData data = AstarPath.active.astarData;
-		gridGraph = data.gridGraph;
+    void InitGridGraph()
+    {
+        if (AstarPath.active == null)
+            throw new System.Exception("There is no AstarPath object in the scene");
 
-		if (gridGraph == null)
-			Debug.Log ("Grid graph not available");
+        AstarData data = AstarPath.active.astarData;
+        gridGraph = data.gridGraph;
 
-		AstarPath.active.Scan();
-	}
-	
-	void InitData()
-	{
-		FogEffect = GameObject.Find ("Fog");
+        if (gridGraph == null)
+            UnityEngine.Debug.Log("Grid graph not available");
 
-		totalRooms = maxRegularRooms + maxItemRooms + maxBossRooms;
-		totalRooms = Mathf.Clamp (totalRooms, 1, mapSizeX * mapSizeY);
+        AstarPath.active.Scan();
+    }
 
-        maxRooms = new List<int> ();
+    void InitData()
+    {
+        FogEffect = GameObject.Find("Fog");
 
-		//TODO: make it a public list with named entries. Example, for the inspector: (Boss: 5, Item: 1, etc.)
-		maxRooms.Add (0); //Padding to increase size. Temp solution.
-		maxRooms.Add (maxRegularRooms);
-		maxRooms.Add (maxItemRooms);
-		maxRooms.Add (maxBossRooms);
+        totalRooms = maxRegularRooms + maxItemRooms + maxBossRooms;
+        totalRooms = Mathf.Clamp(totalRooms, 1, mapSizeX * mapSizeY);
 
-		dRooms = new DRoom[mapSizeX, mapSizeY];
-		roomGrid = new DGrid(mapSizeX, mapSizeY);
+        maxRooms = new List<int>();
 
-		roomPositions = new Vector3[totalRooms];
-	}
-	
-	public void Generate() 
-	{
-		GenerateStartRoom();
-		GenerateRooms();
-	}
-	
-	void GenerateStartRoom() 
-	{	
-		startPos = new Vector3(mapSizeX/2, 0, mapSizeY/2);
-		
-		roomGrid.PlaceAt(startPos);
-		roomPositions[0] = startPos;
-		
-		int r = Random.Range(0, roomData.GetRoomCountAt (0));
-		room = roomData.GetRoomAt(0, r);
-		
-		Vector3 startWorldPos = Vector3.Scale (startPos, room.floorSize);
-		GridCoord pos = DGrid.VecToGridCoord(startPos);
+        // TODO: make it a public list with named entries.
+        maxRooms.Add(0); // padding / dummy index 0
+        maxRooms.Add(maxRegularRooms);
+        maxRooms.Add(maxItemRooms);
+        maxRooms.Add(maxBossRooms);
 
-		GameObject roomObject = Instantiate(room.gameObject, startWorldPos, Quaternion.identity) as GameObject;
-		dRooms[pos.x, pos.y] = roomObject.GetComponent<DRoom>();
+        dRooms = new DRoom[mapSizeX, mapSizeY];
+        roomGrid = new DGrid(mapSizeX, mapSizeY);
 
-		combinedBounds = new Bounds (roomObject.transform.position, Vector3.one);
-		combinedBounds.Encapsulate(dRooms[pos.x, pos.y].GetFloorBounds());
+        roomPositions = new Vector3[totalRooms];
 
-        dRooms [pos.x, pos.y].SetRoomNum (roomInstance);
-		dRooms[pos.x, pos.y].AssignParent(transform);
+        // reset grid bounds tracking
+        minGridX = int.MaxValue;
+        maxGridX = int.MinValue;
+        minGridY = int.MaxValue;
+        maxGridY = int.MinValue;
+        hasAnyRoom = false;
 
-		spawnPoint.transform.position = startWorldPos + new Vector3(0, 5, 0);
-	}
-	
-	void GenerateRooms() 
-	{
-		VectDir next;
+        cellSize = Vector3.zero;
+        floorCenterY = 0f;
+        floorHeight = 5f;
+    }
 
-		Vector3 prevRoomPos, nextRoomPos, worldPos;
-		GridCoord prevGridPos, nextGridPos;
-		
-		int currRoomNum = 1;
-		int roomGroup = 1;
-		int currRoomGroupCount = 0;
+    public void Generate()
+    {
+        GenerateStartRoom();
+        GenerateRooms();
+    }
 
-		int attempts = 0;
-		int maxAttempts = totalRooms * 50; // Arbitrary high number to avoid infinite loops
+    void GenerateStartRoom()
+    {
+        // logical grid coord (center of grid)
+        startPos = new Vector3(mapSizeX / 2, 0, mapSizeY / 2);
 
-        while (currRoomNum < totalRooms && attempts < maxAttempts) 
-		{
-			attempts++;
-			roomInstance += 1;
+        roomGrid.PlaceAt(startPos);
+        roomPositions[0] = startPos;
 
-			//Choose random room that has already been placed
-			prevRoomPos = roomPositions[Random.Range(0, currRoomNum)];
-			
-			//Look for unused nearby spots for the picked room
-			if(roomGrid.CellsAvailable(prevRoomPos))
-			{			
-				next = roomGrid.NextRoomPos(prevRoomPos); // pick random unused spots
+        int r = UnityEngine.Random.Range(0, roomData.GetRoomCountAt(0));
+        room = roomData.GetRoomAt(0, r);
+
+        GridCoord pos = DGrid.VecToGridCoord(startPos);
+
+        // instantiate at origin first so we can measure it
+        Vector3 tempPos = Vector3.zero;
+        GameObject roomObject = Instantiate(room.gameObject, tempPos, Quaternion.identity) as GameObject;
+        DRoom dRoom = roomObject.GetComponent<DRoom>();
+        dRooms[pos.x, pos.y] = dRoom;
+
+        // get actual floor bounds and use them as our cell size
+        Bounds floorBounds = dRoom.GetFloorBounds(); // must be WORLD-space
+        cellSize = new Vector3(floorBounds.size.x, 0f, floorBounds.size.z);
+
+        floorCenterY = floorBounds.center.y;
+        floorHeight = floorBounds.size.y > 0f ? floorBounds.size.y : 5f;
+
+        // now place the start room based on grid and real cell size
+        Vector3 startWorldPos = new Vector3(
+            startPos.x * cellSize.x,
+            0f,
+            startPos.z * cellSize.z
+        );
+        roomObject.transform.position = startWorldPos;
+
+        dRoom.SetRoomNum(roomInstance);
+        dRoom.AssignParent(transform);
+
+        spawnPoint.transform.position = startWorldPos + new Vector3(0, 5, 0);
+
+        // register grid occupancy
+        RegisterRoomAt(pos);
+    }
+
+    void GenerateRooms()
+    {
+        VectDir next;
+
+        Vector3 prevRoomPos, nextRoomPos, worldPos;
+        GridCoord prevGridPos, nextGridPos;
+
+        int currRoomNum = 1;
+        int roomGroup = 1;
+        int currRoomGroupCount = 0;
+
+        int attempts = 0;
+        int maxAttempts = totalRooms * 50; // arbitrary high number to avoid infinite loops
+
+        while (currRoomNum < totalRooms && attempts < maxAttempts)
+        {
+            attempts++;
+            roomInstance += 1;
+
+            // choose random room that has already been placed
+            prevRoomPos = roomPositions[UnityEngine.Random.Range(0, currRoomNum)];
+
+            // look for unused nearby spots for the picked room
+            if (roomGrid.CellsAvailable(prevRoomPos))
+            {
+                next = roomGrid.NextRoomPos(prevRoomPos); // pick random unused spots
 
                 if (next.vect.x < 0f)  // means no valid neighbor
                     continue;
 
                 nextRoomPos = next.vect;
 
-				if(roomGrid.PlaceAt(nextRoomPos))
-				{ 
-					//If the grid placement was sucessful, then place rooms in the world.
-					if(maxRooms[roomGroup] == 0 || currRoomGroupCount >= maxRooms[roomGroup]){ // roomGroup 1 = regularRooms, roomGroup 2 = ItemRooms, roomGroup 3 = BossRooms
-						currRoomGroupCount = 0;
-						roomGroup++;
-					}
+                if (roomGrid.PlaceAt(nextRoomPos))
+                {
+                    // if the grid placement was successful, then place rooms in the world.
+                    if (maxRooms[roomGroup] == 0 || currRoomGroupCount >= maxRooms[roomGroup])
+                    {
+                        // roomGroup 1 = regularRooms, roomGroup 2 = ItemRooms, roomGroup 3 = BossRooms
+                        currRoomGroupCount = 0;
+                        roomGroup++;
+                    }
 
-					if(maxRooms[roomGroup] != 0){
-						int r = Random.Range(0, roomData.GetRoomCountAt(roomGroup));
+                    if (roomGroup < maxRooms.Count && maxRooms[roomGroup] != 0)
+                    {
+                        int r = UnityEngine.Random.Range(0, roomData.GetRoomCountAt(roomGroup));
 
-						//TODO: Make a list of all the rooms available for each roomGroup. Delete entries afterward to avoid reuse of the rooms in further chapters or levels.
-						room = roomData.GetRoomAt(roomGroup, r);
-							
-						nextGridPos = DGrid.VecToGridCoord(nextRoomPos);
-						prevGridPos = DGrid.VecToGridCoord(prevRoomPos);
+                        // TODO: make a list of all the rooms available for each roomGroup.
+                        room = roomData.GetRoomAt(roomGroup, r);
 
-						worldPos = Vector3.Scale(nextRoomPos, room.floorSize);
+                        nextGridPos = DGrid.VecToGridCoord(nextRoomPos);
+                        prevGridPos = DGrid.VecToGridCoord(prevRoomPos);
 
-						//worldPos = Vector3.Scale (new Vector3(1,0,0), room.floorSize);
-						GameObject roomObject = Instantiate(room.gameObject, worldPos, Quaternion.identity) as GameObject;
+                        worldPos = new Vector3(
+                            nextRoomPos.x * cellSize.x,
+                            0f,
+                            nextRoomPos.z * cellSize.z
+                        );
 
-						DRoom nextDRoom = dRooms[nextGridPos.x, nextGridPos.y] = roomObject.GetComponent<DRoom>();
-						
-						switch(nextDRoom.roomType)
-						{
-							case ObjectType.Boss:
-							bossRoom = roomObject.transform;
-							break;
-						case ObjectType.Special: //TODO: Change Special to Item
-							itemRoom = roomObject.transform;
-							break;
-						}
-				
-						PlaceDoors(prevGridPos, nextGridPos);
-						combinedBounds.Encapsulate(nextDRoom.GetFloorBounds());
+                        GameObject roomObject = Instantiate(room.gameObject, worldPos, Quaternion.identity) as GameObject;
 
-						nextDRoom.SetRoomNum(roomInstance);
-						nextDRoom.AssignParent(transform);
+                        DRoom nextDRoom = dRooms[nextGridPos.x, nextGridPos.y] = roomObject.GetComponent<DRoom>();
 
-						roomPositions[currRoomNum] = nextRoomPos;
-						currRoomGroupCount++;
-						currRoomNum++;
-					}
-				}
-			}
-		}
+                        switch (nextDRoom.roomType)
+                        {
+                            case ObjectType.Boss:
+                                bossRoom = roomObject.transform;
+                                break;
+                            case ObjectType.Special: // TODO: Change Special to Item
+                                itemRoom = roomObject.transform;
+                                break;
+                        }
 
-		if (attempts >= maxAttempts) 
-		{
-			Debug.LogWarning ("Max attempts reached during dungeon generation. Generated " + currRoomNum + " out of " + totalRooms + " rooms.");
+                        PlaceDoors(prevGridPos, nextGridPos);
+
+                        nextDRoom.SetRoomNum(roomInstance);
+                        nextDRoom.AssignParent(transform);
+
+                        roomPositions[currRoomNum] = nextRoomPos;
+                        currRoomGroupCount++;
+                        currRoomNum++;
+
+                        // register grid occupancy
+                        RegisterRoomAt(nextGridPos);
+                    }
+                }
+            }
         }
 
-        // Create or reuse the BoxCollider that represents the dungeon bounds
-        if (boxCol == null)
+        if (attempts >= maxAttempts)
         {
-            boxCol = gameObject.AddComponent<BoxCollider>();
-        }
-        else
-        {
-            boxCol.enabled = true;
-        }
-
-        // combinedBounds is in world space; convert to local space of this transform
-        boxCol.center = transform.InverseTransformPoint(combinedBounds.center);
-        boxCol.size = combinedBounds.size;
-
-        // set camera to encompass dungeon
-        CameraLookDown camScript = Camera.main.GetComponent<CameraLookDown>();
-        if (camScript != null)
-        {
-            camScript.SetTarget(boxCol);   // this will SnapToFit() once
+            UnityEngine.Debug.LogWarning(
+                "Max attempts reached during dungeon generation. Generated "
+                + currRoomNum + " out of " + totalRooms + " rooms."
+            );
         }
 
+        RebuildDungeonBounds();
     }
 
     public void RegenerateDungeon()
     {
-        // Clear existing dungeon
+        // clear existing dungeon
         foreach (Transform child in transform)
             Destroy(child.gameObject);
 
-        // Reset data
+        // reset data
         roomInstance = 0;
         InitData();
 
         // Generate new dungeon
         Generate();
 
-        // Update A* graph
+        // update A* graph
         InitGridGraph();
 
-        Debug.Log("Dungeon regenerated!");
+        UnityEngine.Debug.Log("Dungeon regenerated!");
+    }
+
+    void RebuildDungeonBounds()
+    {
+        if (!hasAnyRoom)
+        {
+            Debug.LogWarning("RebuildDungeonBounds: no rooms registered on grid");
+            return;
+        }
+
+        if (cellSize == Vector3.zero)
+        {
+            Debug.LogWarning("RebuildDungeonBounds: cellSize is zero, using fallback");
+            cellSize = new Vector3(10f, 0f, 10f);
+        }
+
+        // how many cells are actually used
+        int cellsX = (maxGridX - minGridX + 1);
+        int cellsY = (maxGridY - minGridY + 1);
+
+        float width = cellsX * cellSize.x;
+        float depth = cellsY * cellSize.z;
+        float height = Mathf.Max(floorHeight, 5f);
+
+        // ✅ correct center index (no +1)
+        float centerGridX = (minGridX + maxGridX) * 0.5f;
+        float centerGridY = (minGridY + maxGridY) * 0.5f;
+
+        Vector3 center = new Vector3(
+            centerGridX * cellSize.x,
+            floorCenterY,
+            centerGridY * cellSize.z
+        );
+
+        combinedBounds = new Bounds(center, new Vector3(width, height, depth));
+
+        if (boxCol == null)
+            boxCol = gameObject.AddComponent<BoxCollider>();
+
+        boxCol.center = transform.InverseTransformPoint(combinedBounds.center);
+        boxCol.size = combinedBounds.size;
+
+        Debug.Log(
+            $"RebuildDungeonBounds (grid-based): center={combinedBounds.center}, size={combinedBounds.size}, " +
+            $"cellsX={cellsX}, cellsY={cellsY}"
+        );
+
+        CameraLookDown camScript = Camera.main != null
+            ? Camera.main.GetComponent<CameraLookDown>()
+            : null;
+
+        if (camScript != null)
+            camScript.SetTarget(boxCol);
+    }
+
+    void RegisterRoomAt(GridCoord gridPos)
+    {
+        if (!hasAnyRoom)
+        {
+            minGridX = maxGridX = gridPos.x;
+            minGridY = maxGridY = gridPos.y;
+            hasAnyRoom = true;
+            return;
+        }
+
+        if (gridPos.x < minGridX) minGridX = gridPos.x;
+        if (gridPos.x > maxGridX) maxGridX = gridPos.x;
+        if (gridPos.y < minGridY) minGridY = gridPos.y;
+        if (gridPos.y > maxGridY) maxGridY = gridPos.y;
     }
 
     void PlaceDoors(GridCoord prev, GridCoord next)
-	{
-		GridCoord idx = roomGrid.PolarDirectionIndeces(prev, next);
-	
-		if(!idx.Equals(GridCoord.Zero))
-		{
-			//Alpha code. results of idx values Change depending on room orientation. TODO: Get rid of that dependency in later revisions. 
-			DRoom roomA = dRooms[prev.x, prev.y];
-			DRoom roomB = dRooms[next.x, next.y];
+    {
+        GridCoord idx = roomGrid.PolarDirectionIndeces(prev, next);
 
-			int AIdx = (int)roomA.roomType;
-			int BIdx = (int)roomB.roomType;
+        if (!idx.Equals(GridCoord.Zero))
+        {
+            // alpha code. results of idx values change depending on room orientation.
+            DRoom roomA = dRooms[prev.x, prev.y];
+            DRoom roomB = dRooms[next.x, next.y];
 
-			roomA.PlaceDoor(idx.y, roomData.doorTypes[BIdx]); 
-			roomB.PlaceDoor(idx.x, roomData.doorTypes[AIdx]); 
-		}
-	}
+            int AIdx = (int)roomA.roomType;
+            int BIdx = (int)roomB.roomType;
 
-	public Transform GetRoomByType(ObjectType type)
-	{
+            roomA.PlaceDoor(idx.y, roomData.doorTypes[BIdx]);
+            roomB.PlaceDoor(idx.x, roomData.doorTypes[AIdx]);
+        }
+    }
 
-		switch (type) {
-			case ObjectType.Boss:
-				return bossRoom;
-			break;
-		case ObjectType.Special:
-				return itemRoom;
-			break;
-		}
+    public Transform GetRoomByType(ObjectType type)
+    {
+        switch (type)
+        {
+            case ObjectType.Boss:
+                return bossRoom;
+            case ObjectType.Special:
+                return itemRoom;
+        }
 
-		return null;
-	}
+        return null;
+    }
 
-	public static Bounds GetDungeonBounds()
-	{
-		if (boxCol == null) 
-		{
-			Debug.LogError ("BoxCollider not initialized in DGenerator.GetDungeonBounds");
-			return new Bounds ();
+    public static Bounds GetDungeonBounds()
+    {
+        if (boxCol == null)
+        {
+            UnityEngine.Debug.LogError("BoxCollider not initialized in DGenerator.GetDungeonBounds");
+            return new Bounds();
         }
 
         return boxCol.bounds;
-	}
+    }
 
-	public static void EnterRoom(Vector3 floorSize, Vector3 center)
-	{
-		if (gridGraph == null || AstarPath.active == null) 
-		{
-			Debug.LogError ("Grid graph not initialized in DGenerator.EnterRoom");
-			return;
+    public static void EnterRoom(Vector3 floorSize, Vector3 center)
+    {
+        if (gridGraph == null || AstarPath.active == null)
+        {
+            UnityEngine.Debug.LogError("Grid graph not initialized in DGenerator.EnterRoom");
+            return;
         }
 
-        if (FogEffect) 
-		{
-			FogEffect.transform.position = center;
-		}
+        if (FogEffect)
+        {
+            FogEffect.transform.position = center;
+        }
 
-		gridGraph.width = (int)floorSize.x;
-		gridGraph.depth = (int)floorSize.z;
-		gridGraph.center = center;
+        gridGraph.width = (int)floorSize.x;
+        gridGraph.depth = (int)floorSize.z;
+        gridGraph.center = center;
 
-		gridGraph.UpdateSizeFromWidthDepth();
-		AstarPath.active.Scan();
-	}
+        gridGraph.UpdateSizeFromWidthDepth();
+        AstarPath.active.Scan();
+    }
 }
