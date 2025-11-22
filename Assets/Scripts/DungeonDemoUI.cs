@@ -1,12 +1,12 @@
 using UnityEngine;
 
-// simple imgui overlay for dungeon demo
+// simple imgui overlay for dungeon demo with custom styling
 public class DungeonDemoUI : MonoBehaviour
 {
-    [Header("Hook up your generator (optional)")]
+    [Header("hook up your generator (optional)")]
     public DGenerator generator;
 
-    [Header("Window Settings")]
+    [Header("window settings")]
     public string windowTitle = "Dungeon Demo Controls";
     public bool startVisible = true;
 
@@ -16,19 +16,27 @@ public class DungeonDemoUI : MonoBehaviour
 
     // style fields
     private GUIStyle _windowStyle;
+    private GUIStyle _titleLabelStyle;
     private GUIStyle _headerStyle;
     private GUIStyle _labelStyle;
     private GUIStyle _buttonStyle;
-    private GUIStyle _thinSeparator;
     private bool _stylesInitialized;
+
+    // textures
+    private Texture2D _windowTex;
+    private Texture2D _titleBarTex;
+    private Texture2D _buttonTex;
+    private Texture2D _buttonHoverTex;
+    private Texture2D _scrollTrackTex;
+    private Texture2D _scrollThumbTex;
+
+    // optional custom font
+    private Font _uiFont;
 
     void Awake()
     {
-        // starting rect for the window
-        _windowRect = new Rect(10, 10, 360, 260);
+        _windowRect = new Rect(20, 20, 340, 220);
         _visible = startVisible;
-
-        // do not call initstyles here, it uses gui.skin which must be inside ongui
         _stylesInitialized = false;
     }
 
@@ -43,17 +51,13 @@ public class DungeonDemoUI : MonoBehaviour
         if (!_visible)
             return;
 
-        // ensure styles are initialized once, inside ongui
         if (!_stylesInitialized)
-        {
             InitStyles();
-            _stylesInitialized = true;
-        }
 
-        // draw the window with custom style
-        _windowRect = GUI.Window(1001, _windowRect, DrawWindow, "", _windowStyle);
+        // always fall back to default style if something went wrong
+        GUIStyle styleToUse = _windowStyle != null ? _windowStyle : GUI.skin.window;
 
-        // clamp so it stays inside screen bounds
+        _windowRect = GUI.Window(1001, _windowRect, DrawWindow, GUIContent.none, styleToUse);
         _windowRect = ClampToScreen(_windowRect);
     }
 
@@ -67,127 +71,139 @@ public class DungeonDemoUI : MonoBehaviour
         return r;
     }
 
-    // initialize basic styles to mimic a dear imgui like dark theme
+    Texture2D MakeTex(Color col)
+    {
+        Texture2D tex = new Texture2D(1, 1);
+        tex.SetPixel(0, 0, col);
+        tex.Apply();
+        tex.hideFlags = HideFlags.HideAndDontSave;
+        return tex;
+    }
+
     void InitStyles()
     {
-        // create base styles using current gui skin
+        // prevent reentry
+        _stylesInitialized = true;
+
+        // load a custom font
+        _uiFont = Resources.Load<Font>("JetBrainsMono-VariableFont_wght");
+
+        // colors
+        Color windowBg = new Color(0.09f, 0.09f, 0.10f, 0.95f);
+        Color titleBg = new Color(0.18f, 0.27f, 0.43f, 1.0f);
+        Color text = new Color(0.85f, 0.86f, 0.89f, 1.0f);
+        Color headerText = new Color(0.35f, 0.65f, 1.0f, 1.0f);
+        Color buttonBg = new Color(0.20f, 0.30f, 0.50f, 1.0f);
+        Color buttonHoverBg = new Color(0.30f, 0.50f, 0.85f, 1.0f);
+        Color scrollTrack = new Color(0.10f, 0.10f, 0.12f, 1.0f);
+        Color scrollThumb = new Color(0.30f, 0.50f, 0.85f, 1.0f);
+
+        _windowTex = MakeTex(windowBg);
+        _titleBarTex = MakeTex(titleBg);
+        _buttonTex = MakeTex(buttonBg);
+        _buttonHoverTex = MakeTex(buttonHoverBg);
+        _scrollTrackTex = MakeTex(scrollTrack);
+        _scrollThumbTex = MakeTex(scrollThumb);
+
+        // window style
         _windowStyle = new GUIStyle(GUI.skin.window);
-        _headerStyle = new GUIStyle(GUI.skin.label);
-        _labelStyle = new GUIStyle(GUI.skin.label);
-        _buttonStyle = new GUIStyle(GUI.skin.button);
-        _thinSeparator = new GUIStyle(GUI.skin.box);
-
-        // colors (dark theme)
-        Color windowBg = new Color(0.11f, 0.11f, 0.13f, 0.96f);
-        Color border = new Color(0.24f, 0.24f, 0.26f, 1f);
-        Color header = new Color(0.85f, 0.86f, 0.89f, 1f);
-        Color text = new Color(0.85f, 0.86f, 0.89f, 1f);
-        Color accent = new Color(0.26f, 0.59f, 0.98f, 1f);
-
-        Texture2D windowTex = MakeTex(1, 1, windowBg);
-        Texture2D borderTex = MakeTex(1, 1, border);
-        Texture2D buttonTex = MakeTex(1, 1, new Color(0.20f, 0.20f, 0.23f, 1f));
-        Texture2D buttonHoverTex = MakeTex(1, 1, new Color(0.26f, 0.59f, 0.98f, 0.8f));
-
-        // window style: force all states to use the same flat texture
-        _windowStyle.normal.background = windowTex;
-        _windowStyle.onNormal.background = windowTex;
-        _windowStyle.hover.background = windowTex;
-        _windowStyle.onHover.background = windowTex;
-        _windowStyle.active.background = windowTex;
-        _windowStyle.onActive.background = windowTex;
-        _windowStyle.focused.background = windowTex;
-        _windowStyle.onFocused.background = windowTex;
-
-        _windowStyle.padding = new RectOffset(10, 10, 18, 10);
+        _windowStyle.normal.background = _windowTex;
+        _windowStyle.onNormal.background = _windowTex;
+        _windowStyle.hover.background = _windowTex;
+        _windowStyle.active.background = _windowTex;
+        _windowStyle.focused.background = _windowTex;
+        _windowStyle.padding = new RectOffset(6, 6, 6, 6);
         _windowStyle.border = new RectOffset(1, 1, 1, 1);
-        _windowStyle.fontSize = 14;
-        _windowStyle.alignment = TextAnchor.UpperCenter;
-        _windowStyle.normal.textColor = header;
+        _windowStyle.normal.textColor = text;
+        _windowStyle.fontSize = 12;
+        if (_uiFont != null)
+            _windowStyle.font = _uiFont;
 
-        // header text
-        _headerStyle.fontSize = 13;
+        // title label
+        _titleLabelStyle = new GUIStyle(GUI.skin.label);
+        _titleLabelStyle.fontSize = 13;
+        _titleLabelStyle.fontStyle = FontStyle.Bold;
+        _titleLabelStyle.normal.textColor = Color.white;
+        _titleLabelStyle.alignment = TextAnchor.MiddleLeft;
+        _titleLabelStyle.padding = new RectOffset(8, 0, 0, 0);
+        if (_uiFont != null)
+            _titleLabelStyle.font = _uiFont;
+
+        // section headers
+        _headerStyle = new GUIStyle(GUI.skin.label);
+        _headerStyle.fontSize = 12;
         _headerStyle.fontStyle = FontStyle.Bold;
-        _headerStyle.normal.textColor = accent;
-        _headerStyle.richText = false;
+        _headerStyle.normal.textColor = headerText;
+        if (_uiFont != null)
+            _headerStyle.font = _uiFont;
 
         // normal labels
-        _labelStyle.fontSize = 12;
+        _labelStyle = new GUIStyle(GUI.skin.label);
+        _labelStyle.fontSize = 11;
         _labelStyle.normal.textColor = text;
-        _labelStyle.richText = false;
+        if (_uiFont != null)
+            _labelStyle.font = _uiFont;
 
-        // buttons: same idea, unify state textures
-        _buttonStyle.normal.background = buttonTex;
-        _buttonStyle.onNormal.background = buttonTex;
-        _buttonStyle.hover.background = buttonHoverTex;
-        _buttonStyle.onHover.background = buttonHoverTex;
-        _buttonStyle.active.background = buttonHoverTex;
-        _buttonStyle.onActive.background = buttonHoverTex;
-        _buttonStyle.focused.background = buttonTex;
-        _buttonStyle.onFocused.background = buttonTex;
-
+        // buttons
+        _buttonStyle = new GUIStyle(GUI.skin.button);
+        _buttonStyle.normal.background = _buttonTex;
+        _buttonStyle.hover.background = _buttonHoverTex;
+        _buttonStyle.active.background = _buttonHoverTex;
         _buttonStyle.normal.textColor = text;
         _buttonStyle.hover.textColor = Color.white;
         _buttonStyle.active.textColor = Color.white;
-        _buttonStyle.fontSize = 12;
-        _buttonStyle.padding = new RectOffset(8, 8, 4, 4);
+        _buttonStyle.fontSize = 11;
+        _buttonStyle.padding = new RectOffset(6, 6, 3, 3);
+        if (_uiFont != null)
+            _buttonStyle.font = _uiFont;
 
-        // thin separator bar
-        _thinSeparator.normal.background = borderTex;
-        _thinSeparator.fixedHeight = 1;
-        _thinSeparator.margin = new RectOffset(0, 0, 4, 4);
-    }
+        // simple scrollbar styling on the current gui skin
+        GUI.skin.verticalScrollbar.normal.background = _scrollTrackTex;
+        GUI.skin.verticalScrollbar.hover.background = _scrollTrackTex;
+        GUI.skin.verticalScrollbar.active.background = _scrollTrackTex;
+        GUI.skin.verticalScrollbar.fixedWidth = 10;
 
-
-    Texture2D MakeTex(int width, int height, Color col)
-    {
-        Color[] pix = new Color[width * height];
-        for (int i = 0; i < pix.Length; i++)
-            pix[i] = col;
-
-        Texture2D result = new Texture2D(width, height);
-        result.SetPixels(pix);
-        result.Apply();
-        result.hideFlags = HideFlags.HideAndDontSave;
-        return result;
+        GUI.skin.verticalScrollbarThumb.normal.background = _scrollThumbTex;
+        GUI.skin.verticalScrollbarThumb.hover.background = _scrollThumbTex;
+        GUI.skin.verticalScrollbarThumb.active.background = _scrollThumbTex;
     }
 
     void DrawWindow(int windowID)
     {
         GUILayout.BeginVertical();
 
-        // manual title bar text
-        GUILayout.Label(windowTitle, _headerStyle);
+        // custom title bar
+        Rect titleRect = GUILayoutUtility.GetRect(0, 18, GUILayout.ExpandWidth(true));
+        GUI.DrawTexture(titleRect, _titleBarTex);
+        GUI.Label(titleRect, windowTitle, _titleLabelStyle);
 
-        // separator
-        GUILayout.Box(GUIContent.none, _thinSeparator);
+        GUILayout.Space(4);
 
-        // scrollable area
-        _scrollPos = GUILayout.BeginScrollView(_scrollPos, GUILayout.Height(210));
+        _scrollPos = GUILayout.BeginScrollView(_scrollPos, GUILayout.Height(170));
 
-        GUILayout.Label("movement", _headerStyle);
-        GUILayout.Label("wasd / arrow keys   - move", _labelStyle);
-        GUILayout.Label("right mouse drag    - rotate camera", _labelStyle);
-        GUILayout.Label("mouse wheel         - zoom in/out", _labelStyle);
+        GUILayout.Label("Movement", _headerStyle);
+        GUILayout.Label("WASD / Arrow Keys   - Move", _labelStyle);
+        GUILayout.Label("Right Mouse Drag    - Rotate Camera", _labelStyle);
+        GUILayout.Label("Mouse Wheel         - Zoom in / out", _labelStyle);
         GUILayout.Space(6);
 
-        GUILayout.Label("dungeon controls", _headerStyle);
-        GUILayout.Label("ctrl + r            - regenerate dungeon", _labelStyle);
-        GUILayout.Label("tab                 - center camera", _labelStyle);
+        GUILayout.Label("Dungeon Controls", _headerStyle);
+        GUILayout.Label("CTRL + R            - Regenerate Dungeon", _labelStyle);
+        GUILayout.Label("Tab                 - Center Camera", _labelStyle);
         GUILayout.Space(6);
 
-        GUILayout.Label("ui", _headerStyle);
-        GUILayout.Label("f1                  - toggle this help panel", _labelStyle);
+        GUILayout.Label("UI", _headerStyle);
+        GUILayout.Label("F1                  - Toggle this help panel", _labelStyle);
         GUILayout.Space(8);
 
         if (generator != null)
         {
-            GUILayout.Label("current dungeon", _headerStyle);
-            GUILayout.Label("rooms: " + generator.TotalRooms, _labelStyle);
+            GUILayout.Label("Current Dungeon", _headerStyle);
+            GUILayout.Label("Rooms: " + generator.TotalRooms, _labelStyle);
             GUILayout.Space(4);
 
             GUILayout.BeginHorizontal();
-            if (GUILayout.Button("regenerate (r)", _buttonStyle))
+            if (GUILayout.Button("Regenerate (r)", _buttonStyle))
             {
                 generator.RegenerateDungeon();
             }
@@ -202,7 +218,7 @@ public class DungeonDemoUI : MonoBehaviour
         GUILayout.EndScrollView();
         GUILayout.EndVertical();
 
-        // allow dragging by the top area
-        GUI.DragWindow(new Rect(0, 0, 10000, 20));
+        // drag window by the title bar area
+        GUI.DragWindow(new Rect(0, 0, _windowRect.width, 22));
     }
 }
