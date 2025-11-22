@@ -42,6 +42,8 @@ public class DGenerator : MonoBehaviour
     private int maxBossRooms = 1;
     private int maxItemRooms = 1;
     private List<int> maxRooms;
+
+    public int TotalRooms { get { return totalRooms; } }
     private int totalRooms;
 
     [HideInInspector]
