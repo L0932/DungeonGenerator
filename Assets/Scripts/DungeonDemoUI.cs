@@ -30,7 +30,7 @@ public class DungeonDemoUI : MonoBehaviour
     private Texture2D _scrollTrackTex;
     private Texture2D _scrollThumbTex;
 
-    // optional custom font
+    // custom font
     private Font _uiFont;
 
     void Awake()
@@ -170,40 +170,39 @@ public class DungeonDemoUI : MonoBehaviour
 
     void DrawWindow(int windowID)
     {
-        GUILayout.BeginVertical();
-
-        // custom title bar
-        Rect titleRect = GUILayoutUtility.GetRect(0, 18, GUILayout.ExpandWidth(true));
-        GUI.DrawTexture(titleRect, _titleBarTex);
-        GUI.Label(titleRect, windowTitle, _titleLabelStyle);
-
-        GUILayout.Space(4);
-
+        // scroll content
         _scrollPos = GUILayout.BeginScrollView(_scrollPos, GUILayout.Height(170));
 
+        // movement
         GUILayout.Label("Movement", _headerStyle);
-        GUILayout.Label("WASD / Arrow Keys   - Move", _labelStyle);
-        GUILayout.Label("Right Mouse Drag    - Rotate Camera", _labelStyle);
-        GUILayout.Label("Mouse Wheel         - Zoom in / out", _labelStyle);
+        DrawRow("WASD / Arrow Keys", "Move");
+        DrawRow("Right Mouse Drag", "Rotate Camera");
+        DrawRow("Mouse Wheel", "Zoom in / out");
+        DrawRow("ALT + Cursor at Screen Edge", "Pan camera");
+
         GUILayout.Space(6);
 
+        // dungeon controls
         GUILayout.Label("Dungeon Controls", _headerStyle);
-        GUILayout.Label("CTRL + R            - Regenerate Dungeon", _labelStyle);
-        GUILayout.Label("Tab                 - Center Camera", _labelStyle);
+        DrawRow("CTRL + R", "Regenerate Dungeon");
+        DrawRow("Tab", "Center Camera");
+        DrawRow("Double Left Mouse Click", "Focus on object in scene");
+        DrawRow("ESC / Left click empty space", "Unfocus from object");
         GUILayout.Space(6);
 
+        // ui
         GUILayout.Label("UI", _headerStyle);
-        GUILayout.Label("F1                  - Toggle this help panel", _labelStyle);
+        DrawRow("F1", "Toggle this help panel");
         GUILayout.Space(8);
 
         if (generator != null)
         {
             GUILayout.Label("Current Dungeon", _headerStyle);
-            GUILayout.Label("Rooms: " + generator.TotalRooms, _labelStyle);
+            DrawRow("Rooms", generator.TotalRooms.ToString());
             GUILayout.Space(4);
 
             GUILayout.BeginHorizontal();
-            if (GUILayout.Button("Regenerate (r)", _buttonStyle))
+            if (GUILayout.Button("Regenerate (R)", _buttonStyle))
             {
                 generator.RegenerateDungeon();
             }
@@ -216,9 +215,16 @@ public class DungeonDemoUI : MonoBehaviour
         }
 
         GUILayout.EndScrollView();
-        GUILayout.EndVertical();
+    }
 
-        // drag window by the title bar area
-        GUI.DragWindow(new Rect(0, 0, _windowRect.width, 22));
+    // draws one row as two columns: left text and right text
+    void DrawRow(string left, string right)
+    {
+        GUILayout.BeginHorizontal();
+        // left column: fixed width so all descriptions line up
+        GUILayout.Label(left, _labelStyle, GUILayout.Width(150));
+        // right column: fills remaining space
+        GUILayout.Label(right, _labelStyle);
+        GUILayout.EndHorizontal();
     }
 }
