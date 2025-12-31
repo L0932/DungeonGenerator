@@ -184,7 +184,7 @@ public class DungeonDemoUI : MonoBehaviour
 
         // dungeon controls
         GUILayout.Label("Dungeon Controls", _headerStyle);
-        DrawRow("CTRL + R", "Regenerate Dungeon");
+        DrawRow("G", "Generate New Dungeon");
         DrawRow("Tab", "Center Camera");
         DrawRow("Double Left Mouse Click", "Focus on object in scene");
         DrawRow("ESC / Left click empty space", "Unfocus from object");

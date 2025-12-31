@@ -84,7 +84,7 @@ public class DGenerator : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.G))
         {
             RegenerateDungeon();
         }
