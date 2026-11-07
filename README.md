@@ -1,6 +1,6 @@
 # DungeonGenerator
 
-A standalone Unity project showcasing the procedural dungeon generator I worked on for *Periwinkle's Adventure*, a 2015 capstone game. The original game was a top-down roguelike inspired by *The Binding of Isaac*, and its interconnected room layouts drew on that same inspiration.
+A Unity project showcasing the procedural dungeon generator I worked on for *Periwinkle's Adventure*, a 2015 capstone game. The original game was a top-down roguelike inspired by *The Binding of Isaac*, and its interconnected room layouts drew on that same inspiration.
 
 ## What's included
 
